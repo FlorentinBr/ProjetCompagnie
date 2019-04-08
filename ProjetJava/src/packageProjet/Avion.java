@@ -18,7 +18,9 @@ public class Avion {
 	private int capacite;
 	private double rayondaction;
 	private double prixkm;
-	private List<Boolean> listplace;
+	private List<Boolean> listPlace;
+	private List<Vol> listVol;
+	
 	
 	
 	/**
@@ -27,7 +29,11 @@ public class Avion {
 	 */
 	public boolean enVol(String date) {
 		//TODOimplementer la methode
-		
+		for(Vol v : this.listVol) {
+			if(v.getDate().equals(date)) {
+				return true;
+			}
+		}return false;
 	}
 	
 	public String getMatricule() {
