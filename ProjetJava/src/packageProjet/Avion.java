@@ -10,19 +10,29 @@ import java.util.ArrayList;
  * @author formation
  *
  */
-public class Avion {
+public abstract class Avion {
 	
 	private String matricule;
-	private String modèle;
+	public Modele modele;
 	private Aeroport localisation;
-	private int capacite;
 	private double rayondaction;
 	private double prixkm;
-	private List<Boolean> listPlace;
+	private List<Boolean> listPlaces;
 	private List<Vol> listVol;
 	
 	
 	
+	
+	
+	public Avion(String matricule, Modele modele, Aeroport localisation, List<Boolean> listPlaces, List<Vol> listVol) {
+		this.matricule = matricule;
+		this.modele = modele;
+		this.localisation = localisation;
+		this.listPlaces = listPlaces;
+		this.listVol = listVol;
+	}
+
+
 	/**
 	 * @param date
 	 * @return
@@ -45,12 +55,12 @@ public class Avion {
 		this.matricule = matricule;
 	}
 	
-	public String getModèle() {
-		return modèle;
+	public Modele getModele() {
+		return modele;
 	}
 	
-	public void setModèle(String modèle) {
-		this.modèle = modèle;
+	public void setModele(Modele modele) {
+		this.modele = modele;
 	}
 	
 	public Aeroport getLocalisation() {
@@ -60,14 +70,7 @@ public class Avion {
 	public void setLocalisation(Aeroport localisation) {
 		this.localisation = localisation;
 	}
-	
-	public int getCapacite() {
-		return capacite;
-	}
-	
-	public void setCapacite(int capacite) {
-		this.capacite = capacite;
-	}
+
 	
 	public double getRayondaction() {
 		return rayondaction;
@@ -85,11 +88,13 @@ public class Avion {
 		this.prixkm = prixkm;
 	}
 	
-	public List<Boolean> getListplace() {
-		return this.listPlace;
+	public List<Boolean> getListplaces() {
+		return this.listPlaces;
 	}
 	
-	public void setListplace(List<Boolean> listplace) {
-		this.listPlace = listplace;
+	public void setListlace(List<Boolean> listPlaces) {
+		this.listPlaces = listPlaces;
 	}
+	
+
 }
