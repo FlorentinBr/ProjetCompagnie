@@ -114,7 +114,7 @@ public class Reservation {
 	
 	
 	public double calculPrix(Vol v, double p) {
-		
+		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + p;
 	}
 	
 }

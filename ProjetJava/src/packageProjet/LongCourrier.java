@@ -18,9 +18,8 @@ public abstract class LongCourrier extends Avion{
 	 * @param capaciteeMax
 	 * @param rayondaction
 	 */
-	public LongCourrier(String matricule, Modele modele, Aeroport localisation, List<Boolean> listPlaces,
-			List<Vol> listVol, int capaciteeMax, double rayondaction) {
-		super(matricule, modele, localisation, listPlaces, listVol);
+	public LongCourrier(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction) {
+		super(matricule, modele, localisation);
 		this.capaciteeMax = capaciteeMax;
 		this.rayondaction = rayondaction;
 	}

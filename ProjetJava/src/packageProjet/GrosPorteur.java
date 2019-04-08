@@ -5,7 +5,6 @@ import java.util.List;
 public class GrosPorteur extends LongCourrier {
 	
 	private int capacitee;
-	private List<Boolean> listPlaces;
 	public Modele modele;
 	private double coeff;
 	private double prixkm;
@@ -21,9 +20,8 @@ public class GrosPorteur extends LongCourrier {
 	 * @param coeff
 	 * @param prixkm
 	 */
-	public GrosPorteur(String matricule, Modele modele, Aeroport localisation, List<Boolean> listPlaces,
-			List<Vol> listVol, int capaciteeMax, double rayondaction, int capacitee, double coeff, double prixkm) {
-		super(matricule, modele, localisation, listPlaces, listVol, capaciteeMax, rayondaction);
+	public GrosPorteur(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction, int capacitee, double coeff, double prixkm) {
+		super(matricule, modele, localisation, capaciteeMax, rayondaction);
 		this.capacitee = capacitee;
 		this.coeff = coeff;
 		this.prixkm = prixkm;

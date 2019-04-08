@@ -19,17 +19,19 @@ public abstract class Avion {
 	private double prixkm;
 	private List<Boolean> listPlaces;
 	private List<Vol> listVol;
+	private double coeff;
+	private int capacitee;
 	
 	
 	
 	
 	
-	public Avion(String matricule, Modele modele, Aeroport localisation, List<Boolean> listPlaces, List<Vol> listVol) {
+	public Avion(String matricule, Modele modele, Aeroport localisation) {
 		this.matricule = matricule;
 		this.modele = modele;
 		this.localisation = localisation;
-		this.listPlaces = listPlaces;
-		this.listVol = listVol;
+		this.listPlaces = new ArrayList<Boolean>();
+		this.listVol = new ArrayList<Vol>();
 	}
 
 
@@ -97,4 +99,19 @@ public abstract class Avion {
 	}
 	
 
+	public double getCoeff() {
+		return coeff;
+	}
+	
+	public void setCoeff(double coeff) {
+		this.coeff = coeff;
+	}
+	
+	public double getCapacitee() {
+		return capacitee;
+	}
+	
+	public void setCapacitee(int capacitee) {
+		this.capacitee = capacitee;
+	}
 }

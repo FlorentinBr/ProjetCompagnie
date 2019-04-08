@@ -1,6 +1,5 @@
 package packageProjet;
 
-import java.util.List;
 
 public abstract class MoyenCourrier extends Avion {
 	
@@ -18,9 +17,8 @@ public abstract class MoyenCourrier extends Avion {
 	 * @param capaciteeMax
 	 * @param rayondaction
 	 */
-	public MoyenCourrier(String matricule, Modele modele, Aeroport localisation, List<Boolean> listPlaces,
-			List<Vol> listVol, int capaciteeMax, double rayondaction) {
-		super(matricule, modele, localisation, listPlaces, listVol);
+	public MoyenCourrier(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction) {
+		super(matricule, modele, localisation);
 		this.capaciteeMax = capaciteeMax;
 		this.rayondaction = rayondaction;
 	}
