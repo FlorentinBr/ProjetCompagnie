@@ -10,8 +10,8 @@ public class Aeroport {
 	private String pays;
 	private int capaciteAccueil;
 	private ArrayList<Equipage> listEquipage;
-	private double[] coordonnees;
-	
+	private double coordonneeX;
+	private double coordonneeY;
 	
 	/**
 	 * @param nom
@@ -22,14 +22,15 @@ public class Aeroport {
 	 * @param coordonnees
 	 */
 	public Aeroport(String nom, String ville, String pays, int capaciteAccueil, ArrayList<Equipage> listEquipage,
-			double[] coordonnees) {
+			double coordonneeX, double coordonneeY) {
 		super();
 		this.nom = nom;
 		this.ville = ville;
 		this.pays = pays;
 		this.capaciteAccueil = capaciteAccueil;
 		this.listEquipage = listEquipage;
-		this.coordonnees = coordonnees;
+		this.coordonneeX = coordonneeX;
+		this.coordonneeY = coordonneeY;
 	}
 	
 	/**
@@ -113,21 +114,34 @@ public class Aeroport {
 
 
 	/**
-	 * @return the coordonnees
+	 * @return the coordonneeX
 	 */
-	public double[] getCoordonnees() {
-		return coordonnees;
+	public double getCoordonneeX() {
+		return coordonneeX;
 	}
 
 
 	/**
-	 * @param coordonnees the coordonnees to set
+	 * @param coordonnees the coordonneeX to set
 	 */
-	public void setCoordonnees(double[] coordonnees) {
-		this.coordonnees = coordonnees;
+	public void setCoordonneeX(double coordonneeX) {
+		this.coordonneeX = coordonneeX;
+	}
+
+	/**
+	 * @return the coordonneeY
+	 */
+	public double getCoordonneeY() {
+		return coordonneeY;
 	}
 
 
+	/**
+	 * @param coordonnees the coordonneeY to set
+	 */
+	public void setCoordonneeY(double coordonneeY) {
+		this.coordonneeY = coordonneeY;
+	}
 	
 	
 }

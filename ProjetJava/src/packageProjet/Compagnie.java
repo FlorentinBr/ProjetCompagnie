@@ -86,5 +86,21 @@ public class Compagnie {
 		this.listAvion = listAvion;
 	}
 	
+	
+	public void addVol(Vol v) {
+		this.listVol.add(v);
+	}
+	
+	public void addEquipage(Equipage e) {
+		this.listEquipage.add(e);
+	}
+	
+	public void addAeroport(Aeroport a) {
+		this.listAeroport.add(a);
+	}
+	
+	public void addAviob(Avion a) {
+		this.listAvion.add(a);
+	}
 
 }
