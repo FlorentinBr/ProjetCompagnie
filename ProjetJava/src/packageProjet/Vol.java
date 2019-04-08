@@ -10,7 +10,7 @@ public class Vol {
 	private Aeroport aeroportD;
 	private Aeroport aeroportA;
  	private ArrayList<Voyageur> listVoyageur;
- 	private String date;
+ 	private int date;
  	
  	
  	
@@ -92,13 +92,13 @@ public class Vol {
 	/**
 	 * @return the date
 	 */
-	public String getDate() {
+	public int getDate() {
 		return date;
 	}
 	/**
 	 * @param date the date to set
 	 */
-	public void setDate(String date) {
+	public void setDate(int date) {
 		this.date = date;
 	} 
  	
