@@ -10,6 +10,7 @@ public class Aeroport {
 	private String pays;
 	private int capaciteAccueil;
 	private ArrayList<Equipage> listEquipage;
+	private ArrayList<Avion> listAvion;
 	private double coordonneeX;
 	private double coordonneeY;
 	
@@ -21,14 +22,13 @@ public class Aeroport {
 	 * @param listEquipage
 	 * @param coordonnees
 	 */
-	public Aeroport(String nom, String ville, String pays, int capaciteAccueil, ArrayList<Equipage> listEquipage,
-			double coordonneeX, double coordonneeY) {
-		super();
+	public Aeroport(String nom, String ville, String pays, int capaciteAccueil, double coordonneeX, double coordonneeY) {
 		this.nom = nom;
 		this.ville = ville;
 		this.pays = pays;
 		this.capaciteAccueil = capaciteAccueil;
-		this.listEquipage = listEquipage;
+		this.listEquipage = new ArrayList<Equipage>();
+		this.listAvion = new ArrayList<Avion>();
 		this.coordonneeX = coordonneeX;
 		this.coordonneeY = coordonneeY;
 	}
@@ -113,6 +113,22 @@ public class Aeroport {
 	}
 
 
+	/**
+	 * @return the listEquipage
+	 */
+	public ArrayList<Avion> getListAvion() {
+		return listAvion;
+	}
+
+
+	/**
+	 * @param listEquipage the listEquipage to set
+	 */
+	public void setListAvion(ArrayList<Avion> listAvion) {
+		this.listAvion = listAvion;
+	}
+
+	
 	/**
 	 * @return the coordonneeX
 	 */

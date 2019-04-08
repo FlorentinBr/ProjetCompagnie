@@ -39,13 +39,13 @@ public abstract class Avion {
 	 * @param date
 	 * @return
 	 */
-	public boolean enVol(String date) {
-		//TODOimplementer la methode
+	public boolean enVol(int date) {
 		for(Vol v : this.listVol) {
-			if(v.getDate().equals(date)) {
+			if(v.getDate() == date) {
 				return true;
 			}
-		}return false;
+		}
+		return false;	
 	}
 	
 	

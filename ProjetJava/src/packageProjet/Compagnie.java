@@ -11,7 +11,7 @@ public class Compagnie {
 	private ArrayList<Avion> listAvion;
 	
 	/**
-	 * 
+	 * capacitee
 	 * @param listVol
 	 * @param listAeroport
 	 * @param listEquipage
