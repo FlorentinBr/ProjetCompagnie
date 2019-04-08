@@ -94,31 +94,5 @@ public class Compagnie {
 		this.listVol.add(v);
 	}
 	
-	/**
-	 * 
-	 * @param e
-	 */
-	public void addEquipage(Equipage e) {
-		this.listEquipage.add(e);
-		//ajoute un nouvel equipage à la liste de
-		//ceux qui existent déjà dans la compagnie...
-		//Pas utile
-	}
-	/**
-	 * moi je propose:
-	 * public void addEquipage(Equipage e){
-	 *     for (Vol v : this.listV
-	 * @param a
-	 */
-	
-	public void addAeroport(Aeroport a) {
-		this.listAeroport.add(a);
-		//mm chose que pour la methode precedente
-	}
-	
-	public void addAviob(Avion a) {
-		this.listAvion.add(a);
-		//mm chose que les deux autres
-	}
 
 }
