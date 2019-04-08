@@ -36,6 +36,7 @@ public class Avion {
 		}return false;
 	}
 	
+	
 	public String getMatricule() {
 		return matricule;
 	}
@@ -85,10 +86,10 @@ public class Avion {
 	}
 	
 	public List<Boolean> getListplace() {
-		return listplace;
+		return this.listPlace;
 	}
 	
 	public void setListplace(List<Boolean> listplace) {
-		this.listplace = listplace;
+		this.listPlace = listplace;
 	}
 }
