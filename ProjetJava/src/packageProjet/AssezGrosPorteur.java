@@ -6,6 +6,6 @@ public class AssezGrosPorteur extends MoyenCourrier {
 	
 	private int capacitee;
 	private List<Boolean> listPlaces;
-	public Modele modele
+	public Modele modele;
 
 }

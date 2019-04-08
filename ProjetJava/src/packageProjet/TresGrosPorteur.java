@@ -6,7 +6,7 @@ public class TresGrosPorteur extends LongCourrier {
 	
 	private int capacitee;
 	private List<Boolean> listPlaces;
-	public Modele modele
+	public Modele modele;
 	
 
 }
