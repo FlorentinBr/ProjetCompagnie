@@ -33,8 +33,6 @@ public class Compagnie {
 		return listVol;
 	}
 
-	
-	
 	/**
 	 * @param listVol the listVol to set
 	 */
@@ -42,13 +40,13 @@ public class Compagnie {
 		this.listVol = listVol;
 	}
 	
-	
 	/**
 	 * @return the listAeroport
 	 */
 	public ArrayList<Aeroport> getListAeroport() {
 		return listAeroport;
 	}
+	
 	/**
 	 * @param listAeroport the listAeroport to set
 	 */
@@ -63,6 +61,7 @@ public class Compagnie {
 	public ArrayList<Equipage> getListEquipage() {
 		return listEquipage;
 	}
+	
 	/**
 	 * @param listEquipage the listEquipage to set
 	 */
@@ -86,21 +85,40 @@ public class Compagnie {
 		this.listAvion = listAvion;
 	}
 	
-	
+	/**
+	 * ajoute un vol à la liste de ceux
+	 *  que la compagnie propose déjà
+	 * @param v
+	 */
 	public void addVol(Vol v) {
 		this.listVol.add(v);
 	}
 	
+	/**
+	 * 
+	 * @param e
+	 */
 	public void addEquipage(Equipage e) {
 		this.listEquipage.add(e);
+		//ajoute un nouvel equipage à la liste de
+		//ceux qui existent déjà dans la compagnie...
+		//Pas utile
 	}
+	/**
+	 * moi je propose:
+	 * public void addEquipage(Equipage e){
+	 *     for (Vol v : this.listV
+	 * @param a
+	 */
 	
 	public void addAeroport(Aeroport a) {
 		this.listAeroport.add(a);
+		//mm chose que pour la methode precedente
 	}
 	
 	public void addAviob(Avion a) {
 		this.listAvion.add(a);
+		//mm chose que les deux autres
 	}
 
 }
