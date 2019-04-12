@@ -7,13 +7,39 @@ public class Reservation {
 	private int idReservation;
 	private Vol vol;
 	private ArrayList<Voyageur> listVoyageur;
-	private ArrayList<Integer> listPlaces;
 	private double prix;
-	private String dateVoyage;
+	private int dateVoyage;
 	private Aeroport aeroportD;
 	private Aeroport aeroportA;
 	
 	
+	
+	
+	/**
+	 * @param idReservation
+	 * @param vol
+	 * @param listVoyageur
+	 * @param dateVoyage
+	 * @param aeroportD
+	 * @param aeroportA
+	 */
+	public Reservation(Vol vol, ArrayList<Voyageur> listVoyageur) {
+		this.idReservation = vol.getListVoyageur().size();
+		this.vol = vol;
+		this.listVoyageur = new ArrayList<Voyageur>();
+		this.dateVoyage = vol.getDate();
+		this.aeroportD = vol.getAeroportD();
+		this.aeroportA = vol.getAeroportA();
+		double prix = 0;
+		for(Voyageur v : listVoyageur) {
+			prix += this.calculPrix(vol, v.getPoidsBagage());
+		}
+		this.prix = prix;
+		for(Voyageur v : listVoyageur) {
+			vol.addVoyageur(v);
+		}
+	}
+
 	
 	/**
 	 * @return the idReservation
@@ -51,18 +77,7 @@ public class Reservation {
 	public void setListVoyageur(ArrayList<Voyageur> listVoyageur) {
 		this.listVoyageur = listVoyageur;
 	}
-	/**
-	 * @return the listPlaces
-	 */
-	public ArrayList<Integer> getListPlaces() {
-		return listPlaces;
-	}
-	/**
-	 * @param listPlaces the listPlaces to set
-	 */
-	public void setListPlaces(ArrayList<Integer> listPlaces) {
-		this.listPlaces = listPlaces;
-	}
+
 	/**
 	 * @return the prix
 	 */
@@ -78,13 +93,13 @@ public class Reservation {
 	/**
 	 * @return the dateVoyage
 	 */
-	public String getDateVoyage() {
+	public int getDateVoyage() {
 		return dateVoyage;
 	}
 	/**
 	 * @param dateVoyage the dateVoyage to set
 	 */
-	public void setDateVoyage(String dateVoyage) {
+	public void setDateVoyage(int dateVoyage) {
 		this.dateVoyage = dateVoyage;
 	}
 	/**
@@ -116,5 +131,6 @@ public class Reservation {
 	public double calculPrix(Vol v, double p) {
 		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + p;
 	}
+	
 	
 }
