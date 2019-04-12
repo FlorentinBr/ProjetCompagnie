@@ -1,5 +1,7 @@
 package packageProjet;
 
+import java.util.ArrayList;
+
 public class Voyageur {
 	
 	private int idVoyageur;
@@ -87,10 +89,19 @@ public class Voyageur {
 		this.poidsBagage = poidsBagage;
 	}
 	
-	public void rechercherVol(int date, Aeroport aeroportD, Aeroport aeroportA) {
-		
+	public void rechercherVol(int date, Aeroport aeroportD, Aeroport aeroportA, Compagnie c) {
+		ArrayList<Vol> list = new ArrayList<Vol>();
+		for(Vol v : c.getListVol()) {
+			if(date < v.getDate() + 2 || date > v.getDate() -2) {
+				list.add(v);
+			}
+		}
+		if(list.isEmpty()) {
+			Vol nouveauVol = new Vol(aeroportD, aeroportA, date);
+			list.add(nouveauVol);
+		}
+		//PROPOSER LES VOLS AU VOYAGEUR 
 	}
-
 
 
 }

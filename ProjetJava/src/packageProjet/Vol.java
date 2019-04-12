@@ -12,9 +12,13 @@ public class Vol {
  	private ArrayList<Voyageur> listVoyageur;
  	private int date;
  	
+ 	private static int CPT_VOL = 0;
+ 	
  	
  	
  	public Vol(Aeroport D, Aeroport A, int date) {
+ 		CPT_VOL ++;
+ 		this.idVol = CPT_VOL;
  		this.aeroportD = D;
  		this.aeroportA = A;
  		this.date = date;
@@ -129,6 +133,7 @@ public class Vol {
 			for(Avion a : D.getListAvion()) {
 				if(a.getCapacitee() > 399) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
@@ -137,9 +142,11 @@ public class Vol {
 			for(Avion a : D.getListAvion()) {
 				if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else if(a.getCapacitee() > 149) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
@@ -148,12 +155,15 @@ public class Vol {
 			for(Avion a : D.getListAvion()) {
 				if(a.getCapacitee() < 149) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else if(a.getCapacitee() > 399) {
 					this.addAvion(a);
+					c.addVol(v);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
