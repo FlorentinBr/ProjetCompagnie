@@ -17,7 +17,6 @@ public abstract class Avion {
 	private Aeroport localisation;
 	private double rayondaction;
 	private double prixkm;
-	private List<Boolean> listPlaces;
 	private List<Vol> listVol;
 	private double coeff;
 	private int capacitee;
@@ -30,7 +29,6 @@ public abstract class Avion {
 		this.matricule = matricule;
 		this.modele = modele;
 		this.localisation = localisation;
-		this.listPlaces = new ArrayList<Boolean>();
 		this.listVol = new ArrayList<Vol>();
 	}
 
@@ -88,14 +86,6 @@ public abstract class Avion {
 	
 	public void setPrixkm(double prixkm) {
 		this.prixkm = prixkm;
-	}
-	
-	public List<Boolean> getListplaces() {
-		return this.listPlaces;
-	}
-	
-	public void setListlace(List<Boolean> listPlaces) {
-		this.listPlaces = listPlaces;
 	}
 	
 

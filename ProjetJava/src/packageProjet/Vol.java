@@ -1,6 +1,7 @@
 package packageProjet;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Vol {
 	
@@ -10,6 +11,7 @@ public class Vol {
 	private Aeroport aeroportD;
 	private Aeroport aeroportA;
  	private ArrayList<Voyageur> listVoyageur;
+ 	private List<Boolean> listPlaces;
  	private int date;
  	
  	private static int CPT_VOL = 0;
@@ -21,6 +23,7 @@ public class Vol {
  		this.idVol = CPT_VOL;
  		this.aeroportD = D;
  		this.aeroportA = A;
+ 		this.listPlaces = new ArrayList<Boolean>();
  		this.date = date;
  		this.listVoyageur = new ArrayList<Voyageur>();
  	}
@@ -76,6 +79,16 @@ public class Vol {
 	public void setAeroportA(Aeroport aeroportA) {
 		this.aeroportA = aeroportA;
 	}
+	
+	public List<Boolean> getListplaces() {
+		return this.listPlaces;
+	}
+	
+	public void setListlace(List<Boolean> listPlaces) {
+		this.listPlaces = listPlaces;
+	}
+	
+	
 	/**
 	 * @return the listVoyageur
 	 */
@@ -126,50 +139,6 @@ public class Vol {
 		this.equipage = equipage;
 	}
  	
-	public void createVol(Aeroport D, Aeroport A, int date, Compagnie c) {
-		Vol v = new Vol(D, A, date);
-		double dist = v.calculDistance();
-		if(dist > 2000) {
-			for(Avion a : D.getListAvion()) {
-				if(a.getCapacitee() > 399) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
-				break;
-			}
-		}else if(dist > 1000) {
-			for(Avion a : D.getListAvion()) {
-				if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else if(a.getCapacitee() > 149) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
-				break;
-			}
-		}else {
-			for(Avion a : D.getListAvion()) {
-				if(a.getCapacitee() < 149) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else if(a.getCapacitee() > 399) {
-					this.addAvion(a);
-					c.addVol(v);
-					break;
-				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
-				break;
-			}
-		}
-		
-	}
+	
  	
 }

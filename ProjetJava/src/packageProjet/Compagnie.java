@@ -95,4 +95,50 @@ public class Compagnie {
 	}
 	
 
+	
+	public void createVol(Aeroport D, Aeroport A, int date) {
+		Vol v = new Vol(D, A, date);
+		double dist = v.calculDistance();
+		if(dist > 2000) {
+			for(Avion a : D.getListAvion()) {
+				if(a.getCapacitee() > 399) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
+				break;
+			}
+		}else if(dist > 1000) {
+			for(Avion a : D.getListAvion()) {
+				if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else if(a.getCapacitee() > 399) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
+				break;
+			}
+		}else {
+			for(Avion a : D.getListAvion()) {
+				if(a.getCapacitee() < 149) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else if(a.getCapacitee() > 399) {
+					v.addAvion(a);
+					this.addVol(v);
+					break;
+				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
+				break;
+			}
+		}
+		
+	}
 }
