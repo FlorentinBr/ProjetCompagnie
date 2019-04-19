@@ -145,10 +145,18 @@ public class Vol {
 	 */
 	public void volEffectue() {
 		this.statut = true;
-		this.aeroportA
-		this.aeroportD.getListAvion().add(this.avion);
-		this.aeroportA.getListAvion().remove();
+		int a = this.aeroportD.getListAvion().indexOf(this.avion);
+		int b = this.aeroportD.getListEquipage().indexOf(this.equipage);
 		
+		this.aeroportD.getListAvion().remove(a);
+		this.aeroportA.getListAvion().add(this.avion);
+		
+	
+		this.aeroportD.getListEquipage().remove(b);
+		this.aeroportA.getListEquipage().add(this.equipage);
+		
+		this.avion.setLocalisation(this.aeroportA);
+		this.equipage.setLocalisation(this.aeroportA);
 	}
  	
 	
