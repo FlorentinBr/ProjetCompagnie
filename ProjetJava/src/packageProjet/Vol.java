@@ -13,7 +13,7 @@ public class Vol {
  	private ArrayList<Voyageur> listVoyageur;
  	private List<Boolean> listPlaces;
  	private int date;
- 	
+ 	private boolean statut;
  	private static int CPT_VOL = 0;
  	
  	
@@ -26,6 +26,7 @@ public class Vol {
  		this.listPlaces = new ArrayList<Boolean>();
  		this.date = date;
  		this.listVoyageur = new ArrayList<Voyageur>();
+ 		this.statut = false;
  	}
  	
  	
@@ -137,6 +138,17 @@ public class Vol {
 	 */
 	public void addEquipage(Equipage equipage) {
 		this.equipage = equipage;
+	}
+	
+	/**
+	 * 
+	 */
+	public void volEffectue() {
+		this.statut = true;
+		this.aeroportA
+		this.aeroportD.getListAvion().add(this.avion);
+		this.aeroportA.getListAvion().remove();
+		
 	}
  	
 	
