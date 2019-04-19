@@ -94,7 +94,7 @@ public class Voyageur {
 		
 		Scanner scan =new Scanner(System.in);
 		
-		System.out.println("Choix dans la date (jj/mm/aaaa");
+		System.out.println("Choix dans la date (jj/mm/aaaa)");
 		int date =scan.nextInt();
 		scan.nextLine();
 		

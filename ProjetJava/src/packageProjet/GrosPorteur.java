@@ -20,8 +20,8 @@ public class GrosPorteur extends LongCourrier {
 	 * @param coeff
 	 * @param prixkm
 	 */
-	public GrosPorteur(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction, int capacitee, double coeff, double prixkm) {
-		super(matricule, modele, localisation, capaciteeMax, rayondaction);
+	public GrosPorteur(String matricule, Modele modele, Aeroport localisation, int capacitee, double rayondaction, double coeff, double prixkm) {
+		super(matricule, modele, localisation, rayondaction);
 		this.capacitee = capacitee;
 		this.coeff = coeff;
 		this.prixkm = prixkm;
