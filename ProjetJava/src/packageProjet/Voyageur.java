@@ -110,6 +110,8 @@ public class Voyageur {
 		
 		Aeroport aeroportA = c.getAeroportByName(nomAeroportA);
 		
+		scan.close();
+		
 		ArrayList<Vol> list = new ArrayList<Vol>();
 		for(Vol v : c.getListVol()) {
 			if(date < v.getDate() + 2 || date > v.getDate() -2) {
@@ -121,6 +123,7 @@ public class Voyageur {
 			list.add(nouveauVol);
 		}
 		//PROPOSER LES VOLS AU VOYAGEUR 
+		
 	}
 
 
