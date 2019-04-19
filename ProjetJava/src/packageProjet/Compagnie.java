@@ -141,4 +141,13 @@ public class Compagnie {
 		}
 		
 	}
+	
+	public Aeroport getAeroportByName(String aeroport) {
+		for(Aeroport i : this.listAeroport) {
+			if(i.getVille().equals(aeroport)) {
+				return i;
+			}
+		}
+		return null;
+	}
 }

@@ -1,6 +1,7 @@
 package packageProjet;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Voyageur {
 	
@@ -89,7 +90,26 @@ public class Voyageur {
 		this.poidsBagage = poidsBagage;
 	}
 	
-	public void rechercherVol(int date, Aeroport aeroportD, Aeroport aeroportA, Compagnie c) {
+	public void rechercherVol(Compagnie c) {
+		
+		Scanner scan =new Scanner(System.in);
+		
+		System.out.println("Choix dans la date (jj/mm/aaaa");
+		int date =scan.nextInt();
+		scan.nextLine();
+		
+		System.out.println("Aéroport de départ (Ville):");
+		String nomAeroportD= scan.next();
+		scan.nextLine();
+		
+		Aeroport aeroportD = c.getAeroportByName(nomAeroportD);
+		
+		System.out.println("Aéroport d'arrivée (Ville):");
+		String nomAeroportA= scan.next();
+		scan.nextLine();
+		
+		Aeroport aeroportA = c.getAeroportByName(nomAeroportA);
+		
 		ArrayList<Vol> list = new ArrayList<Vol>();
 		for(Vol v : c.getListVol()) {
 			if(date < v.getDate() + 2 || date > v.getDate() -2) {
