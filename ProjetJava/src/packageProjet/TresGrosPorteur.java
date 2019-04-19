@@ -11,15 +11,14 @@ public class TresGrosPorteur extends LongCourrier {
 	/**
 	 * @param matricule
 	 * @param modele
-	 * @param localisation
 	 * @param capaciteeMax
 	 * @param rayondaction
 	 * @param capacitee
 	 * @param coeff
 	 * @param prixkm
 	 */
-	public TresGrosPorteur(String matricule, Modele modele, Aeroport localisation, double rayondaction, int capacitee, double coeff, double prixkm) {
-		super(matricule, modele, localisation, rayondaction);
+	public TresGrosPorteur(String matricule, Modele modele, double rayondaction, int capacitee, double coeff, double prixkm) {
+		super(matricule, modele, rayondaction);
 		this.capacitee = capacitee;
 		this.coeff = coeff;
 		this.prixkm = prixkm;

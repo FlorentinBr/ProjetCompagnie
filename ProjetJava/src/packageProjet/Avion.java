@@ -4,7 +4,9 @@
 package packageProjet;
 
 import java.util.List;
+import java.util.Map;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * @author formation
@@ -14,7 +16,7 @@ public abstract class Avion {
 	
 	private String matricule;
 	public Modele modele;
-	private Aeroport localisation;
+	private Map<Integer, Aeroport> mapLocalisation;
 	private double rayondaction;
 	private double prixkm;
 	private List<Vol> listVol;
@@ -25,11 +27,11 @@ public abstract class Avion {
 	
 	
 	
-	public Avion(String matricule, Modele modele, Aeroport localisation) {
+	public Avion(String matricule, Modele modele) {
 		this.matricule = matricule;
 		this.modele = modele;
-		this.localisation = localisation;
 		this.listVol = new ArrayList<Vol>();
+		this.mapLocalisation = new HashMap<Integer, Aeroport>();
 	}
 
 
@@ -63,12 +65,12 @@ public abstract class Avion {
 		this.modele = modele;
 	}
 	
-	public Aeroport getLocalisation() {
-		return localisation;
+	public Map<Integer, Aeroport> getMapLocalisation() {
+		return mapLocalisation;
 	}
 	
-	public void setLocalisation(Aeroport localisation) {
-		this.localisation = localisation;
+	public void setMapLocalisation(Map<Integer, Aeroport> mapLocalisation) {
+		this.mapLocalisation = mapLocalisation;
 	}
 
 	

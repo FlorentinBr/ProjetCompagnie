@@ -11,15 +11,13 @@ public class MoyenPorteur extends MoyenCourrier {
 	/**
 	 * @param matricule
 	 * @param modele
-	 * @param localisation
-	 * @param capaciteeMax
 	 * @param rayondaction
 	 * @param capacitee
 	 * @param coeff
 	 * @param prixkm
 	 */
-	public MoyenPorteur(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction, int capacitee, double coeff, double prixkm) {
-		super(matricule, modele, localisation, capaciteeMax, rayondaction);
+	public MoyenPorteur(String matricule, Modele modele, double rayondaction, int capacitee, double coeff, double prixkm) {
+		super(matricule, modele, rayondaction);
 		this.capacitee = capacitee;
 		this.coeff = coeff;
 		this.prixkm = prixkm;

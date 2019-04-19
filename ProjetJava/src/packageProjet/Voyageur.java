@@ -90,7 +90,7 @@ public class Voyageur {
 		this.poidsBagage = poidsBagage;
 	}
 	
-	public void rechercherVol(Compagnie c) {
+	public ArrayList<Vol> rechercherVol(Compagnie c) {
 		
 		Scanner scan =new Scanner(System.in);
 		
@@ -122,9 +122,10 @@ public class Voyageur {
 			Vol nouveauVol = new Vol(aeroportD, aeroportA, date);
 			list.add(nouveauVol);
 		}
-		//PROPOSER LES VOLS AU VOYAGEUR 
+		return list;
 		
 	}
 
+	
 
 }

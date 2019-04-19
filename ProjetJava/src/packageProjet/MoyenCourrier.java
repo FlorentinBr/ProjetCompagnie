@@ -3,7 +3,6 @@ package packageProjet;
 
 public abstract class MoyenCourrier extends Avion {
 	
-	private int capaciteeMax;
 	private double rayondaction;
 	
 	
@@ -11,30 +10,13 @@ public abstract class MoyenCourrier extends Avion {
 	/**
 	 * @param matricule
 	 * @param modele
-	 * @param localisation
-	 * @param listPlaces
-	 * @param listVol
-	 * @param capaciteeMax
 	 * @param rayondaction
 	 */
-	public MoyenCourrier(String matricule, Modele modele, Aeroport localisation, int capaciteeMax, double rayondaction) {
-		super(matricule, modele, localisation);
-		this.capaciteeMax = capaciteeMax;
+	public MoyenCourrier(String matricule, Modele modele,double rayondaction) {
+		super(matricule, modele);
 		this.rayondaction = rayondaction;
 	}
 	
-	/**
-	 * @return the capaciteeMax
-	 */
-	public int getCapaciteeMax() {
-		return capaciteeMax;
-	}
-	/**
-	 * @param capaciteeMax the capaciteeMax to set
-	 */
-	public void setCapaciteeMax(int capaciteeMax) {
-		this.capaciteeMax = capaciteeMax;
-	}
 	/**
 	 * @return the rayondaction
 	 */

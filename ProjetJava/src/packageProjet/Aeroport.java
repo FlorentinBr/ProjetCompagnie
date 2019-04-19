@@ -1,6 +1,8 @@
 package packageProjet;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Aeroport {
 	
@@ -9,8 +11,8 @@ public class Aeroport {
 	private String ville;
 	private String pays;
 	private int capaciteAccueil;
-	private ArrayList<Equipage> listEquipage;
-	private ArrayList<Avion> listAvion;
+	private Map<Integer, ArrayList<Equipage>> mapEquipage;
+	private Map<Integer, ArrayList<Avion>> mapAvion;
 	private double coordonneeX;
 	private double coordonneeY;
 	
@@ -27,8 +29,8 @@ public class Aeroport {
 		this.ville = ville;
 		this.pays = pays;
 		this.capaciteAccueil = capaciteAccueil;
-		this.listEquipage = new ArrayList<Equipage>();
-		this.listAvion = new ArrayList<Avion>();
+		this.mapEquipage = new HashMap<Integer, ArrayList<Equipage>>();
+		this.mapAvion = new HashMap<Integer, ArrayList<Avion>>();
 		this.coordonneeX = coordonneeX;
 		this.coordonneeY = coordonneeY;
 	}
@@ -100,32 +102,32 @@ public class Aeroport {
 	/**
 	 * @return the listEquipage
 	 */
-	public ArrayList<Equipage> getListEquipage() {
-		return listEquipage;
+	public Map<Integer, ArrayList<Equipage>> getMapEquipage() {
+		return mapEquipage;
 	}
 
 
 	/**
 	 * @param listEquipage the listEquipage to set
 	 */
-	public void setListEquipage(ArrayList<Equipage> listEquipage) {
-		this.listEquipage = listEquipage;
+	public void setMapEquipage(Map<Integer, ArrayList<Equipage>> mapEquipage) {
+		this.mapEquipage = mapEquipage;
 	}
 
 
 	/**
 	 * @return the listEquipage
 	 */
-	public ArrayList<Avion> getListAvion() {
-		return listAvion;
+	public Map<Integer, ArrayList<Avion>> getMapAvion() {
+		return mapAvion;
 	}
 
 
 	/**
 	 * @param listEquipage the listEquipage to set
 	 */
-	public void setListAvion(ArrayList<Avion> listAvion) {
-		this.listAvion = listAvion;
+	public void setMapAvion(Map<Integer, ArrayList<Avion>> mapAvion) {
+		this.mapAvion = mapAvion;
 	}
 
 	

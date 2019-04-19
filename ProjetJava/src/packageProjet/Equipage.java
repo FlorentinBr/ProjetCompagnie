@@ -1,11 +1,24 @@
 package packageProjet;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Equipage {
 	
 	private int idEquipage;
-	private Aeroport localisation;
+	private Map<Integer, Aeroport> mapLocalisation;
 	
 	
+	
+	
+	/**
+	 * @param idEquipage
+	 * @param mapLocalisation
+	 */
+	public Equipage(int idEquipage) {
+		this.idEquipage = idEquipage;
+		this.mapLocalisation = new HashMap<Integer, Aeroport>();
+	}
 	/**
 	 * @return the idEquipage
 	 */
@@ -21,14 +34,14 @@ public class Equipage {
 	/**
 	 * @return the localisation
 	 */
-	public Aeroport getLocalisation() {
-		return localisation;
+	public Map<Integer, Aeroport> getLocalisation() {
+		return mapLocalisation;
 	}
 	/**
 	 * @param localisation the localisation to set
 	 */
-	public void setLocalisation(Aeroport localisation) {
-		this.localisation = localisation;
+	public void setLocalisation(Map<Integer, Aeroport> mapLocalisation) {
+		this.mapLocalisation = mapLocalisation;
 	}
 	
 

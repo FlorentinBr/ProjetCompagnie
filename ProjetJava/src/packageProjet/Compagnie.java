@@ -1,11 +1,13 @@
 package packageProjet;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Compagnie {
 	
 	
-	private ArrayList<Vol> listVol;
+	private Map<Integer, ArrayList<Vol>> mapVol;
 	private ArrayList<Aeroport> listAeroport;
 	private ArrayList<Equipage> listEquipage;
 	private ArrayList<Avion> listAvion;
@@ -17,29 +19,34 @@ public class Compagnie {
 	 * @param listEquipage
 	 * @param listAvion
 	 */
-	public Compagnie(ArrayList<Vol> listVol, ArrayList<Aeroport> listAeroport, ArrayList<Equipage> listEquipage,
+	public Compagnie(Map<Integer, Vol> mapVol, ArrayList<Aeroport> listAeroport, ArrayList<Equipage> listEquipage,
 			ArrayList<Avion> listAvion) {
-		this.listVol = listVol;
-		this.listAeroport = listAeroport;
-		this.listEquipage = listEquipage;
-		this.listAvion = listAvion;
+		this.mapVol = new HashMap<Integer, ArrayList<Vol>>();
+		this.listAeroport = new ArrayList<Aeroport>();
+		this.listEquipage = new ArrayList<Equipage>();
+		this.listAvion = new ArrayList<Avion>();
 	}
 	
 	
-	/**
-	 * @return the listVol
-	 */
-	public ArrayList<Vol> getListVol() {
-		return listVol;
-	}
 
 	/**
-	 * @param listVol the listVol to set
+	 * @return the mapVol
 	 */
-	public void setListVol(ArrayList<Vol> listVol) {
-		this.listVol = listVol;
+	public Map<Integer, ArrayList<Vol>> getMapVol() {
+		return mapVol;
 	}
-	
+
+
+
+	/**
+	 * @param mapVol the mapVol to set
+	 */
+	public void setMapVol(Map<Integer, ArrayList<Vol>> mapVol) {
+		this.mapVol = mapVol;
+	}
+
+
+
 	/**
 	 * @return the listAeroport
 	 */
