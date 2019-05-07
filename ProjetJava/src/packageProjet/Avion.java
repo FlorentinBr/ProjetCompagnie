@@ -38,7 +38,7 @@ public abstract class Avion {
 	/**
 	 * @param date
 	 * @return
-	 */
+	
 	public boolean enVol(int date) {
 		for(Vol v : this.listVol) {
 			if(v.getDate() == date) {
@@ -47,6 +47,8 @@ public abstract class Avion {
 		}
 		return false;	
 	}
+	
+	*/
 	
 	
 	public String getMatricule() {

@@ -13,7 +13,6 @@ public class Vol {
  	private ArrayList<Voyageur> listVoyageur;
  	private List<Boolean> listPlaces;
  	private int date;
- 	private boolean statut;
  	private static int CPT_VOL = 0;
  	
  	
@@ -26,7 +25,6 @@ public class Vol {
  		this.listPlaces = new ArrayList<Boolean>();
  		this.date = date;
  		this.listVoyageur = new ArrayList<Voyageur>();
- 		this.statut = false;
  	}
  	
  	
@@ -121,9 +119,23 @@ public class Vol {
 	 * 
 	 * @return
 	 */
-	public double calculDistance() {
-		return Math.sqrt(Math.pow(this.aeroportA.getCoordonneeX() - this.aeroportD.getCoordonneeX(), 2) + Math.pow(this.aeroportA.getCoordonneeY() - this.aeroportD.getCoordonneeY(), 2) );
-	}
+    public double calculDistance() {
+    	double R=6378137;
+    	double t=Math.PI/180;
+    	
+    	double Phi1= this.getAeroportD().getCoordonneeY()*t;
+    	double L1= this.getAeroportD().getCoordonneeX();
+    	
+    	double Phi2= this.getAeroportA().getCoordonneeY()*t;
+    	double L2= this.getAeroportA().getCoordonneeX();
+    	
+    	double dL=(L2-L1)*t;
+    	
+    	double dist= Math.acos(Math.sin(Phi1)*Math.sin(Phi2) + Math.cos(Phi1)*Math.cos(Phi2)*Math.cos(dL))*R;
+    	
+    	return dist;
+    }
+    
 	
 	
 	/**
@@ -139,15 +151,8 @@ public class Vol {
 	public void addEquipage(Equipage equipage) {
 		this.equipage = equipage;
 	}
-	
-	/**
-	 * 
-	 */
-	public void volEffectue() {
-		this.statut = true;
-		
-	}
- 	
-	
- 	
+
+ 	public String toString(){
+ 		return "Vol "+this.idVol+", départ le "+Integer.toString(this.date)+" \n depuis " + this.aeroportD.getNom()+", "+this.aeroportD.getVille()+", "+this.aeroportD.getPays()+",\n destination" + this.aeroportA.getNom()+", "+this.aeroportA.getVille()+", "+this.aeroportA.getPays();
+ 	}
 }

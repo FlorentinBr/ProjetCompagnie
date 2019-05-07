@@ -1,6 +1,4 @@
 package packageProjet;
-import java.io.*;
-import java.net.*;
 
 
 public abstract class Main {
@@ -8,24 +6,10 @@ public abstract class Main {
 	
 	
 
-	 try{
-	 URL url = new URL("https://fr.distance.to/A%C3%A9roport-Paris-Charles-de-Gaulle,77990,Mauregard,Seine-et-Marne,%C3%8Ele-de-France,FRA/A%C3%A9roport-Rennes-Bretagne,Avenue-de-l'A%C3%A9roport-Joseph-le-Brix,35136,Saint-Jacques-de-la-Lande,Ille-et-Vilaine,Bretagne,FRA");
-	  
-	 URLConnection con=url.openConnection();
-	 System.out.println(con.getContent());
-	    InputStream input = con.getInputStream();
-	    while(input.available()>0)
-	    System.out.print((char)input.read());
-	 }
-	 catch(MalformedURLException e){
-	 System.out.println(e);
-	 }
-	 catch(IOException e){
-	 System.out.println(e);
-	 }
+
 	 
 	 Aeroport CDG = new Aeroport("Paris","Charles de Gaulle", "France", 10 , 2.542496 , 49.011138 );
-	 Aeroport orly = new Aeroport("Paris","Orly", "France", 9 , 2.365247, 48.726243);
+	 Aeroport Orly = new Aeroport("Paris","Orly", "France", 9 , 2.365247, 48.726243);
 	 Aeroport Rennes = new Aeroport("Rennes","Rennes Bretagne", "France", 5 , -1.734365, 48.069784 );
 	 Aeroport Marseille = new Aeroport ("Marseille","Aéroport Marseille Provence", "France", 7, 5.215455, 43.438625  );
 	 Aeroport Lyon = new Aeroport ("Lyon","Aéroport Lyon-Saint Exupéry","France",7, 5.088840, 45.722843 );
@@ -61,7 +45,7 @@ public abstract class Main {
 	 Aeroport Prague = new Aeroport("Prague","Aéroport de Prague","République Tchèque", 8, 14.255699, 50.107346);
 	 Aeroport Bruxelles = new Aeroport("Bruxelles","Aéroport de Bruxelles","Belgique", 9, 4.492472, 50.900507);
 	 Aeroport Amsterdam = new Aeroport("Amsterdam","Aéroport d'Amsterdam","Pays-Bas", 8, 4.755325, 52.312843);
-	 Aeroport Geneves = new Aeroport ("Genèves","Aéroport de Genèves","Suisse", 5,  6.108387, 46.232950);
+	 Aeroport Geneve = new Aeroport ("Genèves","Aéroport de Genèves","Suisse", 5,  6.108387, 46.232950);
 	 Aeroport SaintPetersbourg = new Aeroport ("Saint-Pétersbourg","Aéroport de Saint-Pétersbourg","Russie", 4, 30.264431, 59.796921);
 	 Aeroport Talin = new Aeroport ("Talin","Aéroport de Talin","Estonie", 3, 24.810671, 59.415169);
 	 Aeroport Riga = new Aeroport ("Riga","Aéroport de Riga","Lettonie", 3, 23.975009, 56.922286);
@@ -334,7 +318,64 @@ public abstract class Main {
 	 TresGrosPorteur TGP36= new TresGrosPorteur("TGP36",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	
 	 
+	 Compagnie FonctionnAir = new Compagnie();
+	 
+	 FonctionnAir.getListAeroport().add(CDG);
+	 FonctionnAir.getListAeroport().add(Orly);
+	 FonctionnAir.getListAeroport().add(Rennes);
+	 FonctionnAir.getListAeroport().add(Marseille);
+	 FonctionnAir.getListAeroport().add(Lyon);
+	 FonctionnAir.getListAeroport().add(Reykjavik);
+	 FonctionnAir.getListAeroport().add(Heathrow);
+	 FonctionnAir.getListAeroport().add(City);
+	 FonctionnAir.getListAeroport().add(Ynukovo);
+	 FonctionnAir.getListAeroport().add(Sheremtyevo);
+	 FonctionnAir.getListAeroport().add(Barajas);
+	 FonctionnAir.getListAeroport().add(CuatroVientos);
+	 FonctionnAir.getListAeroport().add(Ciampino);
+	 FonctionnAir.getListAeroport().add(Fiumicino);
+	 FonctionnAir.getListAeroport().add(Barcelona);
+	 FonctionnAir.getListAeroport().add(Gerona);
+	 FonctionnAir.getListAeroport().add(Borispol);
+	 FonctionnAir.getListAeroport().add(Zhulyany);
+	 FonctionnAir.getListAeroport().add(Okecie);
+	 FonctionnAir.getListAeroport().add(Bemowo);
+	 FonctionnAir.getListAeroport().add(Bromma);
+	 FonctionnAir.getListAeroport().add(Barkarby);
+	 FonctionnAir.getListAeroport().add(Oslo);
+	 FonctionnAir.getListAeroport().add(Helsinki);
+	 FonctionnAir.getListAeroport().add(Porto);
+	 FonctionnAir.getListAeroport().add(Lisbonne);
+	 FonctionnAir.getListAeroport().add(Munich);
+	 FonctionnAir.getListAeroport().add(Dublin);
+	 FonctionnAir.getListAeroport().add(Zagreb);
+	 FonctionnAir.getListAeroport().add(Belgrade);
+	 FonctionnAir.getListAeroport().add(Sarajevo);
+	 FonctionnAir.getListAeroport().add(Tirana);
+	 FonctionnAir.getListAeroport().add(Bucarest);
+	 FonctionnAir.getListAeroport().add(Budapest);
+	 FonctionnAir.getListAeroport().add(Prague);
+	 FonctionnAir.getListAeroport().add(Bruxelles);
+	 FonctionnAir.getListAeroport().add(Amsterdam);
+	 FonctionnAir.getListAeroport().add(Geneve);
+	 FonctionnAir.getListAeroport().add(SaintPetersbourg);
+	 FonctionnAir.getListAeroport().add(Talin);
+	 FonctionnAir.getListAeroport().add(Riga);
+	 FonctionnAir.getListAeroport().add(Vilnius);
+	 FonctionnAir.getListAeroport().add(Copenhague);
+	 FonctionnAir.getListAeroport().add(Milan);
+	 FonctionnAir.getListAeroport().add(Athenes);
+	 FonctionnAir.getListAeroport().add(Malte);
+	 FonctionnAir.getListAeroport().add(Edimbourg);
+	 FonctionnAir.getListAeroport().add(Istanboul);
+	 FonctionnAir.getListAeroport().add(Poudlard);
+	 FonctionnAir.getListAeroport().add(Minsk);
+	 
+	 
+	 
      }
+	
+	
 }
 
 

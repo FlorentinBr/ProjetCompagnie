@@ -19,8 +19,7 @@ public class Compagnie {
 	 * @param listEquipage
 	 * @param listAvion
 	 */
-	public Compagnie(Map<Integer, Vol> mapVol, ArrayList<Aeroport> listAeroport, ArrayList<Equipage> listEquipage,
-			ArrayList<Avion> listAvion) {
+	public Compagnie() {
 		this.mapVol = new HashMap<Integer, ArrayList<Vol>>();
 		this.listAeroport = new ArrayList<Aeroport>();
 		this.listEquipage = new ArrayList<Equipage>();
