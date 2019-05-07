@@ -109,5 +109,7 @@ public abstract class Avion {
 		this.capacitee = capacitee;
 	}
 	
-	
+	public String toString(){
+ 		return "\n Appareil "+this.matricule+", de type "+ modele.toString() +", \n Rayon d'action: "+ this.getRayondaction() +"\n prix au km: "+ this.getPrixkm() +"\n Capacité d'acceuil: " + this.getCapacitee() ;
+ 	}
 }

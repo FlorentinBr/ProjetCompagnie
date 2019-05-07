@@ -1,3 +1,6 @@
+/**
+
+
 package packageProjet;
 
 
@@ -5,9 +8,7 @@ public class Gestion {
 	
 	private int date;
 
-	/**
-	 * @param date
-	 */
+	
 	public Gestion() {
 		this.date = 0;
 	}
@@ -17,7 +18,7 @@ public class Gestion {
 		this.miseAJour(c);
 	}
 	
-	/**
+	
 	public void miseAJour(Compagnie c) {
 		for(Vol v : c.getListVol()) {
 			if(v.getDate() == this.date) {
@@ -33,6 +34,8 @@ public class Gestion {
 		}
 	}
 */
-}
+
+
+
 
 //A SUPPRIMER?

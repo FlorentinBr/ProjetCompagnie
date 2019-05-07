@@ -100,6 +100,15 @@ public class Compagnie {
 		this.getMapVol().get(0).add(v);
 	}
 	
+	
+	public Aeroport getAeroportByName(String aeroport) {
+		for(Aeroport i : this.listAeroport) {
+			if(i.getNom().equals(aeroport)) {
+				return i;
+			}
+		}
+		return null;
+	}
 
 	
 	public void createVol(Aeroport D, Aeroport A, int date) {
@@ -148,12 +157,15 @@ public class Compagnie {
 		
 	}
 	
-	public Aeroport getAeroportByName(String aeroport) {
-		for(Aeroport i : this.listAeroport) {
-			if(i.getNom().equals(aeroport)) {
-				return i;
+	public ArrayList<Avion> createVol2(Aeroport D, Aeroport A, int date) {
+		Vol v = new Vol(D, A, date);
+		ArrayList dispo = new ArrayList<Avion>();
+		double dist = v.calculDistance();
+		for(Avion a : D.getMapAvion().get(date)) {
+			if(a.getRayondaction() >= dist) {
+				dispo.add(a);
 			}
-		}
-		return null;
+		}return dispo;
 	}
+	
 }

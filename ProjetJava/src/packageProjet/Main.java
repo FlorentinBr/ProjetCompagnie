@@ -318,6 +318,310 @@ public abstract class Main {
 	 TresGrosPorteur TGP35= new TresGrosPorteur("TGP35",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 TresGrosPorteur TGP36= new TresGrosPorteur("TGP36",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 
+	 Equipage E001 = new Equipage(1);
+	 Equipage E002 = new Equipage(2);
+	 Equipage E003 = new Equipage(3);
+	 Equipage E004 = new Equipage(4);
+	 Equipage E005 = new Equipage(5);
+	 Equipage E006 = new Equipage(6);
+	 Equipage E007 = new Equipage(7);
+	 Equipage E008 = new Equipage(8);
+	 Equipage E009 = new Equipage(9);
+	 Equipage E010 = new Equipage(10);
+	 Equipage E011 = new Equipage(11);
+	 Equipage E012 = new Equipage(12);
+	 Equipage E013 = new Equipage(13);
+	 Equipage E014 = new Equipage(14);
+	 Equipage E015 = new Equipage(15);
+	 Equipage E016 = new Equipage(16);
+	 Equipage E017 = new Equipage(17);
+	 Equipage E018 = new Equipage(18);
+	 Equipage E019 = new Equipage(19);
+	 Equipage E020 = new Equipage(20);
+	 Equipage E021 = new Equipage(21);
+	 Equipage E022 = new Equipage(22);
+	 Equipage E023 = new Equipage(23);
+	 Equipage E024 = new Equipage(24);
+	 Equipage E025 = new Equipage(25);
+	 Equipage E026 = new Equipage(26);
+	 Equipage E027 = new Equipage(27);
+	 Equipage E028 = new Equipage(28);
+	 Equipage E029 = new Equipage(29);
+	 Equipage E030 = new Equipage(30);
+	 Equipage E031 = new Equipage(31);
+	 Equipage E032 = new Equipage(32);
+	 Equipage E033 = new Equipage(33);
+	 Equipage E034 = new Equipage(34);
+	 Equipage E035 = new Equipage(35);
+	 Equipage E036 = new Equipage(36);
+	 Equipage E037 = new Equipage(37);
+	 Equipage E038 = new Equipage(38);
+	 Equipage E039 = new Equipage(39);
+	 Equipage E040 = new Equipage(40);
+	 Equipage E041 = new Equipage(41);
+	 Equipage E042 = new Equipage(42);
+	 Equipage E043 = new Equipage(43);
+	 Equipage E044 = new Equipage(44);
+	 Equipage E045 = new Equipage(45);
+	 Equipage E046 = new Equipage(46);
+	 Equipage E047 = new Equipage(47);
+	 Equipage E048 = new Equipage(48);
+	 Equipage E049 = new Equipage(49);
+	 Equipage E050 = new Equipage(50);
+	 Equipage E051 = new Equipage(51);
+	 Equipage E052 = new Equipage(52);
+	 Equipage E053 = new Equipage(53);
+	 Equipage E054 = new Equipage(54);
+	 Equipage E055 = new Equipage(55);
+	 Equipage E056 = new Equipage(56);
+	 Equipage E057 = new Equipage(57);
+	 Equipage E058 = new Equipage(58);
+	 Equipage E059 = new Equipage(59);
+	 Equipage E060 = new Equipage(60);
+	 Equipage E061 = new Equipage(61);
+	 Equipage E062 = new Equipage(62);
+	 Equipage E063 = new Equipage(63);
+	 Equipage E064 = new Equipage(64);
+	 Equipage E065 = new Equipage(65);
+	 Equipage E066 = new Equipage(66);
+	 Equipage E067 = new Equipage(67);
+	 Equipage E068 = new Equipage(68);
+	 Equipage E069 = new Equipage(69);
+	 Equipage E070 = new Equipage(70);
+	 Equipage E071 = new Equipage(71);
+	 Equipage E072 = new Equipage(72);
+	 Equipage E073 = new Equipage(73);
+	 Equipage E074 = new Equipage(74);
+	 Equipage E075 = new Equipage(75);
+	 Equipage E076 = new Equipage(76);
+	 Equipage E077 = new Equipage(77);
+	 Equipage E078 = new Equipage(78);
+	 Equipage E079 = new Equipage(79);
+	 Equipage E080 = new Equipage(80);
+	 Equipage E081 = new Equipage(81);
+	 Equipage E082 = new Equipage(82);
+	 Equipage E083 = new Equipage(83);
+	 Equipage E084 = new Equipage(84);
+	 Equipage E085 = new Equipage(85);
+	 Equipage E086 = new Equipage(86);
+	 Equipage E087 = new Equipage(87);
+	 Equipage E088 = new Equipage(88);
+	 Equipage E089 = new Equipage(89);
+	 Equipage E090 = new Equipage(90);
+	 Equipage E091 = new Equipage(91);
+	 Equipage E092 = new Equipage(92);
+	 Equipage E093 = new Equipage(93);
+	 Equipage E094 = new Equipage(94);
+	 Equipage E095 = new Equipage(95);
+	 Equipage E096 = new Equipage(96);
+	 Equipage E097 = new Equipage(97);
+	 Equipage E098 = new Equipage(98);
+	 Equipage E099 = new Equipage(99);
+	 Equipage E100 = new Equipage(100);
+	 Equipage E101 = new Equipage(101);
+	 Equipage E102 = new Equipage(102);
+	 Equipage E103 = new Equipage(103);
+	 Equipage E104 = new Equipage(104);
+	 Equipage E105 = new Equipage(105);
+	 Equipage E106 = new Equipage(106);
+	 Equipage E107 = new Equipage(107);
+	 Equipage E108 = new Equipage(108);
+	 Equipage E109 = new Equipage(109);
+	 Equipage E110 = new Equipage(110);
+	 Equipage E111 = new Equipage(111);
+	 Equipage E112 = new Equipage(112);
+	 Equipage E113 = new Equipage(113);
+	 Equipage E114 = new Equipage(114);
+	 Equipage E115 = new Equipage(115);
+	 Equipage E116 = new Equipage(116);
+	 Equipage E117 = new Equipage(117);
+	 Equipage E118 = new Equipage(118);
+	 Equipage E119 = new Equipage(119);
+	 Equipage E120 = new Equipage(120);
+	 Equipage E121 = new Equipage(121);
+	 Equipage E122 = new Equipage(122);
+	 Equipage E123 = new Equipage(123);
+	 Equipage E124 = new Equipage(124);
+	 Equipage E125 = new Equipage(125);
+	 Equipage E126 = new Equipage(126);
+	 Equipage E127 = new Equipage(127);
+	 Equipage E128 = new Equipage(128);
+	 Equipage E129 = new Equipage(129);
+	 Equipage E130 = new Equipage(130);
+	 Equipage E131 = new Equipage(131);
+	 Equipage E132 = new Equipage(132);
+	 Equipage E133 = new Equipage(133);
+	 Equipage E134 = new Equipage(134);
+	 Equipage E135 = new Equipage(135);
+	 Equipage E136 = new Equipage(136);
+	 Equipage E137 = new Equipage(137);
+	 Equipage E138 = new Equipage(138);
+	 Equipage E139 = new Equipage(139);
+	 Equipage E140 = new Equipage(140);
+	 Equipage E141 = new Equipage(141);
+	 Equipage E142 = new Equipage(142);
+	 Equipage E143 = new Equipage(143);
+	 Equipage E144 = new Equipage(144);
+	 Equipage E145 = new Equipage(145);
+	 Equipage E146 = new Equipage(146);
+	 Equipage E147 = new Equipage(147);
+	 Equipage E148 = new Equipage(148);
+	 Equipage E149 = new Equipage(149);
+	 Equipage E150 = new Equipage(150);
+	 Equipage E151 = new Equipage(151);
+	 Equipage E152 = new Equipage(152);
+	 Equipage E153 = new Equipage(153);
+	 Equipage E154 = new Equipage(154);
+	 Equipage E155 = new Equipage(155);
+	 Equipage E156 = new Equipage(156);
+	 Equipage E157 = new Equipage(157);
+	 Equipage E158 = new Equipage(158);
+	 Equipage E159 = new Equipage(159);
+	 Equipage E160 = new Equipage(160);
+	 Equipage E161 = new Equipage(161);
+	 Equipage E162 = new Equipage(162);
+	 Equipage E163 = new Equipage(163);
+	 Equipage E164 = new Equipage(164);
+	 Equipage E165 = new Equipage(165);
+	 Equipage E166 = new Equipage(166);
+	 Equipage E167 = new Equipage(167);
+	 Equipage E168 = new Equipage(168);
+	 Equipage E169 = new Equipage(169);
+	 Equipage E170 = new Equipage(170);
+	 Equipage E171 = new Equipage(171);
+	 Equipage E172 = new Equipage(172);
+	 Equipage E173 = new Equipage(173);
+	 Equipage E174 = new Equipage(174);
+	 Equipage E175 = new Equipage(175);
+	 Equipage E176 = new Equipage(176);
+	 Equipage E177 = new Equipage(177);
+	 Equipage E178 = new Equipage(178);
+	 Equipage E179 = new Equipage(179);
+	 Equipage E180 = new Equipage(180);
+	 Equipage E181 = new Equipage(181);
+	 Equipage E182 = new Equipage(182);
+	 Equipage E183 = new Equipage(183);
+	 Equipage E184 = new Equipage(184);
+	 Equipage E185 = new Equipage(185);
+	 Equipage E186 = new Equipage(186);
+	 Equipage E187 = new Equipage(187);
+	 Equipage E188 = new Equipage(188);
+	 Equipage E189 = new Equipage(189);
+	 Equipage E190 = new Equipage(190);
+	 Equipage E191 = new Equipage(191);
+	 Equipage E192 = new Equipage(192);
+	 Equipage E193 = new Equipage(193);
+	 Equipage E194 = new Equipage(194);
+	 Equipage E195 = new Equipage(195);
+	 Equipage E196 = new Equipage(196);
+	 Equipage E197 = new Equipage(197);
+	 Equipage E198 = new Equipage(198);
+	 Equipage E199 = new Equipage(199);
+	 Equipage E200 = new Equipage(200);
+	 Equipage E201 = new Equipage(201);
+	 Equipage E202 = new Equipage(202);
+	 Equipage E203 = new Equipage(203);
+	 Equipage E204 = new Equipage(204);
+	 Equipage E205 = new Equipage(205);
+	 Equipage E206 = new Equipage(206);
+	 Equipage E207 = new Equipage(207);
+	 Equipage E208 = new Equipage(208);
+	 Equipage E209 = new Equipage(209);
+	 Equipage E210 = new Equipage(210);
+	 Equipage E211 = new Equipage(211);
+	 Equipage E212 = new Equipage(212);
+	 Equipage E213 = new Equipage(213);
+	 Equipage E214 = new Equipage(214);
+	 Equipage E215 = new Equipage(215);
+	 Equipage E216 = new Equipage(216);
+	 Equipage E217 = new Equipage(217);
+	 Equipage E218 = new Equipage(218);
+	 Equipage E219 = new Equipage(219);
+	 Equipage E220 = new Equipage(220);
+	 Equipage E221 = new Equipage(221);
+	 Equipage E222 = new Equipage(222);
+	 Equipage E223 = new Equipage(223);
+	 Equipage E224 = new Equipage(224);
+	 Equipage E225 = new Equipage(225);
+	 Equipage E226 = new Equipage(226);
+	 Equipage E227 = new Equipage(227);
+	 Equipage E228 = new Equipage(228);
+	 Equipage E229 = new Equipage(229);
+	 Equipage E230 = new Equipage(230);
+	 Equipage E231 = new Equipage(231);
+	 Equipage E232 = new Equipage(232);
+	 Equipage E233 = new Equipage(233);
+	 Equipage E234 = new Equipage(234);
+	 Equipage E235 = new Equipage(235);
+	 Equipage E236 = new Equipage(236);
+	 Equipage E237 = new Equipage(237);
+	 Equipage E238 = new Equipage(238);
+	 Equipage E239 = new Equipage(239);
+	 Equipage E240 = new Equipage(240);
+	 Equipage E241 = new Equipage(241);
+	 Equipage E242 = new Equipage(242);
+	 Equipage E243 = new Equipage(243);
+	 Equipage E244 = new Equipage(244);
+	 Equipage E245 = new Equipage(245);
+	 Equipage E246 = new Equipage(246);
+	 Equipage E247 = new Equipage(247);
+	 Equipage E248 = new Equipage(248);
+	 Equipage E249 = new Equipage(249);
+	 Equipage E250 = new Equipage(250);
+	 Equipage E251 = new Equipage(251);
+	 Equipage E252 = new Equipage(252);
+	 Equipage E253 = new Equipage(253);
+	 Equipage E254 = new Equipage(254);
+	 Equipage E255 = new Equipage(255);
+	 Equipage E256 = new Equipage(256);
+	 Equipage E257 = new Equipage(257);
+	 Equipage E258 = new Equipage(258);
+	 Equipage E259 = new Equipage(259);
+	 Equipage E260 = new Equipage(260);
+	 Equipage E261 = new Equipage(261);
+	 Equipage E262 = new Equipage(262);
+	 Equipage E263 = new Equipage(263);
+	 Equipage E264 = new Equipage(264);
+	 Equipage E265 = new Equipage(265);
+	 Equipage E266 = new Equipage(266);
+	 Equipage E267 = new Equipage(267);
+	 Equipage E268 = new Equipage(268);
+	 Equipage E269 = new Equipage(269);
+	 Equipage E270 = new Equipage(270);
+	 Equipage E271 = new Equipage(271);
+	 Equipage E272 = new Equipage(272);
+	 Equipage E273 = new Equipage(273);
+	 Equipage E274 = new Equipage(274);
+	 Equipage E275 = new Equipage(275);
+	 Equipage E276 = new Equipage(276);
+	 Equipage E277 = new Equipage(277);
+	 Equipage E278 = new Equipage(278);
+	 Equipage E279 = new Equipage(279);
+	 Equipage E280 = new Equipage(280);
+	 Equipage E281 = new Equipage(281);
+	 Equipage E282 = new Equipage(282);
+	 Equipage E283 = new Equipage(283);
+	 Equipage E284 = new Equipage(284);
+	 Equipage E285 = new Equipage(285);
+	 Equipage E286 = new Equipage(286);
+	 Equipage E287 = new Equipage(287);
+	 Equipage E288 = new Equipage(288);
+	 Equipage E289 = new Equipage(289);
+	 Equipage E290 = new Equipage(290);
+	 Equipage E291 = new Equipage(291);
+	 Equipage E292 = new Equipage(292);
+	 Equipage E293 = new Equipage(293);
+	 Equipage E294 = new Equipage(294);
+	 Equipage E295 = new Equipage(295);
+	 Equipage E296 = new Equipage(296);
+	 Equipage E297 = new Equipage(297);
+	 Equipage E298 = new Equipage(298);
+	 Equipage E299 = new Equipage(299);
+	 Equipage E300 = new Equipage(300);
+	 
+	 
+	 
+	 
     ArrayList list1 = new ArrayList<Avion>();
     list1.add(MiniP01);
     list1.add(MiniP02);
@@ -330,7 +634,10 @@ public abstract class Main {
     list1.add(TGP01);
     list1.add(TGP02);
     
-    CDG.getMapAvion().put(0, list1);
+    for(int i = 0; i<30; i++) {
+    	CDG.getMapAvion().put(i, list1);
+    }
+    
   
     
     ArrayList list2 = new ArrayList<Avion>() ;
@@ -341,30 +648,41 @@ public abstract class Main {
     list2.add(MOP03);
     list2.add(TGP04);
      
-	 Orly.getMapAvion().put(0, list2);
+    for(int i = 0; i<30; i++) {
+    	Orly.getMapAvion().put(0, list2);
+    }
 	 
-	 ArrayList list3 = new ArrayList<Avion>() ;
+	ArrayList list3 = new ArrayList<Avion>() ;
     list3.add(MiniP05);    
     list3.add(TPP03);  
     list3.add(MOP05);
     list3.add(GP05);
     list3.add(TGP05);
     
-    Rennes.getMapAvion().put(0, list3);
+    for(int i = 0; i<30; i++) {
+    	Rennes.getMapAvion().put(0, list3);
+    }
+    
     
     ArrayList list4 = new ArrayList<Avion>() ;
     list4.add(MiniP05);    
     list4.add(PP03);  
     list4.add(MOP06);
     
-    Marseille.getMapAvion().put(0, list4);
-    
+    for(int i = 0; i<30; i++) {
+    	Marseille.getMapAvion().put(0, list4);
+    }
+    	
     ArrayList list5 = new ArrayList<Avion>() ;
     list5.add(MiniP06);    
     list5.add(TPP04);  
     list5.add(TGP06);
     
-    Lyon.getMapAvion().put(0, list5);
+    
+    for(int i = 0; i<30; i++) {
+    	Lyon.getMapAvion().put(0, list5);
+    }	
+    	
     
     ArrayList list6 = new ArrayList<Avion>() ;
     list6.add(TPP05);    
@@ -372,7 +690,10 @@ public abstract class Main {
     list6.add(PP07);
    
     
-    Reykjavik.getMapAvion().put(0, list6);
+    for(int i = 0; i<30; i++) {
+    	Reykjavik.getMapAvion().put(0, list6);
+    }	
+    	
     
     ArrayList list7 = new ArrayList<Avion>() ;
     list7.add(PP08);    
@@ -381,7 +702,11 @@ public abstract class Main {
     list7.add(TGP08);
     list7.add(TGP09);
     
-    Heathrow.getMapAvion().put(0, list7);
+    
+    for(int i = 0; i<30; i++) {
+    	Heathrow.getMapAvion().put(0, list7);
+    }
+    
     
     ArrayList list8 = new ArrayList<Avion>() ;
     list8.add(PP09);    
@@ -390,8 +715,9 @@ public abstract class Main {
     list8.add(GP09);
     list8.add(TGP10);
     
-    City.getMapAvion().put(0, list8);
-    
+    for(int i = 0; i<30; i++) {
+    	City.getMapAvion().put(0, list8);
+    }
 
     ArrayList list9 = new ArrayList<Avion>() ;
     list9.add(PP10);
@@ -401,7 +727,11 @@ public abstract class Main {
     list9.add(GP10);
     list9.add(TGP11);
     
-    Ynukovo.getMapAvion().put(0, list9);
+    
+    for(int i = 0; i<30; i++) {
+    	Ynukovo.getMapAvion().put(0, list9);
+    }
+    
     
     ArrayList list10 = new ArrayList<Avion>() ;
     list10.add(PP11);
@@ -409,7 +739,9 @@ public abstract class Main {
     list10.add(GP12);
     list10.add(TGP12);
     
-    Sheremtyevo.getMapAvion().put(0, list10);
+    for(int i = 0; i<30; i++) {
+    	Sheremtyevo.getMapAvion().put(0, list10);
+    }
     
     
     ArrayList list11 = new ArrayList<Avion>() ;
@@ -421,7 +753,10 @@ public abstract class Main {
     list11.add(TGP13);
     
     
-    Barajas.getMapAvion().put(0, list11);
+    for(int i = 0; i<30; i++) {
+    	Barajas.getMapAvion().put(0, list11);
+    }	
+    
     
     ArrayList list12 = new ArrayList<Avion>() ;
     list12.add(PP13);
@@ -432,7 +767,10 @@ public abstract class Main {
     list12.add(AGP08);
     
     
-    CuatroVientos.getMapAvion().put(0, list12);
+    for(int i = 0; i<30; i++) {
+    	CuatroVientos.getMapAvion().put(0, list12);
+    }
+    
     
     
     ArrayList list13 = new ArrayList<Avion>() ;
@@ -444,7 +782,9 @@ public abstract class Main {
     list13.add(MOP15);
     
     
-    Ciampino.getMapAvion().put(0, list13);
+    for(int i = 0; i<30; i++) {
+    	Ciampino.getMapAvion().put(0, list13);
+    }
     
     
     ArrayList list14 = new ArrayList<Avion>() ;
@@ -455,8 +795,10 @@ public abstract class Main {
     list14.add(TGP15);
     list14.add(MOP16);
     
+    for(int i = 0; i<30; i++) {
+    	Fiumicino.getMapAvion().put(0, list14);
+    }
     
-    Fiumicino.getMapAvion().put(0, list14);
     
     
     ArrayList list15 = new ArrayList<Avion>() ;
@@ -467,8 +809,10 @@ public abstract class Main {
     list15.add(TGP16);
     list15.add(MOP17);
     
+    for(int i = 0; i<30; i++) {
+    	Barcelona.getMapAvion().put(0, list15);
+    }
     
-    Barcelona.getMapAvion().put(0, list15);
     
     ArrayList list16 = new ArrayList<Avion>() ;
     list16.add(PP17);
@@ -478,8 +822,10 @@ public abstract class Main {
     list16.add(TGP17);
     list16.add(MOP18);
     
+    for(int i = 0; i<30; i++) {
+    	Gerona.getMapAvion().put(0, list16);
+    }
     
-    Gerona.getMapAvion().put(0, list16);
     
     
     ArrayList list17 = new ArrayList<Avion>() ;
@@ -490,8 +836,10 @@ public abstract class Main {
     list17.add(TGP18);
     list17.add(MOP19);
     
+    for(int i = 0; i<30; i++) {
+    	Borispol.getMapAvion().put(0, list17);
+    }
     
-    Borispol.getMapAvion().put(0, list17);
     
     ArrayList list18 = new ArrayList<Avion>() ;
     list18.add(PP19);
@@ -501,8 +849,10 @@ public abstract class Main {
     list18.add(TGP19);
     list18.add(MOP20);
     
+    for(int i = 0; i<30; i++) {
+    	Zhulyany.getMapAvion().put(0, list18);
+    }
     
-    Zhulyany.getMapAvion().put(0, list18);
     
     
     ArrayList list19 = new ArrayList<Avion>() ;
@@ -514,7 +864,10 @@ public abstract class Main {
     list19.add(MOP21);
     
     
-    Okecie.getMapAvion().put(0, list19);
+    for(int i = 0; i<30; i++) {
+    	Okecie.getMapAvion().put(0, list19);
+    }
+    
     
     ArrayList list20 = new ArrayList<Avion>() ;
     list20.add(PP21);
@@ -524,8 +877,10 @@ public abstract class Main {
     list20.add(TGP21);
     list20.add(MOP22);
     
+    for(int i = 0; i<30; i++) {
+    	Bemowo.getMapAvion().put(0, list20);
+    }
     
-    Bemowo.getMapAvion().put(0, list20);
     
     ArrayList list21 = new ArrayList<Avion>() ;
     list21.add(PP22);
@@ -535,8 +890,10 @@ public abstract class Main {
     list21.add(TGP22);
     list21.add(MOP23);
     
+    for(int i = 0; i<30; i++) {
+    	Bromma.getMapAvion().put(0, list21);
+    }
     
-    Bromma.getMapAvion().put(0, list21);
     
     
     
@@ -548,8 +905,10 @@ public abstract class Main {
     list22.add(TGP23);
     list22.add(MOP24);
     
+    for(int i = 0; i<30; i++) {
+    	Barkarby.getMapAvion().put(0, list22);
+    }
     
-    Barkarby.getMapAvion().put(0, list22);
     
     ArrayList list23 = new ArrayList<Avion>() ;
     list23.add(PP24);
@@ -559,8 +918,10 @@ public abstract class Main {
     list23.add(TGP24);
     list23.add(MOP25);
     
-    
-    Malte.getMapAvion().put(0, list23);
+    for(int i = 0; i<30; i++) {
+    	Malte.getMapAvion().put(0, list23);
+    }
+    	
     
     ArrayList list24 = new ArrayList<Avion>() ;
     list24.add(PP25);
@@ -571,7 +932,10 @@ public abstract class Main {
     list24.add(MOP26);
     
     
-    Oslo.getMapAvion().put(0, list24);
+    for(int i = 0; i<30; i++) {
+    	Oslo.getMapAvion().put(0, list24);
+    }
+    
     
     ArrayList list25 = new ArrayList<Avion>() ;
     list25.add(PP26);
@@ -581,7 +945,12 @@ public abstract class Main {
     list25.add(TGP26);
     list25.add(MOP27);
     
-    Helsinki.getMapAvion().put(0, list25);
+    
+    for(int i = 0; i<30; i++) {
+    	Helsinki.getMapAvion().put(0, list25);
+    }
+    
+    
     
     
     ArrayList list26 = new ArrayList<Avion>() ;
@@ -592,7 +961,12 @@ public abstract class Main {
     list26.add(TGP27);
     list26.add(MOP28);
     
-    Porto.getMapAvion().put(0, list26);
+    
+    for(int i = 0; i<30; i++) {
+    	Porto.getMapAvion().put(0, list26);
+    }
+    
+    
     
     ArrayList list27 = new ArrayList<Avion>() ;
     list27.add(PP28);
@@ -602,7 +976,11 @@ public abstract class Main {
     list27.add(TGP28);
     list27.add(MOP29);
     
-    Lisbonne.getMapAvion().put(0, list27);
+    
+    for(int i = 0; i<30; i++) {
+    	Lisbonne.getMapAvion().put(0, list27);
+    }
+    
     
     
     ArrayList list28 = new ArrayList<Avion>() ;
@@ -613,7 +991,12 @@ public abstract class Main {
     list28.add(TGP29);
     list28.add(MOP30);
     
-    Munich.getMapAvion().put(0, list28);
+    
+    for(int i = 0; i<30; i++) {
+    	Munich.getMapAvion().put(0, list28);
+    }
+    
+    
     
     ArrayList list29 = new ArrayList<Avion>() ;
     list29.add(PP30);
@@ -623,7 +1006,11 @@ public abstract class Main {
     list29.add(TGP30);
     list29.add(MOP31);
     
-    Dublin.getMapAvion().put(0, list29);
+    
+    for(int i = 0; i<30; i++) {
+    	Dublin.getMapAvion().put(0, list29);
+    }
+    
     
     ArrayList list30 = new ArrayList<Avion>() ;
     list30.add(PP31);
@@ -633,7 +1020,12 @@ public abstract class Main {
     list30.add(TGP31);
     list30.add(MOP32);
     
-    Edimbourg.getMapAvion().put(0, list30);
+    
+    for(int i = 0; i<30; i++) {
+    	Edimbourg.getMapAvion().put(0, list30);
+    }
+    
+    
     
     ArrayList list31 = new ArrayList<Avion>() ;
     list31.add(PP32);
@@ -643,7 +1035,10 @@ public abstract class Main {
     list31.add(TGP32);
     list31.add(MOP33);
     
-    Istanboul.getMapAvion().put(0, list31);
+    for(int i = 0; i<30; i++) {
+    	Istanboul.getMapAvion().put(0, list31);
+    }
+    
     
     ArrayList list32 = new ArrayList<Avion>() ;
     list32.add(PP33);
@@ -653,7 +1048,12 @@ public abstract class Main {
     list32.add(TGP33);
     list32.add(MOP34);
     
-    Zagreb.getMapAvion().put(0, list32);
+    
+    for(int i = 0; i<30; i++) {
+    	Zagreb.getMapAvion().put(0, list32);
+    }
+    
+    
     
     ArrayList list33 = new ArrayList<Avion>() ;
     list33.add(PP33);
@@ -663,7 +1063,12 @@ public abstract class Main {
     list33.add(TGP33);
     list33.add(MOP34);
     
-    Belgrade.getMapAvion().put(0, list33);
+    
+    for(int i = 0; i<30; i++) {
+    	Belgrade.getMapAvion().put(0, list33);
+    }
+    
+    
     
     ArrayList list34 = new ArrayList<Avion>() ;
     list34.add(PP34);
@@ -673,7 +1078,12 @@ public abstract class Main {
     list34.add(TGP34);
     list34.add(MOP35);
     
-    Sarajevo.getMapAvion().put(0, list34);
+    
+    for(int i = 0; i<30; i++) {
+    	Sarajevo.getMapAvion().put(0, list34);
+    }
+    
+    
     
     ArrayList list35 = new ArrayList<Avion>() ;
     list35.add(PP35);
@@ -683,28 +1093,34 @@ public abstract class Main {
     list35.add(TGP35);
     list35.add(MOP36);
     
-    Tirana.getMapAvion().put(0, list35);
+    
+    for(int i = 0; i<30; i++) {
+    	Tirana.getMapAvion().put(0, list35);
+    }
     
     
     
+   
     ArrayList list36 = new ArrayList<Avion>() ;
-    
     list36.add(MiniP33);
     list36.add(AGP31);  
     list36.add(GP36);
     list36.add(TGP36);
     
     
-    Bucarest.getMapAvion().put(0, list36);
+    for(int i = 0; i<30; i++) {
+    	Bucarest.getMapAvion().put(0, list36);
+    }
     
-    ArrayList list37 = new ArrayList<Avion>() ;
     
+    ArrayList list37 = new ArrayList<Avion>() ; 
     list37.add(MiniP34);
     list37.add(AGP32);  
    
     
-    
-    Budapest.getMapAvion().put(0, list37);
+    for(int i = 0; i<30; i++) {
+    	Budapest.getMapAvion().put(0, list37);
+    }
     
     
     ArrayList list38 = new ArrayList<Avion>() ;
@@ -712,7 +1128,11 @@ public abstract class Main {
     list38.add(MiniP35);
     list38.add(AGP33);  
    
-    Prague.getMapAvion().put(0, list38);
+    for(int i = 0; i<30; i++) {
+    	Prague.getMapAvion().put(0, list38);
+    }
+    
+    
    
     
     ArrayList list39 = new ArrayList<Avion>() ;
@@ -721,70 +1141,123 @@ public abstract class Main {
     list39.add(AGP34);  
    
     
+    for(int i = 0; i<30; i++) {
+    	Bruxelles.getMapAvion().put(0, list39);
+    }
     
-    Bruxelles.getMapAvion().put(0, list39);
+    
     
     
     ArrayList list40 = new ArrayList<Avion>() ;
  
     list40.add(AGP35);  
    
-    Amsterdam.getMapAvion().put(0, list40);
+    for(int i = 0; i<30; i++) {
+    	Amsterdam.getMapAvion().put(0, list40);
+    }
+    
     
     
     
     ArrayList list41 = new ArrayList<Avion>() ;
-    list41.add(AGP36);  
-    Geneve.getMapAvion().put(0, list41);   
+    list41.add(AGP36); 
+    
+    for(int i = 0; i<30; i++) {
+    	Geneve.getMapAvion().put(0, list41); 
+    }
+    
+    
     
     ArrayList list42 = new ArrayList<Avion>() ;
     list42.add(MOP07);
     list42.add(GP07);
-    SaintPetersbourg.getMapAvion().put(0, list42);   
+    
+    for(int i = 0; i<30; i++) {
+    	SaintPetersbourg.getMapAvion().put(0, list42);   
+    }
+    
     
     ArrayList list43 = new ArrayList<Avion>() ;
     list43.add(MOP08);  
     list43.add(GP08);
-    Talin.getMapAvion().put(0, list43);
+    
+    for(int i = 0; i<30; i++) {
+    	Talin.getMapAvion().put(0, list43);
+    }
+    
     
     
     
     ArrayList list44 = new ArrayList<Avion>() ;
     list44.add(MOP13);  
     list44.add(GP11);
-    Riga.getMapAvion().put(0, list44);
+    
+    for(int i = 0; i<30; i++) {
+    	Riga.getMapAvion().put(0, list44);
+    }
+    
+    
     
     
     ArrayList list45 = new ArrayList<Avion>() ;
     list45.add(AGP04);
     list45.add(GP03);
-    Vilnius.getMapAvion().put(0, list45);
+    
+    for(int i = 0; i<30; i++) {
+    	Vilnius.getMapAvion().put(0, list45);
+    }
+    
+    
     
     ArrayList list46 = new ArrayList<Avion>() ;
     list46.add(MOP02);
     list46.add(AGP01);
-    Copenhague.getMapAvion().put(0, list46);
+    
+    for(int i = 0; i<30; i++) {
+    	Copenhague.getMapAvion().put(0, list46);
+    }
+    
     
     
     ArrayList list47 = new ArrayList<Avion>() ;
     list47.add(AGP03);
     list47.add(GP04);
-    Milan.getMapAvion().put(0, list47);
+    
+    for(int i = 0; i<30; i++) {
+    	Milan.getMapAvion().put(0, list47);
+    }
+    
+    
     
     ArrayList list48 = new ArrayList<Avion>() ;
     list48.add(MOP04);
     list48.add(TGP03);
-    Athenes.getMapAvion().put(0, list48);
+    
+    for(int i = 0; i<30; i++) {
+    	Athenes.getMapAvion().put(0, list48);
+    }
+    
+    
     
     ArrayList list49 = new ArrayList<Avion>() ;
     list49.add(PP05);
     list49.add(MOP06);
-    Poudlard.getMapAvion().put(0, list49);
+    
+    for(int i = 0; i<30; i++) {
+    	Poudlard.getMapAvion().put(0, list49);
+    }
+    
+    
     
     ArrayList list50 = new ArrayList<Avion>() ;
     list50.add(PP04);
     list50.add(GP06);
-    Minsk.getMapAvion().put(0, list50);
+    
+    for(int i = 0; i<30; i++) {
+    	Minsk.getMapAvion().put(0, list50);
+    }
+    
+    
 	
 	 
 	 Compagnie FonctionnAir = new Compagnie();
@@ -1092,8 +1565,7 @@ public abstract class Main {
 	 FonctionnAir.getListAvion().add(TGP36);
 	
 	 
-	 
-	 
+	System.out.println(list44);
 	 
      }
 	

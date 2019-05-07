@@ -83,7 +83,7 @@ public class Vol {
 		return this.listPlaces;
 	}
 	
-	public void setListlace(List<Boolean> listPlaces) {
+	public void setListplaces(List<Boolean> listPlaces) {
 		this.listPlaces = listPlaces;
 	}
 	

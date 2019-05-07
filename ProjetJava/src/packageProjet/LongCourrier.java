@@ -1,10 +1,10 @@
 package packageProjet;
 
-import java.util.List;
+
 
 public abstract class LongCourrier extends Avion{
 	
-	private double rayondaction;
+
 	
 	
 	/**
@@ -17,23 +17,9 @@ public abstract class LongCourrier extends Avion{
 	 */
 	public LongCourrier(String matricule, Modele modele, double rayondaction) {
 		super(matricule, modele);
-		this.rayondaction = rayondaction;
+		this.setRayondaction(rayondaction);
 	}
 
-	/**
-	 * @return the rayondaction
-	 */
-	public double getRayondaction() {
-		return rayondaction;
-	}
-	/**
-	 * @param rayondaction the rayondaction to set
-	 */
-	public void setRayondaction(double rayondaction) {
-		this.rayondaction = rayondaction;
-	}
-	
-	
 	
 
 }
