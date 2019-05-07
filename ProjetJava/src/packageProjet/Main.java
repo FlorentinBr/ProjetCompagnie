@@ -1,5 +1,6 @@
 package packageProjet;
 
+import java.util.ArrayList;
 
 public abstract class Main {
 	public static void main(String [] args){
@@ -316,6 +317,474 @@ public abstract class Main {
 	 TresGrosPorteur TGP34= new TresGrosPorteur("TGP34",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 TresGrosPorteur TGP35= new TresGrosPorteur("TGP35",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 TresGrosPorteur TGP36= new TresGrosPorteur("TGP36",Modele.Antonov, 4000, 700, 3.1, 32.6);
+	 
+    ArrayList list1 = new ArrayList<Avion>();
+    list1.add(MiniP01);
+    list1.add(MiniP02);
+    list1.add(TPP01);
+    list1.add(PP01); 
+    list1.add(MOP01);
+    list1.add(AGP02);
+    list1.add(GP01);
+    list1.add(GP02);
+    list1.add(TGP01);
+    list1.add(TGP02);
+    
+    CDG.getMapAvion().put(0, list1);
+  
+    
+    ArrayList list2 = new ArrayList<Avion>() ;
+    list2.add(MiniP03);
+    list2.add(MiniP04);
+    list2.add(TPP02);
+    list2.add(PP02); 
+    list2.add(MOP03);
+    list2.add(TGP04);
+     
+	 Orly.getMapAvion().put(0, list2);
+	 
+	 ArrayList list3 = new ArrayList<Avion>() ;
+    list3.add(MiniP05);    
+    list3.add(TPP03);  
+    list3.add(MOP05);
+    list3.add(GP05);
+    list3.add(TGP05);
+    
+    Rennes.getMapAvion().put(0, list3);
+    
+    ArrayList list4 = new ArrayList<Avion>() ;
+    list4.add(MiniP05);    
+    list4.add(PP03);  
+    list4.add(MOP06);
+    
+    Marseille.getMapAvion().put(0, list4);
+    
+    ArrayList list5 = new ArrayList<Avion>() ;
+    list5.add(MiniP06);    
+    list5.add(TPP04);  
+    list5.add(TGP06);
+    
+    Lyon.getMapAvion().put(0, list5);
+    
+    ArrayList list6 = new ArrayList<Avion>() ;
+    list6.add(TPP05);    
+    list6.add(PP06);  
+    list6.add(PP07);
+   
+    
+    Reykjavik.getMapAvion().put(0, list6);
+    
+    ArrayList list7 = new ArrayList<Avion>() ;
+    list7.add(PP08);    
+    
+    list7.add(TGP07);
+    list7.add(TGP08);
+    list7.add(TGP09);
+    
+    Heathrow.getMapAvion().put(0, list7);
+    
+    ArrayList list8 = new ArrayList<Avion>() ;
+    list8.add(PP09);    
+    list8.add(MOP09);  
+    list8.add(MOP10);
+    list8.add(GP09);
+    list8.add(TGP10);
+    
+    City.getMapAvion().put(0, list8);
+    
+
+    ArrayList list9 = new ArrayList<Avion>() ;
+    list9.add(PP10);
+    list9.add(MiniP07);
+    list9.add(MOP11);  
+    list9.add(MOP12);
+    list9.add(GP10);
+    list9.add(TGP11);
+    
+    Ynukovo.getMapAvion().put(0, list9);
+    
+    ArrayList list10 = new ArrayList<Avion>() ;
+    list10.add(PP11);
+    list10.add(MiniP08);
+    list10.add(GP12);
+    list10.add(TGP12);
+    
+    Sheremtyevo.getMapAvion().put(0, list10);
+    
+    
+    ArrayList list11 = new ArrayList<Avion>() ;
+    list11.add(PP12);
+    list11.add(MiniP09);
+    list11.add(MOP14);  
+    list11.add(GP12);
+    list11.add(GP13);
+    list11.add(TGP13);
+    
+    
+    Barajas.getMapAvion().put(0, list11);
+    
+    ArrayList list12 = new ArrayList<Avion>() ;
+    list12.add(PP13);
+    list12.add(MiniP10);
+    list12.add(AGP05);  
+    list12.add(AGP06);
+    list12.add(AGP07);
+    list12.add(AGP08);
+    
+    
+    CuatroVientos.getMapAvion().put(0, list12);
+    
+    
+    ArrayList list13 = new ArrayList<Avion>() ;
+    list13.add(PP14);
+    list13.add(MiniP11);
+    list13.add(AGP09);  
+    list13.add(GP14);
+    list13.add(TGP14);
+    list13.add(MOP15);
+    
+    
+    Ciampino.getMapAvion().put(0, list13);
+    
+    
+    ArrayList list14 = new ArrayList<Avion>() ;
+    list14.add(PP15);
+    list14.add(MiniP12);
+    list14.add(AGP10);  
+    list14.add(GP15);
+    list14.add(TGP15);
+    list14.add(MOP16);
+    
+    
+    Fiumicino.getMapAvion().put(0, list14);
+    
+    
+    ArrayList list15 = new ArrayList<Avion>() ;
+    list15.add(PP16);
+    list15.add(MiniP13);
+    list15.add(AGP11);  
+    list15.add(GP16);
+    list15.add(TGP16);
+    list15.add(MOP17);
+    
+    
+    Barcelona.getMapAvion().put(0, list15);
+    
+    ArrayList list16 = new ArrayList<Avion>() ;
+    list16.add(PP17);
+    list16.add(MiniP14);
+    list16.add(AGP12);  
+    list16.add(GP17);
+    list16.add(TGP17);
+    list16.add(MOP18);
+    
+    
+    Gerona.getMapAvion().put(0, list16);
+    
+    
+    ArrayList list17 = new ArrayList<Avion>() ;
+    list17.add(PP18);
+    list17.add(MiniP15);
+    list17.add(AGP13);  
+    list17.add(GP18);
+    list17.add(TGP18);
+    list17.add(MOP19);
+    
+    
+    Borispol.getMapAvion().put(0, list17);
+    
+    ArrayList list18 = new ArrayList<Avion>() ;
+    list18.add(PP19);
+    list18.add(MiniP16);
+    list18.add(AGP14);  
+    list18.add(GP19);
+    list18.add(TGP19);
+    list18.add(MOP20);
+    
+    
+    Zhulyany.getMapAvion().put(0, list18);
+    
+    
+    ArrayList list19 = new ArrayList<Avion>() ;
+    list19.add(PP20);
+    list19.add(MiniP17);
+    list19.add(AGP15);  
+    list19.add(GP20);
+    list19.add(TGP20);
+    list19.add(MOP21);
+    
+    
+    Okecie.getMapAvion().put(0, list19);
+    
+    ArrayList list20 = new ArrayList<Avion>() ;
+    list20.add(PP21);
+    list20.add(MiniP18);
+    list20.add(AGP16);  
+    list20.add(GP21);
+    list20.add(TGP21);
+    list20.add(MOP22);
+    
+    
+    Bemowo.getMapAvion().put(0, list20);
+    
+    ArrayList list21 = new ArrayList<Avion>() ;
+    list21.add(PP22);
+    list21.add(MiniP19);
+    list21.add(AGP17);  
+    list21.add(GP22);
+    list21.add(TGP22);
+    list21.add(MOP23);
+    
+    
+    Bromma.getMapAvion().put(0, list21);
+    
+    
+    
+    ArrayList list22 = new ArrayList<Avion>() ;
+    list22.add(PP23);
+    list22.add(MiniP20);
+    list22.add(AGP18);  
+    list22.add(GP23);
+    list22.add(TGP23);
+    list22.add(MOP24);
+    
+    
+    Barkarby.getMapAvion().put(0, list22);
+    
+    ArrayList list23 = new ArrayList<Avion>() ;
+    list23.add(PP24);
+    list23.add(MiniP21);
+    list23.add(AGP19);  
+    list23.add(GP24);
+    list23.add(TGP24);
+    list23.add(MOP25);
+    
+    
+    Malte.getMapAvion().put(0, list23);
+    
+    ArrayList list24 = new ArrayList<Avion>() ;
+    list24.add(PP25);
+    list24.add(MiniP22);
+    list24.add(AGP20);  
+    list24.add(GP25);
+    list24.add(TGP25);
+    list24.add(MOP26);
+    
+    
+    Oslo.getMapAvion().put(0, list24);
+    
+    ArrayList list25 = new ArrayList<Avion>() ;
+    list25.add(PP26);
+    list25.add(MiniP23);
+    list25.add(AGP21);  
+    list25.add(GP26);
+    list25.add(TGP26);
+    list25.add(MOP27);
+    
+    Helsinki.getMapAvion().put(0, list25);
+    
+    
+    ArrayList list26 = new ArrayList<Avion>() ;
+    list26.add(PP27);
+    list26.add(MiniP24);
+    list26.add(AGP22);  
+    list26.add(GP27);
+    list26.add(TGP27);
+    list26.add(MOP28);
+    
+    Porto.getMapAvion().put(0, list26);
+    
+    ArrayList list27 = new ArrayList<Avion>() ;
+    list27.add(PP28);
+    list27.add(MiniP25);
+    list27.add(AGP23);  
+    list27.add(GP28);
+    list27.add(TGP28);
+    list27.add(MOP29);
+    
+    Lisbonne.getMapAvion().put(0, list27);
+    
+    
+    ArrayList list28 = new ArrayList<Avion>() ;
+    list28.add(PP29);
+    list28.add(MiniP26);
+    list28.add(AGP24);  
+    list28.add(GP29);
+    list28.add(TGP29);
+    list28.add(MOP30);
+    
+    Munich.getMapAvion().put(0, list28);
+    
+    ArrayList list29 = new ArrayList<Avion>() ;
+    list29.add(PP30);
+    list29.add(MiniP27);
+    list29.add(AGP25);  
+    list29.add(GP30);
+    list29.add(TGP30);
+    list29.add(MOP31);
+    
+    Dublin.getMapAvion().put(0, list29);
+    
+    ArrayList list30 = new ArrayList<Avion>() ;
+    list30.add(PP31);
+    list30.add(MiniP28);
+    list30.add(AGP26);  
+    list30.add(GP31);
+    list30.add(TGP31);
+    list30.add(MOP32);
+    
+    Edimbourg.getMapAvion().put(0, list30);
+    
+    ArrayList list31 = new ArrayList<Avion>() ;
+    list31.add(PP32);
+    list31.add(MiniP29);
+    list31.add(AGP27);  
+    list31.add(GP32);
+    list31.add(TGP32);
+    list31.add(MOP33);
+    
+    Istanboul.getMapAvion().put(0, list31);
+    
+    ArrayList list32 = new ArrayList<Avion>() ;
+    list32.add(PP33);
+    list32.add(MiniP30);
+    list32.add(AGP28);  
+    list32.add(GP33);
+    list32.add(TGP33);
+    list32.add(MOP34);
+    
+    Zagreb.getMapAvion().put(0, list32);
+    
+    ArrayList list33 = new ArrayList<Avion>() ;
+    list33.add(PP33);
+    list33.add(MiniP30);
+    list33.add(AGP28);  
+    list33.add(GP33);
+    list33.add(TGP33);
+    list33.add(MOP34);
+    
+    Belgrade.getMapAvion().put(0, list33);
+    
+    ArrayList list34 = new ArrayList<Avion>() ;
+    list34.add(PP34);
+    list34.add(MiniP31);
+    list34.add(AGP29);  
+    list34.add(GP34);
+    list34.add(TGP34);
+    list34.add(MOP35);
+    
+    Sarajevo.getMapAvion().put(0, list34);
+    
+    ArrayList list35 = new ArrayList<Avion>() ;
+    list35.add(PP35);
+    list35.add(MiniP32);
+    list35.add(AGP30);  
+    list35.add(GP35);
+    list35.add(TGP35);
+    list35.add(MOP36);
+    
+    Tirana.getMapAvion().put(0, list35);
+    
+    
+    
+    ArrayList list36 = new ArrayList<Avion>() ;
+    
+    list36.add(MiniP33);
+    list36.add(AGP31);  
+    list36.add(GP36);
+    list36.add(TGP36);
+    
+    
+    Bucarest.getMapAvion().put(0, list36);
+    
+    ArrayList list37 = new ArrayList<Avion>() ;
+    
+    list37.add(MiniP34);
+    list37.add(AGP32);  
+   
+    
+    
+    Budapest.getMapAvion().put(0, list37);
+    
+    
+    ArrayList list38 = new ArrayList<Avion>() ;
+    
+    list38.add(MiniP35);
+    list38.add(AGP33);  
+   
+    Prague.getMapAvion().put(0, list38);
+   
+    
+    ArrayList list39 = new ArrayList<Avion>() ;
+    
+    
+    list39.add(AGP34);  
+   
+    
+    
+    Bruxelles.getMapAvion().put(0, list39);
+    
+    
+    ArrayList list40 = new ArrayList<Avion>() ;
+ 
+    list40.add(AGP35);  
+   
+    Amsterdam.getMapAvion().put(0, list40);
+    
+    
+    
+    ArrayList list41 = new ArrayList<Avion>() ;
+    list41.add(AGP36);  
+    Geneve.getMapAvion().put(0, list41);   
+    
+    ArrayList list42 = new ArrayList<Avion>() ;
+    list42.add(MOP07);
+    list42.add(GP07);
+    SaintPetersbourg.getMapAvion().put(0, list42);   
+    
+    ArrayList list43 = new ArrayList<Avion>() ;
+    list43.add(MOP08);  
+    list43.add(GP08);
+    Talin.getMapAvion().put(0, list43);
+    
+    
+    
+    ArrayList list44 = new ArrayList<Avion>() ;
+    list44.add(MOP13);  
+    list44.add(GP11);
+    Riga.getMapAvion().put(0, list44);
+    
+    
+    ArrayList list45 = new ArrayList<Avion>() ;
+    list45.add(AGP04);
+    list45.add(GP03);
+    Vilnius.getMapAvion().put(0, list45);
+    
+    ArrayList list46 = new ArrayList<Avion>() ;
+    list46.add(MOP02);
+    list46.add(AGP01);
+    Copenhague.getMapAvion().put(0, list46);
+    
+    
+    ArrayList list47 = new ArrayList<Avion>() ;
+    list47.add(AGP03);
+    list47.add(GP04);
+    Milan.getMapAvion().put(0, list47);
+    
+    ArrayList list48 = new ArrayList<Avion>() ;
+    list48.add(MOP04);
+    list48.add(TGP03);
+    Athenes.getMapAvion().put(0, list48);
+    
+    ArrayList list49 = new ArrayList<Avion>() ;
+    list49.add(PP05);
+    list49.add(MOP06);
+    Poudlard.getMapAvion().put(0, list49);
+    
+    ArrayList list50 = new ArrayList<Avion>() ;
+    list50.add(PP04);
+    list50.add(GP06);
+    Minsk.getMapAvion().put(0, list50);
 	
 	 
 	 Compagnie FonctionnAir = new Compagnie();
@@ -370,6 +839,259 @@ public abstract class Main {
 	 FonctionnAir.getListAeroport().add(Istanboul);
 	 FonctionnAir.getListAeroport().add(Poudlard);
 	 FonctionnAir.getListAeroport().add(Minsk);
+	 
+	 FonctionnAir.getListAvion().add(MiniP01);
+	 FonctionnAir.getListAvion().add(MiniP02);
+	 FonctionnAir.getListAvion().add(MiniP03);
+	 FonctionnAir.getListAvion().add(MiniP04);
+	 FonctionnAir.getListAvion().add(MiniP05);
+	 FonctionnAir.getListAvion().add(MiniP06);
+	 FonctionnAir.getListAvion().add(MiniP07);
+	 FonctionnAir.getListAvion().add(MiniP08);
+	 FonctionnAir.getListAvion().add(MiniP09);
+	 FonctionnAir.getListAvion().add(MiniP10);
+	 FonctionnAir.getListAvion().add(MiniP11);
+	 FonctionnAir.getListAvion().add(MiniP12);
+	 FonctionnAir.getListAvion().add(MiniP13);
+	 FonctionnAir.getListAvion().add(MiniP14);
+	 FonctionnAir.getListAvion().add(MiniP15);
+	 FonctionnAir.getListAvion().add(MiniP16);
+	 FonctionnAir.getListAvion().add(MiniP17);
+	 FonctionnAir.getListAvion().add(MiniP18);
+	 FonctionnAir.getListAvion().add(MiniP19);
+	 FonctionnAir.getListAvion().add(MiniP20);
+	 FonctionnAir.getListAvion().add(MiniP21);
+	 FonctionnAir.getListAvion().add(MiniP22);
+	 FonctionnAir.getListAvion().add(MiniP23);
+	 FonctionnAir.getListAvion().add(MiniP24);
+	 FonctionnAir.getListAvion().add(MiniP25);
+	 FonctionnAir.getListAvion().add(MiniP26);
+	 FonctionnAir.getListAvion().add(MiniP27);
+	 FonctionnAir.getListAvion().add(MiniP28);
+	 FonctionnAir.getListAvion().add(MiniP29);
+	 FonctionnAir.getListAvion().add(MiniP30);
+	 FonctionnAir.getListAvion().add(MiniP31);
+	 FonctionnAir.getListAvion().add(MiniP32);
+	 FonctionnAir.getListAvion().add(MiniP33);
+	 FonctionnAir.getListAvion().add(MiniP34);
+	 FonctionnAir.getListAvion().add(MiniP35);
+	 FonctionnAir.getListAvion().add(TPP01);
+	 FonctionnAir.getListAvion().add(TPP02);
+	 FonctionnAir.getListAvion().add(TPP03);
+	 FonctionnAir.getListAvion().add(TPP04);
+	 FonctionnAir.getListAvion().add(TPP05);
+	 FonctionnAir.getListAvion().add(TPP06);
+	 FonctionnAir.getListAvion().add(TPP07);
+	 FonctionnAir.getListAvion().add(TPP08);
+	 FonctionnAir.getListAvion().add(TPP09);
+	 FonctionnAir.getListAvion().add(TPP10);
+	 FonctionnAir.getListAvion().add(TPP11);
+	 FonctionnAir.getListAvion().add(TPP12);
+	 FonctionnAir.getListAvion().add(TPP13);
+	 FonctionnAir.getListAvion().add(TPP14);
+	 FonctionnAir.getListAvion().add(TPP15);
+	 FonctionnAir.getListAvion().add(TPP16);
+	 FonctionnAir.getListAvion().add(TPP17);
+	 FonctionnAir.getListAvion().add(TPP18);
+	 FonctionnAir.getListAvion().add(TPP19);
+	 FonctionnAir.getListAvion().add(TPP20);
+	 FonctionnAir.getListAvion().add(TPP21);
+	 FonctionnAir.getListAvion().add(TPP22);
+	 FonctionnAir.getListAvion().add(TPP23);
+	 FonctionnAir.getListAvion().add(TPP24);
+	 FonctionnAir.getListAvion().add(TPP25);
+	 FonctionnAir.getListAvion().add(TPP26);
+	 FonctionnAir.getListAvion().add(TPP27);
+	 FonctionnAir.getListAvion().add(TPP28);
+	 FonctionnAir.getListAvion().add(TPP29);
+	 FonctionnAir.getListAvion().add(TPP30);
+	 FonctionnAir.getListAvion().add(TPP31);
+	 FonctionnAir.getListAvion().add(TPP32);
+	 FonctionnAir.getListAvion().add(TPP33);
+	 FonctionnAir.getListAvion().add(TPP34);
+	 FonctionnAir.getListAvion().add(TPP35);
+	 FonctionnAir.getListAvion().add(TPP36);
+	 FonctionnAir.getListAvion().add(PP01);
+	 FonctionnAir.getListAvion().add(PP02);
+	 FonctionnAir.getListAvion().add(PP03);
+	 FonctionnAir.getListAvion().add(PP04);
+	 FonctionnAir.getListAvion().add(PP05);
+	 FonctionnAir.getListAvion().add(PP06);
+	 FonctionnAir.getListAvion().add(PP07);
+	 FonctionnAir.getListAvion().add(PP08);
+	 FonctionnAir.getListAvion().add(PP09);
+	 FonctionnAir.getListAvion().add(PP10);
+	 FonctionnAir.getListAvion().add(PP11);
+	 FonctionnAir.getListAvion().add(PP12);
+	 FonctionnAir.getListAvion().add(PP13);
+	 FonctionnAir.getListAvion().add(PP14);
+	 FonctionnAir.getListAvion().add(PP15);
+	 FonctionnAir.getListAvion().add(PP16);
+	 FonctionnAir.getListAvion().add(PP17);
+	 FonctionnAir.getListAvion().add(PP18);
+	 FonctionnAir.getListAvion().add(PP19);
+	 FonctionnAir.getListAvion().add(PP20);
+	 FonctionnAir.getListAvion().add(PP21);
+	 FonctionnAir.getListAvion().add(PP22);
+	 FonctionnAir.getListAvion().add(PP23);
+	 FonctionnAir.getListAvion().add(PP24);
+	 FonctionnAir.getListAvion().add(PP25);
+	 FonctionnAir.getListAvion().add(PP26);
+	 FonctionnAir.getListAvion().add(PP27);
+	 FonctionnAir.getListAvion().add(PP28);
+	 FonctionnAir.getListAvion().add(PP29);
+	 FonctionnAir.getListAvion().add(PP30);
+	 FonctionnAir.getListAvion().add(PP31);
+	 FonctionnAir.getListAvion().add(PP32);
+	 FonctionnAir.getListAvion().add(PP33);
+	 FonctionnAir.getListAvion().add(PP34);
+	 FonctionnAir.getListAvion().add(PP35);
+	 FonctionnAir.getListAvion().add(MOP01);
+	 FonctionnAir.getListAvion().add(MOP02);
+	 FonctionnAir.getListAvion().add(MOP03);
+	 FonctionnAir.getListAvion().add(MOP04);
+	 FonctionnAir.getListAvion().add(MOP05);
+	 FonctionnAir.getListAvion().add(MOP06);
+	 FonctionnAir.getListAvion().add(MOP07);
+	 FonctionnAir.getListAvion().add(MOP08);
+	 FonctionnAir.getListAvion().add(MOP09);
+	 FonctionnAir.getListAvion().add(MOP10);
+	 FonctionnAir.getListAvion().add(MOP11);
+	 FonctionnAir.getListAvion().add(MOP12);
+	 FonctionnAir.getListAvion().add(MOP13);
+	 FonctionnAir.getListAvion().add(MOP14);
+	 FonctionnAir.getListAvion().add(MOP15);
+	 FonctionnAir.getListAvion().add(MOP16);
+	 FonctionnAir.getListAvion().add(MOP17);
+	 FonctionnAir.getListAvion().add(MOP18);
+	 FonctionnAir.getListAvion().add(MOP19);
+	 FonctionnAir.getListAvion().add(MOP20);
+	 FonctionnAir.getListAvion().add(MOP21);
+	 FonctionnAir.getListAvion().add(MOP22);
+	 FonctionnAir.getListAvion().add(MOP23);
+	 FonctionnAir.getListAvion().add(MOP24);
+	 FonctionnAir.getListAvion().add(MOP25);
+	 FonctionnAir.getListAvion().add(MOP26);
+	 FonctionnAir.getListAvion().add(MOP27);
+	 FonctionnAir.getListAvion().add(MOP28);
+	 FonctionnAir.getListAvion().add(MOP29);
+	 FonctionnAir.getListAvion().add(MOP30);
+	 FonctionnAir.getListAvion().add(MOP31);
+	 FonctionnAir.getListAvion().add(MOP32);
+	 FonctionnAir.getListAvion().add(MOP33);
+	 FonctionnAir.getListAvion().add(MOP34);
+	 FonctionnAir.getListAvion().add(MOP35);
+	 FonctionnAir.getListAvion().add(MOP36);
+	 FonctionnAir.getListAvion().add(AGP01);
+	 FonctionnAir.getListAvion().add(AGP02);
+	 FonctionnAir.getListAvion().add(AGP03);
+	 FonctionnAir.getListAvion().add(AGP04);
+	 FonctionnAir.getListAvion().add(AGP05);
+	 FonctionnAir.getListAvion().add(AGP06);
+	 FonctionnAir.getListAvion().add(AGP07);
+	 FonctionnAir.getListAvion().add(AGP08);
+	 FonctionnAir.getListAvion().add(AGP09);
+	 FonctionnAir.getListAvion().add(AGP10);
+	 FonctionnAir.getListAvion().add(AGP11);
+	 FonctionnAir.getListAvion().add(AGP12);
+	 FonctionnAir.getListAvion().add(AGP13);
+	 FonctionnAir.getListAvion().add(AGP14);
+	 FonctionnAir.getListAvion().add(AGP15);
+	 FonctionnAir.getListAvion().add(AGP16);
+	 FonctionnAir.getListAvion().add(AGP17);
+	 FonctionnAir.getListAvion().add(AGP18);
+	 FonctionnAir.getListAvion().add(AGP19);
+	 FonctionnAir.getListAvion().add(AGP20);
+	 FonctionnAir.getListAvion().add(AGP21);
+	 FonctionnAir.getListAvion().add(AGP22);
+	 FonctionnAir.getListAvion().add(AGP23);
+	 FonctionnAir.getListAvion().add(AGP24);
+	 FonctionnAir.getListAvion().add(AGP25);
+	 FonctionnAir.getListAvion().add(AGP26);
+	 FonctionnAir.getListAvion().add(AGP27);
+	 FonctionnAir.getListAvion().add(AGP28);
+	 FonctionnAir.getListAvion().add(AGP29);
+	 FonctionnAir.getListAvion().add(AGP30);
+	 FonctionnAir.getListAvion().add(AGP31);
+	 FonctionnAir.getListAvion().add(AGP32);
+	 FonctionnAir.getListAvion().add(AGP33);
+	 FonctionnAir.getListAvion().add(AGP34);
+	 FonctionnAir.getListAvion().add(AGP35);
+	 FonctionnAir.getListAvion().add(AGP36);
+	 FonctionnAir.getListAvion().add(GP01);
+	 FonctionnAir.getListAvion().add(GP02);
+	 FonctionnAir.getListAvion().add(GP03);
+	 FonctionnAir.getListAvion().add(GP04);
+	 FonctionnAir.getListAvion().add(GP05);
+	 FonctionnAir.getListAvion().add(GP06);
+	 FonctionnAir.getListAvion().add(GP07);
+	 FonctionnAir.getListAvion().add(GP08);
+	 FonctionnAir.getListAvion().add(GP09);
+	 FonctionnAir.getListAvion().add(GP10);
+	 FonctionnAir.getListAvion().add(GP11);
+	 FonctionnAir.getListAvion().add(GP12);
+	 FonctionnAir.getListAvion().add(GP13);
+	 FonctionnAir.getListAvion().add(GP14);
+	 FonctionnAir.getListAvion().add(GP15);
+	 FonctionnAir.getListAvion().add(GP16);
+	 FonctionnAir.getListAvion().add(GP17);
+	 FonctionnAir.getListAvion().add(GP18);
+	 FonctionnAir.getListAvion().add(GP19);
+	 FonctionnAir.getListAvion().add(GP20);
+	 FonctionnAir.getListAvion().add(GP21);
+	 FonctionnAir.getListAvion().add(GP22);
+	 FonctionnAir.getListAvion().add(GP23);
+	 FonctionnAir.getListAvion().add(GP24);
+	 FonctionnAir.getListAvion().add(GP25);
+	 FonctionnAir.getListAvion().add(GP26);
+	 FonctionnAir.getListAvion().add(GP27);
+	 FonctionnAir.getListAvion().add(GP28);
+	 FonctionnAir.getListAvion().add(GP29);
+	 FonctionnAir.getListAvion().add(GP30);
+	 FonctionnAir.getListAvion().add(GP31);
+	 FonctionnAir.getListAvion().add(GP32);
+	 FonctionnAir.getListAvion().add(GP33);
+	 FonctionnAir.getListAvion().add(GP34);
+	 FonctionnAir.getListAvion().add(GP35);
+	 FonctionnAir.getListAvion().add(GP36);
+	 FonctionnAir.getListAvion().add(TGP01);
+	 FonctionnAir.getListAvion().add(TGP02);
+	 FonctionnAir.getListAvion().add(TGP03);
+	 FonctionnAir.getListAvion().add(TGP04);
+	 FonctionnAir.getListAvion().add(TGP05);
+	 FonctionnAir.getListAvion().add(TGP06);
+	 FonctionnAir.getListAvion().add(TGP07);
+	 FonctionnAir.getListAvion().add(TGP08);
+	 FonctionnAir.getListAvion().add(TGP09);
+	 FonctionnAir.getListAvion().add(TGP10);
+	 FonctionnAir.getListAvion().add(TGP11);
+	 FonctionnAir.getListAvion().add(TGP12);
+	 FonctionnAir.getListAvion().add(TGP13);
+	 FonctionnAir.getListAvion().add(TGP14);
+	 FonctionnAir.getListAvion().add(TGP15);
+	 FonctionnAir.getListAvion().add(TGP16);
+	 FonctionnAir.getListAvion().add(TGP17);
+	 FonctionnAir.getListAvion().add(TGP18);
+	 FonctionnAir.getListAvion().add(TGP19);
+	 FonctionnAir.getListAvion().add(TGP20);
+	 FonctionnAir.getListAvion().add(TGP21);
+	 FonctionnAir.getListAvion().add(TGP22);
+	 FonctionnAir.getListAvion().add(TGP23);
+	 FonctionnAir.getListAvion().add(TGP24);
+	 FonctionnAir.getListAvion().add(TGP25);
+	 FonctionnAir.getListAvion().add(TGP26);
+	 FonctionnAir.getListAvion().add(TGP27);
+	 FonctionnAir.getListAvion().add(TGP28);
+	 FonctionnAir.getListAvion().add(TGP29);
+	 FonctionnAir.getListAvion().add(TGP30);
+	 FonctionnAir.getListAvion().add(TGP31);
+	 FonctionnAir.getListAvion().add(TGP32);
+	 FonctionnAir.getListAvion().add(TGP33);
+	 FonctionnAir.getListAvion().add(TGP34);
+	 FonctionnAir.getListAvion().add(TGP35);
+	 FonctionnAir.getListAvion().add(TGP36);
+	
+	 
 	 
 	 
 	 
