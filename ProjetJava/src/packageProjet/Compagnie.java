@@ -159,7 +159,7 @@ public class Compagnie {
 	
 	public ArrayList<Avion> createVol2(Aeroport D, Aeroport A, int date) {
 		Vol v = new Vol(D, A, date);
-		ArrayList dispo = new ArrayList<Avion>();
+		ArrayList<Avion> dispo = new ArrayList<Avion>();
 		double dist = v.calculDistance();
 		for(Avion a : D.getMapAvion().get(date)) {
 			if(a.getRayondaction() >= dist) {

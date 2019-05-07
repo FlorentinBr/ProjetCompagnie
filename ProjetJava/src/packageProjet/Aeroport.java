@@ -162,6 +162,8 @@ public class Aeroport {
 		this.coordonneeY = coordonneeY;
 	}
 	
-	
-	
+	public String toString(){
+		return "Aéroport "+this.nom+", "+this.ville+", "+this.pays;
+	}
+		
 }
