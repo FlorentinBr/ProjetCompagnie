@@ -97,8 +97,8 @@ public class Compagnie {
 	 *  que la compagnie propose déjà
 	 * @param v
 	 */
-	public void addVol(Vol v) {
-		this.listVol.add(v);
+	public void addVol(Vol v, int date) {
+		this.getMapVol().get(0).add(v);
 	}
 	
 
@@ -107,40 +107,40 @@ public class Compagnie {
 		Vol v = new Vol(D, A, date);
 		double dist = v.calculDistance();
 		if(dist > 2000) {
-			for(Avion a : D.getListAvion()) {
+			for(Avion a : D.getMapAvion().get(date)) {
 				if(a.getCapacitee() > 399) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
 			}
 		}else if(dist > 1000) {
-			for(Avion a : D.getListAvion()) {
+			for(Avion a : D.getMapAvion().get(date)) {
 				if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else if(a.getCapacitee() > 399) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
 			}
 		}else {
-			for(Avion a : D.getListAvion()) {
+			for(Avion a : D.getMapAvion().get(date)) {
 				if(a.getCapacitee() < 149) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else if(a.getCapacitee() > 149 && a.getCapacitee() < 399) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else if(a.getCapacitee() > 399) {
 					v.addAvion(a);
-					this.addVol(v);
+					this.addVol(v, date);
 					break;
 				}else System.out.println("Il n'y a pas d'avion adéquat disponible");
 				break;
@@ -151,7 +151,7 @@ public class Compagnie {
 	
 	public Aeroport getAeroportByName(String aeroport) {
 		for(Aeroport i : this.listAeroport) {
-			if(i.getVille().equals(aeroport)) {
+			if(i.getNom().equals(aeroport)) {
 				return i;
 			}
 		}

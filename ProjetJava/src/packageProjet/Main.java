@@ -332,9 +332,7 @@ public abstract class Main {
 	 TresGrosPorteur TGP34= new TresGrosPorteur("TGP34",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 TresGrosPorteur TGP35= new TresGrosPorteur("TGP35",Modele.Antonov, 4000, 700, 3.1, 32.6);
 	 TresGrosPorteur TGP36= new TresGrosPorteur("TGP36",Modele.Antonov, 4000, 700, 3.1, 32.6);
-	 
-	 
-	 
+	
 	 
      }
 }

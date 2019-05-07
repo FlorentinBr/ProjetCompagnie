@@ -113,7 +113,7 @@ public class Voyageur {
 		scan.close();
 		
 		ArrayList<Vol> list = new ArrayList<Vol>();
-		for(Vol v : c.getListVol()) {
+		for(Vol v : c.getMapVol().get(date)) {
 			if(date < v.getDate() + 2 || date > v.getDate() -2) {
 				list.add(v);
 			}
