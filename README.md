@@ -4,13 +4,13 @@ Ce projet consiste à développer une application de gestion de réservations de
 L'application fourni à la compagnie, une fois le vol plannifié, un récapitulatif de ce dernier.
 Cette application permet aussi aux voyageur de faire une réservation sur une interface à part.
 
-##Pour lancer l'application
+## Pour lancer l'application
 
-###Prérequis
+### Prérequis
 
 Installez, si ce n'est pas déjà fait, un IDE spécifique au language java. Pour ce faire installez d'abord un jdk [en cliquant ici](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), puis [installez Eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2019-03/R/eclipse-inst-linux64.tar.gz).
 
-####Installation
+#### Installation
 
 Etant donné que vous lisez ce document vous savez que dans le même dossier qui le contient se trouve un dossier Projet compagnie.
 En ouvrant Eclipse choisissez n'importe quel espace de travail et cliquez sur 'launch'.
