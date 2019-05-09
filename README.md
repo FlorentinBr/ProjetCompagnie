@@ -15,7 +15,7 @@ Installez, si ce n'est pas déjà fait, un IDE spécifique au language java. Pou
 Etant donné que vous lisez ce document vous savez que dans le même dossier qui le contient se trouve un dossier Projet compagnie.
 En ouvrant Eclipse choisissez n'importe quel espace de travail et cliquez sur 'launch'.
 
-
+![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20d%E2%80%99%C3%A9cran%20de%202019-05-09%2010-41-44.png)
 
 
 
