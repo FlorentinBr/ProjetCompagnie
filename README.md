@@ -17,5 +17,11 @@ En ouvrant Eclipse choisissez n'importe quel espace de travail et cliquez sur 'l
 
 ![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20d%E2%80%99%C3%A9cran%20de%202019-05-09%2010-41-44.png)
 
+Ensuite, sur la barre des menus, dans 'Files' cliquez sur 'Open project from files system'.
+Une nouvelle fenêtre s'ouvre, cliquez sur 'Directory' et allez chercher le dossier contenant entre autre ce readme et selectionner le fichier nommé ProjetJava. 
+
+Enfin cliquez sur 'Finish'.
+
+
 
 
