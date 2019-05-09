@@ -13,14 +13,14 @@ Installez, si ce n'est pas déjà fait, un IDE spécifique au language java. Pou
 #### Installation
 
 Etant donné que vous lisez ce document vous savez que dans le même dossier qui le contient se trouve un dossier Projet compagnie.
-En ouvrant Eclipse choisissez n'importe quel espace de travail et cliquez sur 'launch'.
+En ouvrant Eclipse choisissez n'importe quel espace de travail et cliquez sur **'launch'**.
 
 ![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20d%E2%80%99%C3%A9cran%20de%202019-05-09%2010-41-44.png)
 
-Ensuite, sur la barre des menus, dans 'Files' cliquez sur 'Open project from files system'.
-Une nouvelle fenêtre s'ouvre, cliquez sur 'Directory' et allez chercher le dossier contenant entre autre ce readme et selectionner le fichier nommé ProjetJava. 
+Ensuite, sur la barre des menus, dans 'Files' cliquez sur **'Open project from files system'**.
+Une nouvelle fenêtre s'ouvre, cliquez sur **'Directory'** et allez chercher le dossier contenant entre autre ce readme et selectionner le fichier nommé ProjetJava. 
 
-Enfin cliquez sur 'Finish'.
+Enfin cliquez sur **'Finish'**.
 
 ## Utiliser l'application
 Dans le package 'interface'
