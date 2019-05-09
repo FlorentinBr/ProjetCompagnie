@@ -90,6 +90,10 @@ public class Voyageur {
 		this.poidsBagage = poidsBagage;
 	}
 	
+	public double calculPrix(Vol v) {
+		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + this.getPoidsBagage();
+	}
+	
 	public ArrayList<Vol> rechercherVol(Compagnie c) {
 		
 		Scanner scan =new Scanner(System.in);
@@ -125,7 +129,7 @@ public class Voyageur {
 		return list;
 		
 	}
-
+	
 	
 
 }

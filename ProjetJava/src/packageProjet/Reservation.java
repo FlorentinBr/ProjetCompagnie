@@ -32,7 +32,7 @@ public class Reservation {
 		this.aeroportA = vol.getAeroportA();
 		double prix = 0;
 		for(Voyageur v : listVoyageur) {
-			prix += this.calculPrix(vol, v.getPoidsBagage());
+			prix += v.calculPrix(vol);
 		}
 		this.prix = prix;
 		for(Voyageur v : listVoyageur) {
@@ -128,9 +128,7 @@ public class Reservation {
 	}
 	
 	
-	public double calculPrix(Vol v, double poids) {
-		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + poids;
-	}
+	
 	
 	
 }

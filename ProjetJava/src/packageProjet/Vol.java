@@ -11,7 +11,7 @@ public class Vol {
 	private Aeroport aeroportD;
 	private Aeroport aeroportA;
  	private ArrayList<Voyageur> listVoyageur;
- 	private List<Boolean> listPlaces;
+ 	private ArrayList<Boolean> listPlaces;
  	private int date;
  	private static int CPT_VOL = 0;
  	
@@ -83,7 +83,7 @@ public class Vol {
 		return this.listPlaces;
 	}
 	
-	public void setListplaces(List<Boolean> listPlaces) {
+	public void setListplaces(ArrayList<Boolean> listPlaces) {
 		this.listPlaces = listPlaces;
 	}
 	
@@ -133,7 +133,7 @@ public class Vol {
     	
     	double dist= Math.acos(Math.sin(Phi1)*Math.sin(Phi2) + Math.cos(Phi1)*Math.cos(Phi2)*Math.cos(dL))*R;
     	
-    	return dist;
+    	return dist/1000;
     }
     
 	
@@ -154,5 +154,14 @@ public class Vol {
 
  	public String toString(){
  		return "Vol "+this.idVol+", départ le "+Integer.toString(this.date)+" \n depuis " + this.aeroportD.getNom()+", "+this.aeroportD.getVille()+", "+this.aeroportD.getPays()+",\n destination" + this.aeroportA.getNom()+", "+this.aeroportA.getVille()+", "+this.aeroportA.getPays();
+ 	}
+ 
+ 	public double benefice() {
+ 		double coutTotal = this.calculDistance() * this.getAvion().getPrixkm();
+ 		double prixBillet = 0;
+ 		for(Voyageur voy : this.getListVoyageur()) {
+ 			prixBillet += voy.calculPrix(this);
+ 		}
+ 		return prixBillet - coutTotal;
  	}
 }

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package packageProjet;
 
 import java.util.List;
@@ -109,7 +106,25 @@ public abstract class Avion {
 		this.capacitee = capacitee;
 	}
 	
+
+	/**
+	 * @return the listVol
+	 */
+	public List<Vol> getListVol() {
+		return listVol;
+	}
+
+
+	/**
+	 * @param listVol the listVol to set
+	 */
+	public void setListVol(List<Vol> listVol) {
+		this.listVol = listVol;
+	}
+	
 	public String toString(){
  		return "\n Appareil "+this.matricule+", de type "+ modele.toString() +", \n Rayon d'action: "+ this.getRayondaction() +"\n prix au km: "+ this.getPrixkm() +"\n Capacité d'acceuil: " + this.getCapacitee() ;
  	}
+
+
 }
