@@ -22,6 +22,11 @@ Une nouvelle fenêtre s'ouvre, cliquez sur 'Directory' et allez chercher le doss
 
 Enfin cliquez sur 'Finish'.
 
+## Utiliser l'application
+Dans le package 'interface'
+
+
+
 
 
 
