@@ -1,7 +1,6 @@
 package packageProjet;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -97,10 +96,10 @@ public class Compagnie {
 	 *  que la compagnie propose déjà
 	 * @param v
 	 */
-	public void addVol(Vol v, int date) {
-		v.addAvion(this.avionDispo(v.getAeroportD(), v.getAeroportA(), date));
-		v.addEquipage(v.getAeroportD().getMapEquipage().get(date).get(0));
-		this.getMapVol().get(date).add(v);
+	public void addVol(Vol v) {
+		v.addAvion(this.avionDispo(v.getAeroportD(), v.getAeroportA(), v.getDate()));
+		v.addEquipage(v.getAeroportD().getMapEquipage().get(v.getDate()).get(0));
+		this.getMapVol().get(v.getDate()).add(v);
 		v.getAvion().getListVol().add(v);
 		for(int i = v.getDate(); i<30; i++) {
 			v.getAeroportD().getMapAvion().get(i).remove(v.getAvion());
