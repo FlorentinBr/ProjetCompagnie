@@ -17,7 +17,8 @@ public class Vol {
  	
  	
  	
- 	public Vol(Aeroport D, Aeroport A, int date) {
+
+	public Vol(Aeroport D, Aeroport A, int date) {
  		CPT_VOL ++;
  		this.idVol = CPT_VOL;
  		this.aeroportD = D;
@@ -25,6 +26,7 @@ public class Vol {
  		this.listPlaces = new ArrayList<Boolean>();
  		this.date = date;
  		this.listVoyageur = new ArrayList<Voyageur>();
+ 		
  	}
  	
  	
@@ -107,6 +109,8 @@ public class Vol {
 	public void setDate(int date) {
 		this.date = date;
 	} 
+	
+
  	
 	/**
 	 * @param v le voyageur que l'on ajoute a la liste des passagers du vol
@@ -157,11 +161,12 @@ public class Vol {
  	}
  
  	public double benefice() {
- 		double coutTotal = this.calculDistance() * this.getAvion().getPrixkm();
  		double prixBillet = 0;
+ 		double coutTotal = this.calculDistance() * this.getAvion().getPrixkm();
  		for(Voyageur voy : this.getListVoyageur()) {
  			prixBillet += voy.calculPrix(this);
  		}
  		return prixBillet - coutTotal;
  	}
+ 	
 }

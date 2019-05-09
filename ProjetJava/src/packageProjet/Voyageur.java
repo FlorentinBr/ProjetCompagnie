@@ -93,6 +93,12 @@ public class Voyageur {
 	public double calculPrix(Vol v) {
 		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + this.getPoidsBagage();
 	}
+
+
+	public String toString() {
+		return "Identifiant: "+this.idVoyageur+"\n Nom: "+this.nom+"\n Prenom:"+this.prenom+"\n date de naissance: "+this.dateNaissance+"\n Poid des bagages: "+this.poidsBagage;
+	}
+	
 	
 	public ArrayList<Vol> rechercherVol(Compagnie c) {
 		

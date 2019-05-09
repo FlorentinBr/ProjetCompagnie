@@ -119,6 +119,8 @@ public class Compagnie {
 		}
 		return null;
 	}
+	
+
 
 	
 //	public void createVol(Aeroport D, Aeroport A, int date) {
@@ -167,7 +169,7 @@ public class Compagnie {
 //		
 //	}
 	
-	public ArrayList<Avion> createVol(Aeroport D, Aeroport A, int date) {
+	public ArrayList<Avion> avionDispo(Aeroport D, Aeroport A, int date) {
 		Vol v = new Vol(D, A, date);
 		ArrayList<Avion> dispo = new ArrayList<Avion>();
 		double dist = v.calculDistance();
