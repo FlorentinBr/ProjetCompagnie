@@ -1,5 +1,45 @@
 package packageProjet;
 
+
+/**
+ * https://www.jmdoudoux.fr/java/dej/chap-swing.htm
+ */
+
+import packageProjet.*;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Desktop;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.URI;
+import java.net.URL;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTextField;
+import javax.swing.ListModel;
+import javax.swing.ListSelectionModel;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+
 import java.util.ArrayList;
 
 public abstract class Main {
@@ -1564,11 +1604,337 @@ public abstract class Main {
 	 FonctionnAir.getListAvion().add(TGP35);
 	 FonctionnAir.getListAvion().add(TGP36);
 	
+
 	 
-	 Voyageur voy = new Voyageur(1, "Brisebard", "Florentin", "04/06", 20);
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 SwingUtilities.invokeLater(new Runnable() {
+         public void run() {
+             // nouvelle fenêtre
+             JFrame fenetre = new JFrame("Mon application");
+             JFrame fenetre2 = new JFrame("Intro application");
+             // pas de layout manager pour cette fenêtre : 
+             // on positionnera les composants à la fin
+             
+              
+           
+         	
+     		JPanel pannel = new JPanel();
+     		
+     		
+     		
+     		//Fenetre intro application
+     		
+             JPanel pannel1 = new JPanel();
+             pannel1.setLayout(null);
+             pannel1.setPreferredSize(new Dimension(738, 699));
+             
+             fenetre2.add(pannel1);
+             
+             JButton bouton = new JButton("Entrer dans l'application ");
+             bouton.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 fenetre2.setVisible(false);
+         				 fenetre.setVisible(true);
+         				
+         				            				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             
+             JLabel logo = new JLabel (new ImageIcon("logo.png"));
+           
+             pannel1.add(logo);
+             logo.setBounds(230, 100, 250, 250);
+           
+             pannel1.add(bouton);
+             bouton.setBounds(220, 500, 300, 70);
+             
+             fenetre2.setSize(740, 700);
+             Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+     		fenetre2.setLocation(dim.width/2 - fenetre2.getWidth()/2, dim.height/2 - fenetre2.getHeight()/2);
+     		fenetre2.setVisible(true);
+             
+             
+             //création des onglets               
+             
+             JTabbedPane onglets = new JTabbedPane(SwingConstants.TOP);       
+             JTabbedPane onglets2 = new JTabbedPane(SwingConstants.TOP); 
+             
+     		//Celui des voyageurs
+     		JPanel onglet1 = new JPanel();
+     		onglet1.setLayout(null);
+     		JLabel titreOnglet1 = new JLabel("Votre espace voyageur");
+     	    
+     		onglet1.add(titreOnglet1);
+     	    titreOnglet1.setBounds(300, 70, 180, 20);
+     		onglet1.setPreferredSize(new Dimension(730, 690));
+     		
+     		//Compagnie
+     		
+     		JPanel onglet2 = new JPanel();
+     		
+     		JLabel titreOnglet2 = new JLabel("Votre espace compagnie");
+     		onglet2.add(titreOnglet2);
+     	    titreOnglet2.setBounds(300, 70, 150, 20);
+     		onglet2.setPreferredSize(new Dimension(730, 690));
+     		
+     		JPanel onglet3 = new JPanel();
+     		onglet3.setLayout(null);
+     		JLabel titreOnglet3 = new JLabel("Gestion de vos aéroports");
+     		onglet3.add(titreOnglet3);
+     		onglet3.setLayout(null);
+     	    titreOnglet3.setBounds(300, 40, 180, 20);
+     		onglet3.setPreferredSize(new Dimension(730, 550));
+     		
+     		JPanel onglet4 = new JPanel();
+     		onglet4.setLayout(null);
+     		JLabel titreOnglet4 = new JLabel("Gestion de vos avions");
+     		onglet4.add(titreOnglet4);
+     		onglet4.setLayout(null);
+     	    titreOnglet4.setBounds(300, 40, 150, 20);
+     		onglet4.setPreferredSize(new Dimension(730, 550));
+     		
+     		JPanel onglet5 = new JPanel();
+     		onglet5.setLayout(null);
+     		JLabel titreOnglet5 = new JLabel("Gestion de vos vols");
+     		onglet5.add(titreOnglet5);
+     		onglet5.setLayout(null);
+     	    titreOnglet5.setBounds(300, 40, 150, 20);
+     		onglet5.setPreferredSize(new Dimension(730, 550));
+     		
+     		
+     		
+     		
+     		//ajout des onglets
+     		
+     		onglets.addTab("Voyageur", onglet1);
+     		onglets.addTab("Compagnie", onglet2);
+     		onglets.addTab("Voyageur", onglet1);
+     		onglets2.addTab("Aéroports", onglet3);
+     		onglets2.addTab("Avions", onglet4);
+     		onglets2.addTab("Vols", onglet5);
+     		
+     		
+     		onglets.setOpaque(true);
+     		onglets2.setOpaque(true);
+     		
+     		onglet2.add(onglets2);
+     		pannel.add(onglets);
+     		
+     		fenetre.getContentPane().add(pannel);
+     		
+             
+             
+             
+             // Création des images
+             
+             JLabel avion = new JLabel (new ImageIcon("avion.gif"));
+             JLabel aéroport = new JLabel (new ImageIcon("aeroport.png"));
+             JLabel vol = new JLabel (new ImageIcon("vol.gif"));
+             
+             
+            
+             //ajout des images aux onglets
+             
+             onglet4.add(avion);
+             onglet3.add(aéroport);
+             onglet5.add(vol);
+             
+             JList list = new JList(); 
+				list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+				list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+				list.setVisibleRowCount(-1);
+            
+				
+				
+				
+             //Position et dimension image
+             
+             avion.setBounds(30, 140, 100, 100);
+             aéroport.setBounds(30, 120, 140, 140);
+             vol.setBounds(30, 120, 120, 120);
+				
+				
+             
+             
+        // création des boutons
+     		
+     		//Bouton voyageur
+             JButton bouton1 = new JButton("Réserver un voyage");
+             bouton1.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			 try {
+         				 
+         				// URI uri= new URI(url);
+         				// java.awt.Desktop.getDesktop().browse(uri);
+         				 System.out.println("Ouvre une feetre avec les vols et infos affichés");
+         				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             JButton bouton2 = new JButton("Modifier un voyage");
+             bouton2.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			 try {
+         				 
+         				// URI uri= new URI(url);
+         				// java.awt.Desktop.getDesktop().browse(uri);
+         				 System.out.println("Ouvre une fenetre avec le voyage en cours à modifier..");
+         				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             
+             
+             //boutons compagnie
+             
+             JButton boutona = new JButton("Afficher nos aéroports");
+             boutona.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				   JList listaeroport; 
+			       
+         				   ArrayList bonjour = FonctionnAir.getListAeroport();
+         				   Object week[] = bonjour.toArray();
+         				   listaeroport= new JList(week); 
+         			       JScrollPane listScroller = new JScrollPane(listaeroport);
+
+         			       onglet3.add(listScroller);
+         			       listScroller.setBounds(420,150,300,250);
+	 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             JButton boutonb = new JButton("Afficher nos avions");
+             boutonb.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			 try {
+         				 
+         				 JList listavion; 
+       			       
+         				ArrayList bonjour = FonctionnAir.getListAvion();
+      				    Object week[] = bonjour.toArray(); 
+   			            listavion= new JList(week); 
+      			        JScrollPane listScroller = new JScrollPane(listavion);
+
+      			        onglet4.add(listScroller);
+      			        listScroller.setBounds(420,150,300,250);         				 } 
+         			 
+         			 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);
+             
+             JButton boutonc = new JButton("Nos Vols");
+             boutonc.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 
+         				 JList listvol; 
+         			     
+       			        String week[]= { "Rafale","CDG","Rennes", 
+       			                         "Florentin","Blabla","Oslo","Nimbus","Airbus","heyheyhey","charles23","Autre avion", "f35", "f22","tomcat"}; 
+    			            listvol= new JList(week); 
+       			        JScrollPane listScroller = new JScrollPane(listvol);
+
+       			        onglet5.add(listScroller);
+       			        listScroller.setBounds(420,150,300,250);          				 } 
+         				 
+         				  
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);
+             
+             // ajout des boutons aux onglets
+             onglet1.add(bouton1);
+         	onglet1.add(bouton2);
+         	
+         	
+             onglet3.add(boutona);
+             onglet4.add(boutonb);
+        
+             onglet5.add(boutonc);
+             
+             
+             // positionnement et dimensionnement manuel des boutons
+             bouton1.setBounds(200, 150, 200, 30);
+             bouton2.setBounds(200, 200, 200, 30);
+
+             boutona.setBounds(200, 150, 200, 30);
+             boutonb.setBounds(200, 150, 200, 30);
+             boutonc.setBounds(200, 150, 200, 30);
+             
+            
+             
+             // quitter le programme lorsqu'on ferme la fenêtre
+             fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              
+             
+             
+             
+             
+             // dimensionnement en affichage de la fenêtre
+             
+             fenetre.setSize(740, 700);
+            
+     		fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+     		
+     		
+            
+         }
+          
+     });
+ 
+
+	
+		
+		
+		
+		
 	 System.out.println(FonctionnAir.avionDispo(CDG, City, 0));
-	 
-	 
      }
 	
 	

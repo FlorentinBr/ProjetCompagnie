@@ -163,7 +163,7 @@ public class Aeroport {
 	}
 	
 	public String toString(){
-		return "Aéroport "+this.nom+", "+this.ville+", "+this.pays;
+		return this.nom+", "+this.ville+", "+this.pays;
 	}
 		
 }
