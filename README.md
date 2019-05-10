@@ -30,12 +30,12 @@ Une fois le main ouvert sur l'éditeur, cliquez sur le bouton  ![Screenshot](htt
 
 Vous pouvez alors utiliser l'application.
 
-ATTENTION : Lors de chaque clic menant a l'apparition d'une fenêtre, cette dernière va apparaître en double, il se peut de plus que la deuxième fenêtre passe en arrière et que les fenêtres s'empilent les unes sur les autres (ceci n'est pas gênant en soi mais nous n'avons pas réussi à résoudre le problème...)
+ATTENTION : Lors de chaque clic menant a l'apparition d'une fenêtre, cette dernière va apparaître en double, il se peut de plus que la deuxième fenêtre passe en arrière plan et que les fenêtres s'empilent les unes sur les autres (ceci n'est pas gênant en soi mais nous n'avons pas réussi à résoudre le problème...)
 
 Cliquez sur **"Entrer dans l'application"** pour débuter.
 Celle-ci contient deux interfaces principales, Compagnie et Voyageur.
 
-Fenêtre compagnie :
+**Fenêtre compagnie** :
   Trois onglets sont à dispositions, ils permettent principalement de visualiser les éléments de la compagnie.
   
   
@@ -57,7 +57,7 @@ Fenêtre compagnie :
 ![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20du%202019-05-10%2022-25-00.png)
     
     
-Fenêtre voyageur : 
+**Fenêtre voyageur** : 
   Deux boutons sont à disposition.
   **"Identification"** ouvre une fenêtre où un voyageur peut entrer ses informations : Nom, Prénon, Date de naissance et poids (initialement 20kg). Entrez toutes vos informations puis appuyer sur la touche entrée de votre clavier.
   Une fenêtre de bienvenu s'ouvre.
