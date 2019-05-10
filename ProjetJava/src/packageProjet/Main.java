@@ -3265,7 +3265,13 @@ public abstract class Main {
      		fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
          }
          });
-            
+      
+	 
+	 
+	 
+	 
+	   //Petits tests de vérif
+	 
 	   Vol vol1 = new Vol(CDG, City, 10);
 	   FonctionnAir.addVol(vol1);
 	   System.out.println(FonctionnAir.getMapVol().get(10));

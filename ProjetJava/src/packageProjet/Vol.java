@@ -155,7 +155,7 @@ public class Vol {
 	
 	//Methode toString de la classe Vol
  	public String toString(){
- 		return "Vol "+this.idVol+", départ le "+Integer.toString(this.date)+" \n depuis " + this.aeroportD.getNom()+", "+this.aeroportD.getVille()+", "+this.aeroportD.getPays()+",\n destination " + this.aeroportA.getNom()+", "+this.aeroportA.getVille()+", "+this.aeroportA.getPays() + "\n " + this.getAvion() + "\n" + this.calculDistance() + "km" ;
+ 		return "Vol "+this.idVol+", départ le "+Integer.toString(this.date)+" \n depuis " + this.aeroportD.getNom()+", "+this.aeroportD.getVille()+", "+this.aeroportD.getPays()+",\n destination " + this.aeroportA.getNom()+", "+this.aeroportA.getVille()+", "+this.aeroportA.getPays() + "\n " + this.getAvion() + "\n " + this.calculDistance() + "km" ;
  	}
  
  	/**
