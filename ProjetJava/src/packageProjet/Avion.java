@@ -31,22 +31,6 @@ public abstract class Avion {
 		this.mapLocalisation = new HashMap<Integer, Aeroport>();
 	}
 
-
-	/**
-	 * @param date
-	 * @return
-	
-	public boolean enVol(int date) {
-		for(Vol v : this.listVol) {
-			if(v.getDate() == date) {
-				return true;
-			}
-		}
-		return false;	
-	}
-	
-	*/
-	
 	
 	public String getMatricule() {
 		return matricule;
@@ -123,7 +107,7 @@ public abstract class Avion {
 	}
 	
 	public String toString(){
- 		return "\n Appareil "+this.matricule+", de type "+ modele.toString() +", \n Rayon d'action: "+ this.getRayondaction() +"\n prix au km: "+ this.getPrixkm() +"\n Capacité d'acceuil: " + this.getCapacitee() ;
+ 		return "\n Appareil "+this.matricule+", de type "+ modele.toString() +", \n Rayon d'action: "+ this.getRayondaction() +"\n prix au km: "+ this.getPrixkm() +"\n Capacité d'acceuil: " + this.getCapacitee();
  	}
 
 

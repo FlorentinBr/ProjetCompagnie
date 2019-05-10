@@ -3,6 +3,7 @@ package packageProjet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Compagnie {
 	
@@ -106,7 +107,6 @@ public class Compagnie {
 			v.getAeroportD().getMapEquipage().get(i).remove(v.getEquipage());
 			v.getAeroportA().getMapAvion().get(i).add(v.getAvion());
 			v.getAeroportA().getMapEquipage().get(i).add(v.getEquipage());
-			
 		}
 	}
 	
@@ -120,6 +120,14 @@ public class Compagnie {
 		return null;
 	}
 	
+	public Aeroport stringToAeroport(String aeroport) {
+		for(Aeroport i : this.listAeroport) {
+			if(i.toString().equals(aeroport)) {
+				return i;
+			}
+		}
+		return null;
+	}
 
 	public Avion avionDispo(Aeroport D, Aeroport A, int date) {
 		Vol v = new Vol(D, A, date);
@@ -142,6 +150,34 @@ public class Compagnie {
 		}return dispo.get(0);
 		
 
+	}
+	
+	public Voyageur identification() {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Votre nom:");
+		String nom = scan.next();
+		scan.nextLine();
+		
+		System.out.println("Votre prenom:");
+		String prenom = scan.next();
+		scan.nextLine();
+		
+		System.out.println("Votre date de naissance (jj/mm/aaaa):");
+		String datedenaissance = scan.next();
+		scan.nextLine();
+		
+		System.out.println("Le poid de vos bagages:");
+		double poids = scan.nextDouble();
+		scan.nextLine();
+		
+		
+		
+		scan.close();
+		
+		Voyageur voyageur = new Voyageur(nom, prenom,datedenaissance,poids);
+		return voyageur;
+		
 	}
 	
 }

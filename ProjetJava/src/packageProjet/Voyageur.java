@@ -10,6 +10,7 @@ public class Voyageur {
 	private String prenom;
 	private String dateNaissance;
 	private double poidsBagage;
+	private static int CPT_VOY = 0;
 	
 	
 	
@@ -20,8 +21,9 @@ public class Voyageur {
 	 * @param dateNaissance
 	 * @param poidsBagage
 	 */
-	public Voyageur(int idVoyageur, String nom, String prenom, String dateNaissance, double poidsBagage) {
-		this.idVoyageur = idVoyageur;
+	public Voyageur(String nom, String prenom, String dateNaissance, double poidsBagage) {
+		CPT_VOY++;
+		this.idVoyageur = CPT_VOY;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.dateNaissance = dateNaissance;
@@ -104,7 +106,7 @@ public class Voyageur {
 		
 		Scanner scan =new Scanner(System.in);
 		
-		System.out.println("Choix de votre date (jj/mm/aaaa)");
+		System.out.println("Choix de votre date");
 		int date =scan.nextInt();
 		scan.nextLine();
 		

@@ -677,7 +677,11 @@ public abstract class Main {
     list1.add(TGP02);
     
     for(int i = 0; i<30; i++) {
-    	CDG.getMapAvion().put(i, list1);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list1.size(); k++) {
+    		local.add(list1.get(k));
+    	}
+    	CDG.getMapAvion().put(i, local);
     }
     
   
@@ -691,7 +695,11 @@ public abstract class Main {
     list2.add(TGP04);
      
     for(int i = 0; i<30; i++) {
-    	Orly.getMapAvion().put(i, list2);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list2.size(); k++) {
+    		local.add(list2.get(k));
+    	}
+    	Orly.getMapAvion().put(i, local);
     }
 	 
 	ArrayList<Avion> list3 = new ArrayList<Avion>() ;
@@ -702,7 +710,11 @@ public abstract class Main {
     list3.add(TGP05);
     
     for(int i = 0; i<30; i++) {
-    	Rennes.getMapAvion().put(i, list3);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list3.size(); k++) {
+    		local.add(list3.get(k));
+    	}
+    	Rennes.getMapAvion().put(i, local);
     }
     
     
@@ -712,7 +724,11 @@ public abstract class Main {
     list4.add(MOP06);
     
     for(int i = 0; i<30; i++) {
-    	Marseille.getMapAvion().put(i, list4);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list4.size(); k++) {
+    		local.add(list4.get(k));
+    	}
+    	Marseille.getMapAvion().put(i, local);
     }
     	
     ArrayList<Avion> list5 = new ArrayList<Avion>() ;
@@ -722,7 +738,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Lyon.getMapAvion().put(i, list5);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list5.size(); k++) {
+    		local.add(list5.get(k));
+    	}
+    	Lyon.getMapAvion().put(i, local);
     }	
     	
     
@@ -733,7 +753,11 @@ public abstract class Main {
    
     
     for(int i = 0; i<30; i++) {
-    	Reykjavik.getMapAvion().put(i, list6);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list6.size(); k++) {
+    		local.add(list6.get(k));
+    	}
+    	Reykjavik.getMapAvion().put(i, local);
     }	
     	
     
@@ -746,7 +770,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Heathrow.getMapAvion().put(i, list7);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list7.size(); k++) {
+    		local.add(list7.get(k));
+    	}
+    	Heathrow.getMapAvion().put(i, local);
     }
     
     
@@ -758,7 +786,11 @@ public abstract class Main {
     list8.add(TGP10);
     
     for(int i = 0; i<30; i++) {
-    	City.getMapAvion().put(i, list8);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list8.size(); k++) {
+    		local.add(list8.get(k));
+    	}
+    	City.getMapAvion().put(i, local);
     }
 
     ArrayList<Avion> list9 = new ArrayList<Avion>() ;
@@ -771,7 +803,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Ynukovo.getMapAvion().put(i, list9);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list9.size(); k++) {
+    		local.add(list9.get(k));
+    	}
+    	Ynukovo.getMapAvion().put(i, local);
     }
     
     
@@ -782,7 +818,11 @@ public abstract class Main {
     list10.add(TGP12);
     
     for(int i = 0; i<30; i++) {
-    	Sheremtyevo.getMapAvion().put(i, list10);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list10.size(); k++) {
+    		local.add(list10.get(k));
+    	}
+    	Sheremtyevo.getMapAvion().put(i, local);
     }
     
     
@@ -796,7 +836,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Barajas.getMapAvion().put(i, list11);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list11.size(); k++) {
+    		local.add(list11.get(k));
+    	}
+    	Barajas.getMapAvion().put(i, local);
     }	
     
     
@@ -810,7 +854,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	CuatroVientos.getMapAvion().put(i, list12);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list12.size(); k++) {
+    		local.add(list12.get(k));
+    	}
+    	CuatroVientos.getMapAvion().put(i, local);
     }
     
     
@@ -825,7 +873,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Ciampino.getMapAvion().put(i, list13);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list13.size(); k++) {
+    		local.add(list13.get(k));
+    	}
+    	Ciampino.getMapAvion().put(i, local);
     }
     
     
@@ -838,7 +890,11 @@ public abstract class Main {
     list14.add(MOP16);
     
     for(int i = 0; i<30; i++) {
-    	Fiumicino.getMapAvion().put(i, list14);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list14.size(); k++) {
+    		local.add(list14.get(k));
+    	}
+    	Fiumicino.getMapAvion().put(i, local);
     }
     
     
@@ -852,7 +908,11 @@ public abstract class Main {
     list15.add(MOP17);
     
     for(int i = 0; i<30; i++) {
-    	Barcelona.getMapAvion().put(i, list15);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list15.size(); k++) {
+    		local.add(list15.get(k));
+    	}
+    	Barcelona.getMapAvion().put(i, local);
     }
     
     
@@ -865,7 +925,11 @@ public abstract class Main {
     list16.add(MOP18);
     
     for(int i = 0; i<30; i++) {
-    	Gerona.getMapAvion().put(i, list16);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list16.size(); k++) {
+    		local.add(list16.get(k));
+    	}
+    	Gerona.getMapAvion().put(i, local);
     }
     
     
@@ -879,7 +943,11 @@ public abstract class Main {
     list17.add(MOP19);
     
     for(int i = 0; i<30; i++) {
-    	Borispol.getMapAvion().put(i, list17);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list17.size(); k++) {
+    		local.add(list17.get(k));
+    	}
+    	Borispol.getMapAvion().put(i, local);
     }
     
     
@@ -892,7 +960,11 @@ public abstract class Main {
     list18.add(MOP20);
     
     for(int i = 0; i<30; i++) {
-    	Zhulyany.getMapAvion().put(i, list18);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list18.size(); k++) {
+    		local.add(list18.get(k));
+    	}
+    	Zhulyany.getMapAvion().put(i, local);
     }
     
     
@@ -907,7 +979,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Okecie.getMapAvion().put(i, list19);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list19.size(); k++) {
+    		local.add(list19.get(k));
+    	}
+    	Okecie.getMapAvion().put(i, local);
     }
     
     
@@ -920,7 +996,11 @@ public abstract class Main {
     list20.add(MOP22);
     
     for(int i = 0; i<30; i++) {
-    	Bemowo.getMapAvion().put(i, list20);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list20.size(); k++) {
+    		local.add(list20.get(k));
+    	}
+    	Bemowo.getMapAvion().put(i, local);
     }
     
     
@@ -933,7 +1013,11 @@ public abstract class Main {
     list21.add(MOP23);
     
     for(int i = 0; i<30; i++) {
-    	Bromma.getMapAvion().put(i, list21);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list21.size(); k++) {
+    		local.add(list21.get(k));
+    	}
+    	Bromma.getMapAvion().put(i, local);
     }
     
     
@@ -948,7 +1032,11 @@ public abstract class Main {
     list22.add(MOP24);
     
     for(int i = 0; i<30; i++) {
-    	Barkarby.getMapAvion().put(i, list22);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list22.size(); k++) {
+    		local.add(list22.get(k));
+    	}
+    	Barkarby.getMapAvion().put(i, local);
     }
     
     
@@ -961,7 +1049,11 @@ public abstract class Main {
     list23.add(MOP25);
     
     for(int i = 0; i<30; i++) {
-    	Malte.getMapAvion().put(i, list23);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list23.size(); k++) {
+    		local.add(list23.get(k));
+    	}
+    	Malte.getMapAvion().put(i, local);
     }
     	
     
@@ -975,7 +1067,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Oslo.getMapAvion().put(i, list24);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list24.size(); k++) {
+    		local.add(list24.get(k));
+    	}
+    	Oslo.getMapAvion().put(i, local);
     }
     
     
@@ -989,7 +1085,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Helsinki.getMapAvion().put(i, list25);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list25.size(); k++) {
+    		local.add(list25.get(k));
+    	}
+    	Helsinki.getMapAvion().put(i, local);
     }
     
     
@@ -1005,7 +1105,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Porto.getMapAvion().put(i, list26);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list26.size(); k++) {
+    		local.add(list26.get(k));
+    	}
+    	Porto.getMapAvion().put(i, local);
     }
     
     
@@ -1020,7 +1124,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Lisbonne.getMapAvion().put(i, list27);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list27.size(); k++) {
+    		local.add(list27.get(k));
+    	}
+    	Lisbonne.getMapAvion().put(i, local);
     }
     
     
@@ -1035,7 +1143,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Munich.getMapAvion().put(i, list28);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list28.size(); k++) {
+    		local.add(list28.get(k));
+    	}
+    	Munich.getMapAvion().put(i, local);
     }
     
     
@@ -1050,7 +1162,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Dublin.getMapAvion().put(i, list29);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list29.size(); k++) {
+    		local.add(list29.get(k));
+    	}
+    	Dublin.getMapAvion().put(i, local);
     }
     
     
@@ -1064,7 +1180,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Edimbourg.getMapAvion().put(i, list30);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list30.size(); k++) {
+    		local.add(list30.get(k));
+    	}
+    	Edimbourg.getMapAvion().put(i, local);
     }
     
     
@@ -1078,7 +1198,11 @@ public abstract class Main {
     list31.add(MOP33);
     
     for(int i = 0; i<30; i++) {
-    	Istanboul.getMapAvion().put(i, list31);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list31.size(); k++) {
+    		local.add(list31.get(k));
+    	}
+    	Istanboul.getMapAvion().put(i, local);
     }
     
     
@@ -1092,7 +1216,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Zagreb.getMapAvion().put(i, list32);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list32.size(); k++) {
+    		local.add(list32.get(k));
+    	}
+    	Zagreb.getMapAvion().put(i, local);
     }
     
     
@@ -1107,7 +1235,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Belgrade.getMapAvion().put(i, list33);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list33.size(); k++) {
+    		local.add(list33.get(k));
+    	}
+    	Belgrade.getMapAvion().put(i, local);
     }
     
     
@@ -1122,7 +1254,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Sarajevo.getMapAvion().put(i, list34);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list34.size(); k++) {
+    		local.add(list34.get(k));
+    	}
+    	Sarajevo.getMapAvion().put(i, local);
     }
     
     
@@ -1137,7 +1273,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Tirana.getMapAvion().put(i, list35);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list35.size(); k++) {
+    		local.add(list35.get(k));
+    	}
+    	Tirana.getMapAvion().put(i, local);
     }
     
     
@@ -1151,7 +1291,11 @@ public abstract class Main {
     
     
     for(int i = 0; i<30; i++) {
-    	Bucarest.getMapAvion().put(i, list36);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list36.size(); k++) {
+    		local.add(list36.get(k));
+    	}
+    	Bucarest.getMapAvion().put(i, local);
     }
     
     
@@ -1161,7 +1305,11 @@ public abstract class Main {
    
     
     for(int i = 0; i<30; i++) {
-    	Budapest.getMapAvion().put(i, list37);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list37.size(); k++) {
+    		local.add(list37.get(k));
+    	}
+    	Budapest.getMapAvion().put(i, local);
     }
     
     
@@ -1171,7 +1319,11 @@ public abstract class Main {
     list38.add(AGP33);  
    
     for(int i = 0; i<30; i++) {
-    	Prague.getMapAvion().put(i, list38);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list38.size(); k++) {
+    		local.add(list38.get(k));
+    	}
+    	Prague.getMapAvion().put(i, local);
     }
     
     
@@ -1184,7 +1336,11 @@ public abstract class Main {
    
     
     for(int i = 0; i<30; i++) {
-    	Bruxelles.getMapAvion().put(i, list39);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list39.size(); k++) {
+    		local.add(list39.get(k));
+    	}
+    	Bruxelles.getMapAvion().put(i, local);
     }
     
     
@@ -1195,7 +1351,11 @@ public abstract class Main {
     list40.add(AGP35);  
    
     for(int i = 0; i<30; i++) {
-    	Amsterdam.getMapAvion().put(i, list40);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list40.size(); k++) {
+    		local.add(list40.get(k));
+    	}
+    	Amsterdam.getMapAvion().put(i, local);
     }
     
     
@@ -1205,7 +1365,11 @@ public abstract class Main {
     list41.add(AGP36); 
     
     for(int i = 0; i<30; i++) {
-    	Geneve.getMapAvion().put(i, list41); 
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list41.size(); k++) {
+    		local.add(list41.get(k));
+    	}
+    	Geneve.getMapAvion().put(i, local); 
     }
     
     
@@ -1215,7 +1379,11 @@ public abstract class Main {
     list42.add(GP07);
     
     for(int i = 0; i<30; i++) {
-    	SaintPetersbourg.getMapAvion().put(i, list42);   
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list42.size(); k++) {
+    		local.add(list42.get(k));
+    	}
+    	SaintPetersbourg.getMapAvion().put(i, local);   
     }
     
     
@@ -1224,7 +1392,11 @@ public abstract class Main {
     list43.add(GP08);
     
     for(int i = 0; i<30; i++) {
-    	Talin.getMapAvion().put(i, list43);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list43.size(); k++) {
+    		local.add(list43.get(k));
+    	}
+    	Talin.getMapAvion().put(i, local);
     }
     
     
@@ -1235,7 +1407,11 @@ public abstract class Main {
     list44.add(GP11);
     
     for(int i = 0; i<30; i++) {
-    	Riga.getMapAvion().put(i, list44);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list44.size(); k++) {
+    		local.add(list44.get(k));
+    	}
+    	Riga.getMapAvion().put(i, local);
     }
     
     
@@ -1246,7 +1422,11 @@ public abstract class Main {
     list45.add(GP03);
     
     for(int i = 0; i<30; i++) {
-    	Vilnius.getMapAvion().put(i, list45);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list45.size(); k++) {
+    		local.add(list45.get(k));
+    	}
+    	Vilnius.getMapAvion().put(i, local);
     }
     
     
@@ -1256,7 +1436,11 @@ public abstract class Main {
     list46.add(AGP01);
     
     for(int i = 0; i<30; i++) {
-    	Copenhague.getMapAvion().put(i, list46);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list46.size(); k++) {
+    		local.add(list46.get(k));
+    	}
+    	Copenhague.getMapAvion().put(i, local);
     }
     
     
@@ -1266,7 +1450,11 @@ public abstract class Main {
     list47.add(GP04);
     
     for(int i = 0; i<30; i++) {
-    	Milan.getMapAvion().put(i, list47);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list47.size(); k++) {
+    		local.add(list47.get(k));
+    	}
+    	Milan.getMapAvion().put(i, local);
     }
     
     
@@ -1276,7 +1464,11 @@ public abstract class Main {
     list48.add(TGP03);
     
     for(int i = 0; i<30; i++) {
-    	Athenes.getMapAvion().put(i, list48);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list48.size(); k++) {
+    		local.add(list48.get(k));
+    	}
+    	Athenes.getMapAvion().put(i, local);
     }
     
     
@@ -1286,7 +1478,11 @@ public abstract class Main {
     list49.add(MOP06);
     
     for(int i = 0; i<30; i++) {
-    	Poudlard.getMapAvion().put(i, list49);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list49.size(); k++) {
+    		local.add(list49.get(k));
+    	}
+    	Poudlard.getMapAvion().put(i, local);
     }
     
     
@@ -1296,7 +1492,11 @@ public abstract class Main {
     list50.add(GP06);
     
     for(int i = 0; i<30; i++) {
-    	Minsk.getMapAvion().put(i, list50);
+    	ArrayList<Avion> local = new ArrayList<Avion>();
+    	for(int k = 0; k < list50.size(); k++) {
+    		local.add(list50.get(k));
+    	}
+    	Minsk.getMapAvion().put(i, local);
     }
     
     
@@ -2465,448 +2665,613 @@ public abstract class Main {
 		// la création des objets graphiques est déléguée au thread de
         // diffusion d'événements de Swing
 		
-		
-			
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                // nouvelle fenêtre
-                JFrame fenetre = new JFrame("Mon application");
-                JFrame fenetre2 = new JFrame("Intro application");
-                // pas de layout manager pour cette fenêtre : 
-                // on positionnera les composants à la fin
-                
-                 
+	 SwingUtilities.invokeLater(new Runnable() {
+         public void run() {
+             // nouvelle fenêtre
+             JFrame fenetre = new JFrame("Mon application");
+             JFrame fenetre2 = new JFrame("Intro application");
+             // pas de layout manager pour cette fenêtre : 
+             // on positionnera les composants à la fin
+             
               
-            	
-        		JPanel pannel = new JPanel();
-        		
-        		
-        		
-        		//Fenetre intro application
-        		
-                JPanel pannel1 = new JPanel();
-                pannel1.setLayout(null);
-                pannel1.setPreferredSize(new Dimension(738, 699));
-                
-                fenetre2.add(pannel1);
-                
-                JButton bouton = new JButton("Entrer dans l'application ");
-                bouton.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			
-            			 try {
-            				 fenetre2.setVisible(false);
-            				 fenetre.setVisible(true);
-            				
-            				            				 
-            				 } 
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-            		}
-            		);	
-                
-                JLabel logo = new JLabel (new ImageIcon("logo.png"));
-              
-                pannel1.add(logo);
-                logo.setBounds(230, 100, 250, 250);
-              
-                pannel1.add(bouton);
-                bouton.setBounds(220, 500, 300, 70);
-                
-                fenetre2.setSize(740, 700);
-                Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        		fenetre2.setLocation(dim.width/2 - fenetre2.getWidth()/2, dim.height/2 - fenetre2.getHeight()/2);
-        		fenetre2.setVisible(true);
-                
-                
-                //création des onglets               
-                
-                JTabbedPane onglets = new JTabbedPane(SwingConstants.TOP);       
-                JTabbedPane onglets2 = new JTabbedPane(SwingConstants.TOP); 
-                
-        		//Celui des voyageurs
-        		JPanel onglet1 = new JPanel();
-        		onglet1.setLayout(null);
-        		JLabel titreOnglet1 = new JLabel("Votre espace voyageur");
-        	    
-        		onglet1.add(titreOnglet1);
-        	    titreOnglet1.setBounds(300, 70, 180, 20);
-        		onglet1.setPreferredSize(new Dimension(730, 690));
-        		
-        		//Compagnie
-        		
-        		JPanel onglet2 = new JPanel();
-        		
-        		JLabel titreOnglet2 = new JLabel("Votre espace compagnie");
-        		onglet2.add(titreOnglet2);
-        	    titreOnglet2.setBounds(300, 70, 150, 20);
-        		onglet2.setPreferredSize(new Dimension(730, 690));
-        		
-        		JPanel onglet3 = new JPanel();
-        		onglet3.setLayout(null);
-        		JLabel titreOnglet3 = new JLabel("Gestion de vos aéroports");
-        		onglet3.add(titreOnglet3);
-        		onglet3.setLayout(null);
-        	    titreOnglet3.setBounds(300, 40, 180, 20);
-        		onglet3.setPreferredSize(new Dimension(730, 550));
-        		
-        		JPanel onglet4 = new JPanel();
-        		onglet4.setLayout(null);
-        		JLabel titreOnglet4 = new JLabel("Gestion de vos avions");
-        		onglet4.add(titreOnglet4);
-        		onglet4.setLayout(null);
-        	    titreOnglet4.setBounds(300, 40, 150, 20);
-        		onglet4.setPreferredSize(new Dimension(730, 550));
-        		
-        		JPanel onglet5 = new JPanel();
-        		onglet5.setLayout(null);
-        		JLabel titreOnglet5 = new JLabel("Gestion de vos vols");
-        		onglet5.add(titreOnglet5);
-        		onglet5.setLayout(null);
-        	    titreOnglet5.setBounds(300, 40, 150, 20);
-        		onglet5.setPreferredSize(new Dimension(730, 550));
-        		
-        		
-        		
-        		
-        		//ajout des onglets
-        		
-        		onglets.addTab("Voyageur", onglet1);
-        		onglets.addTab("Compagnie", onglet2);
-        		onglets.addTab("Voyageur", onglet1);
-        		onglets2.addTab("Aéroports", onglet3);
-        		onglets2.addTab("Avions", onglet4);
-        		onglets2.addTab("Vols", onglet5);
-        		
-        		
-        		onglets.setOpaque(true);
-        		onglets2.setOpaque(true);
-        		
-        		onglet2.add(onglets2);
-        		pannel.add(onglets);
-        		
-        		fenetre.getContentPane().add(pannel);
-        		
-                
-                
-                
-                // Création des images
-                
-                JLabel avion = new JLabel (new ImageIcon("avion.gif"));
-                JLabel aéroport = new JLabel (new ImageIcon("aeroport.png"));
-                JLabel vol = new JLabel (new ImageIcon("vol.gif"));
-                
-                
-               
-                //ajout des images aux onglets
-                
-                onglet4.add(avion);
-                onglet3.add(aéroport);
-                onglet5.add(vol);
-                
-                JList list = new JList(); 
+           
+         	
+     		JPanel pannel = new JPanel();
+     		
+     		
+     		
+     		//Fenetre intro application
+     		
+             JPanel pannel1 = new JPanel();
+             pannel1.setLayout(null);
+             pannel1.setPreferredSize(new Dimension(738, 699));
+             
+             fenetre2.add(pannel1);
+             
+             JButton bouton = new JButton("Entrer dans l'application ");
+             bouton.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 fenetre2.setVisible(false);
+         				 fenetre.setVisible(true);
+         				
+         				            				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             
+             JLabel logo = new JLabel (new ImageIcon("logo.png"));
+           
+             pannel1.add(logo);
+             logo.setBounds(230, 100, 250, 250);
+           
+             pannel1.add(bouton);
+             bouton.setBounds(220, 500, 300, 70);
+             
+             fenetre2.setSize(740, 700);
+             Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+     		fenetre2.setLocation(dim.width/2 - fenetre2.getWidth()/2, dim.height/2 - fenetre2.getHeight()/2);
+     		fenetre2.setVisible(true);
+             
+             
+             //création des onglets               
+             
+             JTabbedPane onglets = new JTabbedPane(SwingConstants.TOP);       
+             JTabbedPane onglets2 = new JTabbedPane(SwingConstants.TOP); 
+             
+     		//Celui des voyageurs
+     		JPanel onglet1 = new JPanel();
+     		onglet1.setLayout(null);
+     		JLabel titreOnglet1 = new JLabel("Votre espace voyageur");
+     	    
+     		onglet1.add(titreOnglet1);
+     	    titreOnglet1.setBounds(300, 70, 180, 20);
+     		onglet1.setPreferredSize(new Dimension(730, 690));
+     		
+     		//Compagnie
+     		
+     		JPanel onglet2 = new JPanel();
+     		
+     		JLabel titreOnglet2 = new JLabel("Votre espace compagnie");
+     		onglet2.add(titreOnglet2);
+     	    titreOnglet2.setBounds(300, 70, 150, 20);
+     		onglet2.setPreferredSize(new Dimension(730, 690));
+     		
+     		JPanel onglet3 = new JPanel();
+     		onglet3.setLayout(null);
+     		JLabel titreOnglet3 = new JLabel("Gestion de vos aéroports");
+     		onglet3.add(titreOnglet3);
+     		onglet3.setLayout(null);
+     	    titreOnglet3.setBounds(300, 40, 180, 20);
+     		onglet3.setPreferredSize(new Dimension(730, 550));
+     		
+     		JPanel onglet4 = new JPanel();
+     		onglet4.setLayout(null);
+     		JLabel titreOnglet4 = new JLabel("Gestion de vos avions");
+     		onglet4.add(titreOnglet4);
+     		onglet4.setLayout(null);
+     	    titreOnglet4.setBounds(300, 40, 150, 20);
+     		onglet4.setPreferredSize(new Dimension(730, 550));
+     		
+     		JPanel onglet5 = new JPanel();
+     		onglet5.setLayout(null);
+     		JLabel titreOnglet5 = new JLabel("Gestion de vos vols");
+     		onglet5.add(titreOnglet5);
+     		onglet5.setLayout(null);
+     	    titreOnglet5.setBounds(300, 40, 150, 20);
+     		onglet5.setPreferredSize(new Dimension(730, 550));
+     		
+     		
+     		
+     		
+     		//ajout des onglets
+     		
+     		onglets.addTab("Voyageur", onglet1);
+     		onglets.addTab("Compagnie", onglet2);
+     		onglets.addTab("Voyageur", onglet1);
+     		onglets2.addTab("Aéroports", onglet3);
+     		onglets2.addTab("Avions", onglet4);
+     		onglets2.addTab("Vols", onglet5);
+     		
+     		
+     		onglets.setOpaque(true);
+     		onglets2.setOpaque(true);
+     		
+     		onglet2.add(onglets2);
+     		pannel.add(onglets);
+     		
+     		fenetre.getContentPane().add(pannel);
+     		
+             
+             
+             
+             // Création des images
+             
+             JLabel avion = new JLabel (new ImageIcon("avion.gif"));
+             JLabel aéroport = new JLabel (new ImageIcon("aeroport.png"));
+             JLabel vol = new JLabel (new ImageIcon("vol.gif"));
+             JLabel technique = new JLabel (new ImageIcon("techniqu.gif"));
+           
+             
+            
+             //ajout des images aux onglets
+             
+             onglet4.add(avion);
+             onglet3.add(aéroport);
+             onglet5.add(vol);
+             onglet4.add(technique);
+             
+             
+             
+             
+             // ajout des fenetres scroll
+             JList list = new JList(); 
 				list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 				list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
 				list.setVisibleRowCount(-1);
-               
+            
 				
 				
 				
-                //Position et dimension image
-                
-                avion.setBounds(30, 140, 100, 100);
-                aéroport.setBounds(30, 120, 140, 140);
-                vol.setBounds(30, 120, 120, 120);
+             //Position et dimension image
+             
+             avion.setBounds(10, 140, 180, 150);
+             aéroport.setBounds(30, 120, 140, 140);
+             vol.setBounds(30, 120, 120, 120);
+				technique.setBounds(10, 300, 180, 150);
 				
-				
-                
-                
-           // création des boutons
-        		
-        		//Bouton voyageur
-                JButton bouton1 = new JButton("Réserver un voyage");
-                bouton1.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
-            			 try {
-            				 
-            				// URI uri= new URI(url);
-            				// java.awt.Desktop.getDesktop().browse(uri);
-            				 System.out.println("Ouvre une feetre avec les vols et infos affichés");
-            				 
-            				 } 
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-            		}
-            		);	
-                
-                
-                JButton bouton2 = new JButton("Modifier un voyage");
-                bouton2.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
-            			 try {
-            				 
-            				// URI uri= new URI(url);
-            				// java.awt.Desktop.getDesktop().browse(uri);
-            				 System.out.println("Ouvre une fenetre avec le voyage en cours à modifier..");
-            				 
-            				 } 
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-            		}
-            		);	
-                
-              
-                
-                //boutons compagnie
-                
-                JButton boutona = new JButton("Afficher nos aéroports");
-                boutona.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			
-            			 try {
-            				   JList<Aeroport> listaeroport; 
+             
+             
+        // création des boutons
+     		
+     		//Bouton voyageur
+             JButton bouton1 = new JButton("Réserver un voyage");
+             bouton1.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			 try {
+         				 
+         				// URI uri= new URI(url);
+         				// java.awt.Desktop.getDesktop().browse(uri);
+         				 System.out.println("Ouvre une feetre avec les vols et infos affichés");
+         				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             
+             
+             JButton bouton2 = new JButton("Modifier un voyage");
+             bouton2.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			 try {
+         				 
+         				// URI uri= new URI(url);
+         				// java.awt.Desktop.getDesktop().browse(uri);
+         				 System.out.println("Ouvre une fenetre avec le voyage en cours à modifier..");
+         				 
+         				 } 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);	
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             //boutons compagnie
+             
+             JButton boutona = new JButton("Afficher nos aéroports");
+             boutona.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				   JList listaeroport; 
 			       
-         				   ArrayList<Aeroport> bonjour = FonctionnAir.getListAeroport();
-         				   Object week[] = bonjour.toArray();
-         				   listaeroport = new JList(week); 
-         			       JScrollPane listScroller = new JScrollPane(listaeroport);
+      				       ArrayList bonjour = FonctionnAir.getListAeroport();
+      				       Object week[] = bonjour.toArray();
+      				       listaeroport= new JList(week); 
+      			           JScrollPane listScroller = new JScrollPane(listaeroport);
 
-         			       onglet3.add(listScroller);
-         			       listScroller.setBounds(420,150,300,250);
-            			        
-            			      
-            			        
-            			        listaeroport.addListSelectionListener(new ListSelectionListener() {
-            			           
-            			        	 public void valueChanged(ListSelectionEvent evt) {
-            			        		JFrame fenetre3 = new JFrame("Information aéroport");
-             			            	
-             			            	JPanel pannel2 = new JPanel();
-             			                pannel2.setLayout(null);
-             			                pannel2.setPreferredSize(new Dimension(400, 400));
-             			                
-             			                fenetre3.add(pannel2);
-             			                
-             			                JButton bouton = new JButton(" Danse Danse ");
-             			                bouton.addActionListener( new ActionListener() {
-             			            		public void actionPerformed(ActionEvent e) {
-             			            			
-             			            			 try {
-             			            				 System.out.println("Charles est moche");
-             			            				
-             			            				            				 
-             			            				 } 
-             			            			 catch (Exception ex) {
-             			            				 
-             			            				 ex.printStackTrace();
-             			            				 }
-             			            		}
-             			            		}
-             			                
-             			            		);
-             			                pannel2.add(bouton);
-             			                bouton.setBounds(100, 100, 200, 50);
-             			               fenetre3.setSize(401, 401);
-             			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-             			               fenetre3.setVisible(true);
-                       				
-            			        	      }
-            			        	    });
-            			        }
-            			  
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-                }
-
-            		);	
-
-                
-                
-                JButton boutonb = new JButton("Afficher nos avions");
-                boutonb.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
-            			 try {
-            				 
-            				 JList<Avion> listavion; 
-       			       
-         				ArrayList<Avion> bonjour = FonctionnAir.getListAvion();
-      				    Object week[] = bonjour.toArray(); 
-   			            listavion= new JList(week); 
-      			        JScrollPane listScroller = new JScrollPane(listavion);
-
-      			        onglet4.add(listScroller);
-      			        listScroller.setBounds(420,150,300,250);         				 
-        			        listavion.addListSelectionListener( new ListSelectionListener(){
-        			           
-        			        	 public void valueChanged(ListSelectionEvent evt) {
-        			        		JFrame fenetre3 = new JFrame("Information avion");
-         			            	
-         			            	JPanel pannel2 = new JPanel();
-         			                pannel2.setLayout(null);
-         			                pannel2.setPreferredSize(new Dimension(400, 400));
-         			                
-         			                
-         			                fenetre3.add(pannel2);
-         			                JList source = (JList)evt.getSource();
-         			                String selected = source.getSelectedValue().toString();
-         			                
-         			                JLabel avion = new JLabel (new ImageIcon(selected +".gif"));
-         			                
-         			                JTextArea area = new JTextArea();
-         			                
-         			               JTextArea area2 = new JTextArea();
-         			               
-         			               area.append(selected );
-         			               area2.append("Capacité: " + selected + "\n" + "Rayon d'action: " + selected);
-         			               pannel2.add(avion);
-         			               pannel2.add(area);
-         			               pannel2.add(area2);
-         			               
-         			               avion.setBounds(30, 100, 500, 350);
-         			               area.setBounds(200,2,200,40);
-         			               area.setFont(area.getFont().deriveFont(30f));
-         			               area2.setBounds(2,80,200,200);
-         			               area2.setFont(area2.getFont().deriveFont(12f));
-         			               fenetre3.setSize(600, 500);
-         			               fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-         			               fenetre3.setVisible(true);
-                   				
-        			        	      }
-        			        	    });
+      			           onglet3.add(listScroller);
+      			           listScroller.setBounds(420,150,300,250);
          			        
+         			      
          			        
-         			        
-            				 } 
-            			 
-            			 
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-            		}
-            		);
-                
-                JButton boutonc = new JButton("Nos Vols");
-                boutonc.addActionListener( new ActionListener() {
-            		public void actionPerformed(ActionEvent e) {
-            			
-            			 try {
-            				 
-            				 JList<Vol> listvol; 
-            			     
-          			        String week[]= { "Rafale","CDG","Rennes", 
-          			                         "Florentin","Blabla","Oslo","Nimbus","Airbus","heyheyhey","charles23","Autre avion", "f35", "f22","tomcat"}; 
-       			            listvol= new JList(week); 
-          			        JScrollPane listScroller = new JScrollPane(listvol);
+         			        listaeroport.addListSelectionListener(new ListSelectionListener() {
+         			           
+         			        public void valueChanged(ListSelectionEvent evt) {
+         			        		JFrame fenetre3 = new JFrame("Information aéroport");
+         			        		
+          			            	
+          			            	 JPanel pannel2 = new JPanel();
+          			                 pannel2.setLayout(null);
+          			                 pannel2.setPreferredSize(new Dimension(400, 400));
+          			            
+          			                 JList listdate; 
+          			                 
+          			                 
+          			                
 
-          			        onglet5.add(listScroller);
-          			        listScroller.setBounds(450,150,200,150);
-          			        
-          			        
-          			      listvol.addListSelectionListener(new ListSelectionListener() {
-       			           
+    			                         String week44[]= { "0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"}; 
+               			             listdate= new JList(week44); 
+                  			         JScrollPane listScroller = new JScrollPane(listdate);
+          	             			 
+          	            			 pannel2.add(listScroller);
+          	            		     listScroller.setBounds(10,30,370,350);
+          	            		     
+          	            		     JTextArea area = new JTextArea();
+          	            		     area.append("Selection de la date:");
+          	            		     fenetre3.add(area);
+          			                 area.setBounds(40, 2, 300, 20);
+          			                
+          			                 fenetre3.add(pannel2);
+          			                
+          			                 fenetre3.setSize(420, 420);
+          			                 fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+          			                 fenetre3.setVisible(true);
+          			                 
+          			               
+          			              
+          			                 listdate.addListSelectionListener(new ListSelectionListener() {
+          			                 
+          			                  JList source = (JList)evt.getSource();
+        			                      String i = source.getSelectedValue().toString();
+        			                      Aeroport a = FonctionnAir.stringToAeroport(i);
+                  			           
+                			        	 public void valueChanged(ListSelectionEvent evt1) {
+                			        		JFrame fenetre4 = new JFrame("Avion dans l'aéroport");
+                			        		
+                			        		    
+                 			            	
+                 			            	 JPanel pannel3 = new JPanel();
+                 			                 pannel3.setLayout(null);
+                 			                 pannel3.setPreferredSize(new Dimension(400, 400));
+                 			            
+                 			                 JList listaviondate; 
+                 			                 
+                 			                 
+                 			                 JList source2 = (JList)evt1.getSource();
+              			                     String selected2 = source2.getSelectedValue().toString();
+              			                     int i = Integer.parseInt(selected2); 
+                 			                 
+                 			                 ArrayList bonjour19 = a.getMapAvion().get(i);
+                 			                 Object week19[] = bonjour19.toArray();
+                 			                 
+                      			             listaviondate= new JList(week19); 
+                         			         JScrollPane listScroller = new JScrollPane(listaviondate);
+                 	             			 
+                 	            			 pannel3.add(listScroller);
+                 	            		     listScroller.setBounds(10,30,370,350);
+                 	            		     
+                 	            		     JTextArea area = new JTextArea();
+                 	            		     area.append("Avions à la date " + i + " dans l'aéroport sélectionné");
+                 	            		     fenetre4.add(area);
+                 			                 area.setBounds(40, 2, 300, 20);
+                 			                
+                 			                 fenetre4.add(pannel3);
+                 			                
+                 			                 fenetre4.setSize(420, 420);
+                 			                 fenetre4.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+                 			                 fenetre4.setVisible(true);
+                 			                 fenetre3.setVisible(false);
+                 			                 
+                 			                 
+                 			                 
+                 			                 
+                 			                
+                 			                
+                           				
+                			        	      }
+                			        	    });
+          			                 
+          			                
+          			                
+          			                
+                    				
+         			        	      }
+         			        	    });
+         			        }
+         			  
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+             }
+
+         		);	
+             
+     
+             
+             JButton boutonb = new JButton("Afficher nos avions");
+             boutonb.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 
+         				 JList listavion; 
+    			        
+         		    ArrayList<Modele> modele = new ArrayList<Modele>();
+         		    
+      				ArrayList bonjour = FonctionnAir.getListAvion();
+      				
+      				for(Avion a: FonctionnAir.getListAvion()) {
+      					modele.add(a.getModele());
+      				}
+      				Object week[] = modele.toArray();
+      				Object week2[] = bonjour.toArray();
+   				     
+			            listavion= new JList(week); 
+   			        JScrollPane listScroller = new JScrollPane(listavion);
+
+   			        onglet4.add(listScroller);
+   			        listScroller.setBounds(420,150,300,180);         				 
+     			        listavion.addListSelectionListener( new ListSelectionListener(){
+     			           
      			        	 public void valueChanged(ListSelectionEvent evt) {
-     			        		JFrame fenetre3 = new JFrame("Information vol");
+     			        		JFrame fenetre3 = new JFrame("Information avion");
       			            	
       			            	JPanel pannel2 = new JPanel();
       			                pannel2.setLayout(null);
       			                pannel2.setPreferredSize(new Dimension(400, 400));
       			                
+      			                
       			                fenetre3.add(pannel2);
+      			                JList source = (JList)evt.getSource();
+      			                String selected = source.getSelectedValue().toString();
       			                
-      			                JButton bouton = new JButton(" Danse Danse ");
-      			                bouton.addActionListener( new ActionListener() {
-      			            		public void actionPerformed(ActionEvent e) {
-      			            			
-      			            			 try {
-      			            				 System.out.println("Charles est moche");
-      			            				
-      			            				            				 
-      			            				 } 
-      			            			 catch (Exception ex) {
-      			            				 
-      			            				 ex.printStackTrace();
-      			            				 }
-      			            		}
-      			            		}
+      			                JLabel avion = new JLabel (new ImageIcon(selected +".gif"));
       			                
-      			            		);
-      			                pannel2.add(bouton);
-      			                bouton.setBounds(100, 100, 200, 50);
-      			                fenetre3.setSize(401, 401);
-      			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-      			                fenetre3.setVisible(true);
+      			                JTextArea area = new JTextArea();
+      			                
+      			               JTextArea area2 = new JTextArea();
+      			               
+      			               area.append(selected);
+      			               
+      			               pannel2.add(avion);
+      			               pannel2.add(area);
+      			             
+      			               
+      			               avion.setBounds(30, 100, 500, 400);
+      			               area.setBounds(200,2,200,40);
+      			               area.setFont(area.getFont().deriveFont(30f));
+      			               
+      			               fenetre3.setSize(600, 500);
+      			               fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+      			               fenetre3.setVisible(true);
                 				
      			        	      }
      			        	    });
-    	        
-             				 } 
-            				 
-            				  
-            			 catch (Exception ex) {
-            				 
-            				 ex.printStackTrace();
-            				 }
-            		}
-            		}
-            		);
-                
-                // ajout des boutons aux onglets
-                onglet1.add(bouton1);
-            	onglet1.add(bouton2);
-            	
-            	
-                onglet3.add(boutona);
-                onglet4.add(boutonb);
-           
-                onglet5.add(boutonc);
-                
-                
-                // positionnement et dimensionnement manuel des boutons
-                bouton1.setBounds(200, 150, 200, 30);
-                bouton2.setBounds(200, 200, 200, 30);
-
-                boutona.setBounds(200, 150, 200, 30);
-                boutonb.setBounds(200, 150, 200, 30);
-                boutonc.setBounds(200, 150, 200, 30);
-                
-               
-                
-                // quitter le programme lorsqu'on ferme la fenêtre
-                fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                 
-                
-                
-                
-                
-                // dimensionnement en affichage de la fenêtre
-                
-                fenetre.setSize(740, 700);
-               
-        		fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-            }
-            });
-               
-           
+      			        
+      			        
+      			        
+         				 } 
+         			 
+         			 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);
              
-     Vol vol1 = new Vol(CDG, City, 0);
-   	 FonctionnAir.addVol(vol1);
-   	 System.out.println(FonctionnAir.getMapVol().get(0));
+             
+             
+             JButton boutone = new JButton("Détail de nos avions");
+             boutone.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 
+         				 JList listavion; 
+    			        
+         	
+      				ArrayList bonjour = FonctionnAir.getListAvion();
+      				
+      				Object week[] = bonjour.toArray();
+      				
+   				     
+			            listavion= new JList(week); 
+   			        JScrollPane listScroller = new JScrollPane(listavion);
+
+   			        onglet4.add(listScroller);
+   			        listScroller.setBounds(420,350,300,180);         				 
+     			        listavion.addListSelectionListener( new ListSelectionListener(){
+     			           
+     			        	 public void valueChanged(ListSelectionEvent evt) {
+     			        		JFrame fenetre3 = new JFrame("Information avion");
+      			            	
+      			            	JPanel pannel2 = new JPanel();
+      			                pannel2.setLayout(null);
+      			                pannel2.setPreferredSize(new Dimension(200, 200));
+      			                
+      			                
+      			                fenetre3.add(pannel2);
+      			                JList source = (JList)evt.getSource();
+      			                String selected = source.getSelectedValue().toString();
+      			                
+      			                JTextArea area = new JTextArea();
+      			                
+      			               JTextArea area2 = new JTextArea();
+      			               
+      			               area.append(selected);
+      			               area2.append("Détail technique: "+ "\n" + selected  );
+      			               pannel2.add(area);
+      			               pannel2.add(area2);
+      			            
+      			               area.setBounds(200,2,200,40);
+      			               area.setFont(area.getFont().deriveFont(30f));
+      			               area2.setBounds(2,80,200,200);
+      			               area2.setFont(area2.getFont().deriveFont(12f));
+      			               fenetre3.setSize(300, 250);
+      			               fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+      			               fenetre3.setVisible(true);
+                				
+     			        	      }
+     			        	    });
+      			        
+      			        
+      			        
+         				 } 
+         			 
+         			 
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);
+             
+             
+             
+             
+             
+             JButton boutonc = new JButton("Nos Vols");
+             boutonc.addActionListener( new ActionListener() {
+         		public void actionPerformed(ActionEvent e) {
+         			
+         			 try {
+         				 
+         				 JList listvol; 
+         			     
+       			        String week[]= { "0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"}; 
+    			            listvol= new JList(week); 
+       			        JScrollPane listScroller = new JScrollPane(listvol);
+
+       			        onglet5.add(listScroller);
+       			        listScroller.setBounds(450,150,200,120);
+       			        
+       			        
+       			      listvol.addListSelectionListener(new ListSelectionListener() {
+    			           
+  			        	 public void valueChanged(ListSelectionEvent evt) {
+  			        		JFrame fenetre3 = new JFrame("Information vol");
+   			            	
+   			            	JPanel pannel2 = new JPanel();
+   			                pannel2.setLayout(null);
+   			                pannel2.setPreferredSize(new Dimension(400, 400));
+   			                
+   			                JList listvoldate; 
+          			        
+   			                JList source = (JList)evt.getSource();
+   			                String selected = source.getSelectedValue().toString();
+   			                int i = Integer.parseInt(selected); 
+            				    ArrayList bonjour1 = FonctionnAir.getMapVol().get(i);
+            				    
+   			                
+            				    Object week3[] = bonjour1.toArray();
+            				
+         				     
+      			            listvoldate= new JList(week3); 
+         			        JScrollPane listScroller = new JScrollPane(listvoldate);
+
+         			        pannel2.add(listScroller);
+         			        listScroller.setBounds(10,10,370,370);
+   			                
+   			                fenetre3.add(pannel2);
+   			                
+   			                
+   			                fenetre3.setSize(401, 401);
+   			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+   			                fenetre3.setVisible(true);
+             				
+  			        	      }
+  			        	    });
+   			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+       			        
+          				 } 
+         				 
+         				  
+         			 catch (Exception ex) {
+         				 
+         				 ex.printStackTrace();
+         				 }
+         		}
+         		}
+         		);
+             
+             // ajout des boutons aux onglets
+             onglet1.add(bouton1);
+         	onglet1.add(bouton2);
+         	
+         	
+             onglet3.add(boutona);
+             onglet4.add(boutonb);
+             onglet4.add(boutone);
+             onglet5.add(boutonc);
+             
+             
+             // positionnement et dimensionnement manuel des boutons
+             bouton1.setBounds(200, 150, 200, 30);
+             bouton2.setBounds(200, 200, 200, 30);
+             
+             boutona.setBounds(200, 150, 200, 30);
+             boutonb.setBounds(200, 150, 200, 30);
+             boutonc.setBounds(200, 150, 200, 30);
+             boutone.setBounds(200, 380, 200, 30);
+            
+             
+             // quitter le programme lorsqu'on ferme la fenêtre
+             fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+              
+             
+             
+             
+             
+             // dimensionnement en affichage de la fenêtre
+             
+             fenetre.setSize(740, 700);
+            
+     		fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+         }
+         });
+            
+	   Vol vol1 = new Vol(CDG, City, 10);
+	   FonctionnAir.addVol(vol1);
+	   System.out.println(FonctionnAir.getMapVol().get(10));
+	   
+	   
+             
+  
     }
 }
