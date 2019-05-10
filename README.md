@@ -28,4 +28,5 @@ Enfin cliquez sur **'Finish'**.
 Double cliquez sur le dossier **'ProjetJava'**, puis sur **'packageProjet'**, puis sur **'Main'**.
 Une fois le main ouvert sur l'éditeur, cliquez sur le bouton  ![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20d%E2%80%99%C3%A9cran%203.png) en haut à gauche.
 
-
+Vous pouvez alors utiliser l'application.
+Celle-ci contient deux interfaces principales, Compagnie et Voyageur.
