@@ -32,7 +32,7 @@ Vous pouvez alors utiliser l'application.
 
 ATTENTION : Lors de chaque clic menant a l'apparition d'une fenêtre, cette dernière va apparaître en double, il se peut de plus que la deuxième fenêtre passe en arrière et que les fenêtres s'empilent les unes sur les autres (ceci n'est pas gênant en soi mais nous n'avons pas réussi à résoudre le problème...)
 
-Cliquez sur "Entrer dans l'application pour débuter.
+Cliquez sur **"Entrer dans l'application"** pour débuter.
 Celle-ci contient deux interfaces principales, Compagnie et Voyageur.
 
 Fenêtre compagnie :
@@ -40,7 +40,7 @@ Fenêtre compagnie :
   
   
   Dans l'onglet aeroport : 
-    Cliquez sur "Afficher nos aeroports", vous aurez ensuite besoin de cliquer "dans le vide" (sur un endroit vide de l'interface) pour que le menu déroulant s'affiche. 
+    Cliquez sur **"Afficher nos aeroports"**, vous aurez ensuite besoin de cliquer "dans le vide" (sur un endroit vide de l'interface) pour que le menu déroulant s'affiche. 
     La liste de tous les aeroports est disponible, vous pouvez cliquer sur n'importe lequel pour faire apparaître les dates.
     Vous pouvez ensuite choisir une date pour faire apparaître la liste des avions disponibles dans l'aeroport concerné a la date choisie.
     
@@ -50,7 +50,7 @@ Fenêtre compagnie :
     Le deuxième bouton affiche quant à lui les différents appareils, et vous pouvez observer les détails techniques en cliquant dessus.
     
   Dans l'onglet vol :
-    Cliquez sur "nos vols" puis dans le vide pour afficher les différents dates disponibles.
+    Cliquez sur **"nos vols"** puis dans le vide pour afficher les différents dates disponibles.
     Vous pouvez ensuite choisir une date pour afficher la liste des vols prévus à cette date ainsi que leurs détails.
     Initialement, aucun vol n'a été préalablement enregistré donc toutes les listes de vols sont vides, néanmoins nous avons manuellement rentré un vol dans le main pour pouvoir observer cette partie de l'interface, le vol est programmé au jour 10 comme vu ci-dessous.
     
@@ -59,16 +59,15 @@ Fenêtre compagnie :
     
 Fenêtre voyageur : 
   Deux boutons sont à disposition.
-  "Identification" ouvre une fenêtre où un voyageur peut entrer ses informations : Nom, Prénon, Date de naissance et poids (initialement 20kg). Entrez toutes vos informations puis appuyer sur la touche entrée de votre clavier.
+  **"Identification"** ouvre une fenêtre où un voyageur peut entrer ses informations : Nom, Prénon, Date de naissance et poids (initialement 20kg). Entrez toutes vos informations puis appuyer sur la touche entrée de votre clavier.
   Une fenêtre de bienvenu s'ouvre.
   
-  Le bouton "Déja enregistré" permet quant à lui d'afficher la liste des voyageurs qui se sont déjà enregistré.
+  Le bouton **"Déja enregistré"** permet quant à lui d'afficher la liste des voyageurs qui se sont déjà enregistré.
   Initialement celui-ci est vide mais nous avons instancié manuellement un voyageur pour pouvoir observer cette partie.
   
 ![Screenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/capture_voyageur.png)
 
-Pour la suite, nous n'avons pas pu finir l'interface et de nombreuses fonctions ne sont pas disponibles sur cette dernière.
-Il est donc possible d'effectuer ces actions manuellement sur le main. 
+
     
 
 
