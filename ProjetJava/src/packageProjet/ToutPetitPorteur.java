@@ -3,8 +3,8 @@ package packageProjet;
 
 public class ToutPetitPorteur extends CourtesDistances{
 	
-
 	/**
+	 * constructeur de la classe ToutPetitPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param rayondaction
@@ -19,10 +19,4 @@ public class ToutPetitPorteur extends CourtesDistances{
 		this.setPrixkm(prixkm);
 	}
 	
-	
-	
-	
-	
-	
-
 }

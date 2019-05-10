@@ -4,8 +4,8 @@ package packageProjet;
 
 public class MiniPorteur extends CourtesDistances{
 	
-
 	/**
+	 * constructeur de la classe MiniPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param rayondaction

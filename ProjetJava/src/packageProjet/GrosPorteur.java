@@ -4,6 +4,7 @@ package packageProjet;
 public class GrosPorteur extends LongCourrier {
 
 	/**
+	 * constructeur de la classe GrosPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param rayondaction

@@ -13,11 +13,11 @@ public class Vol {
  	private ArrayList<Voyageur> listVoyageur;
  	private ArrayList<Boolean> listPlaces;
  	private int date;
- 	private static int CPT_VOL = 0;
+ 	private static int CPT_VOL = 0;//même chose que pour l'identifiant du voyageur.
  	
  	
  	
-
+//constructeur du Vol
 	public Vol(Aeroport D, Aeroport A, int date) {
  		CPT_VOL ++;
  		this.idVol = CPT_VOL;
@@ -29,7 +29,7 @@ public class Vol {
  		
  	}
  	
- 	
+	//Methodes de modification(set) et de renvoi(get) des attributs de Vol
 	/**
 	 * @return the idVol
 	 */
@@ -48,14 +48,12 @@ public class Vol {
 	public Avion getAvion() {
 		return avion;
 	}
-
 	/**
 	 * @return the equipage
 	 */
 	public Equipage getEquipage() {
 		return equipage;
 	}
-	
 	/**
 	 * @return the aeroportD
 	 */
@@ -80,23 +78,26 @@ public class Vol {
 	public void setAeroportA(Aeroport aeroportA) {
 		this.aeroportA = aeroportA;
 	}
-	
+	/**
+	 * 
+	 * @return la liste des places occupées  et non occupées
+	 */
 	public List<Boolean> getListplaces() {
 		return this.listPlaces;
 	}
-	
+	/**
+	 * 
+	 * @param listPlaces
+	 */
 	public void setListplaces(ArrayList<Boolean> listPlaces) {
 		this.listPlaces = listPlaces;
 	}
-	
-	
 	/**
 	 * @return the listVoyageur
 	 */
 	public ArrayList<Voyageur> getListVoyageur() {
 		return listVoyageur;
 	}
-
 	/**
 	 * @return the date
 	 */
@@ -109,9 +110,20 @@ public class Vol {
 	public void setDate(int date) {
 		this.date = date;
 	} 
-	
-
+	/**
+	 * @param avion l'avion que l'on affrète au vol
+	 */
+	public void addAvion(Avion avion) {
+		this.avion = avion;
+	}
+	/**
+	 * @param equipage l'équipage que l'on affrète au vol 
+	 */
+	public void addEquipage(Equipage equipage) {
+		this.equipage = equipage;
+	}
  	
+	
 	/**
 	 * @param v le voyageur que l'on ajoute a la liste des passagers du vol
 	 */
@@ -121,7 +133,7 @@ public class Vol {
 	
 	/**
 	 * 
-	 * @return
+	 * @return la distance d'un aéroport à un autre en kilomètres
 	 */
     public double calculDistance() {
     	double R=6378137;
@@ -141,25 +153,16 @@ public class Vol {
     }
     
 	
-	
-	/**
-	 * @param avion l'avion que l'on affrète au vol
-	 */
-	public void addAvion(Avion avion) {
-		this.avion = avion;
-	}
-	
-	/**
-	 * @param equipage l'équipage que l'on affrète au vol 
-	 */
-	public void addEquipage(Equipage equipage) {
-		this.equipage = equipage;
-	}
-
+	//Methode toString de la classe Vol
  	public String toString(){
  		return "Vol "+this.idVol+", départ le "+Integer.toString(this.date)+" \n depuis " + this.aeroportD.getNom()+", "+this.aeroportD.getVille()+", "+this.aeroportD.getPays()+",\n destination " + this.aeroportA.getNom()+", "+this.aeroportA.getVille()+", "+this.aeroportA.getPays() + "\n " + this.getAvion();
  	}
  
+ 	/**
+ 	 * Méthode qui calcule le bénéfice que la compagnie se fait sur le vol
+ 	 * en soustrayant la somme des prix des billets par le coût total du voyage pour la compagnie.
+ 	 * @return un flottant pouvant être négatif.
+ 	 */
  	public double benefice() {
  		double prixBillet = 0;
  		double coutTotal = this.calculDistance() * this.getAvion().getPrixkm();

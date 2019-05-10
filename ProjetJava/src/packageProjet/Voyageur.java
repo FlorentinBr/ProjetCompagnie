@@ -5,16 +5,19 @@ import java.util.Scanner;
 
 public class Voyageur {
 	
+	
+	
 	private int idVoyageur;
 	private String nom;
 	private String prenom;
 	private String dateNaissance;
 	private double poidsBagage;
-	private static int CPT_VOY = 0;
+	private static int CPT_VOY = 0;//vas permettre de fabriquer les identifiants des voyageurs 
 	
 	
 	
 	/**
+	 * Constructeur de la classe Voyageur
 	 * @param idVoyageur
 	 * @param nom
 	 * @param prenom
@@ -22,14 +25,16 @@ public class Voyageur {
 	 * @param poidsBagage
 	 */
 	public Voyageur(String nom, String prenom, String dateNaissance, double poidsBagage) {
-		CPT_VOY++;
-		this.idVoyageur = CPT_VOY;
+		CPT_VOY++;//a chaque nouveau voyageur le compteur ajoute +1
+		this.idVoyageur = CPT_VOY;//ainsi les voyageurs ont chacun un identifiant entier différent
 		this.nom = nom;
 		this.prenom = prenom;
 		this.dateNaissance = dateNaissance;
 		this.poidsBagage = poidsBagage;
 	}
 	
+	
+	//Methodes de modification(set) et de renvoi(get) des attributs de Voyageurs
 	
 	/**
 	 * @return the idVoyageur
@@ -92,16 +97,37 @@ public class Voyageur {
 		this.poidsBagage = poidsBagage;
 	}
 	
+	
+	/**
+	 * Méthode de calcul du prix de la réservation en fonctionde plusieurs parametres:
+	 * -La distance parcourue
+	 * -Le coefficient propre à l'avion. Nous l'avons determiné arbitrairement mais il 
+	 *     serait calculé en fonction de ce que l'avion coûte à l'achat et en entretient afin de le rentabiliser
+	 * -Le prix au kilomètre qui représente la consomation d'essence à amortir de l'avion et qui ne rentre pas en
+	 *     compte dans le coefficient, car le prix du carburant n'est pas propre à l'avion. 
+	 *-Le remplissage de l'avion. Plus l'avion est rempli plus le prix augmente.
+	 *-Le poid des bagages   
+	 * @param v
+	 * @return
+	 */
 	public double calculPrix(Vol v) {
 		return (v.calculDistance() * 0.1) * v.getAvion().getCoeff() + v.getAvion().getCapacitee() /(v.getAvion().getCapacitee() - v.getListVoyageur().size()) + this.getPoidsBagage();
 	}
 
-
+    /**
+     *Méthode to String de la Classe Voyageur
+     */
 	public String toString() {
 		return "Identifiant: "+this.idVoyageur+"\n Nom: "+this.nom+"\n Prenom:"+this.prenom+"\n date de naissance: "+this.dateNaissance+"\n Poid des bagages: "+this.poidsBagage;
 	}
 	
-	
+	/**
+	 * Méthode grâce à laquelle le voyageur peut chercher un vol disponible en entrant la date de son choix,
+	 * son lieu de départ et sa destination.
+	 * @param c la compagnie aériene
+	 * @return retourne la liste des vols disponibles dans un intervale de cinq jours (le troisième étant le jours désiré)
+	 * retourne, si aucun avion n'est disponible dans cet intervalle de temps, un message. 
+	 */
 	public ArrayList<Vol> rechercherVol(Compagnie c) {
 		
 		Scanner scan =new Scanner(System.in);
@@ -144,5 +170,4 @@ public class Voyageur {
 	}
 	
 	
-
 }

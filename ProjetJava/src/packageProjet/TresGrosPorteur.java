@@ -5,6 +5,7 @@ public class TresGrosPorteur extends LongCourrier {
 	
 	
 	/**
+	 * constructeur de la classe TresGrosPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param capaciteeMax

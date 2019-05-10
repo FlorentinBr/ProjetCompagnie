@@ -5,25 +5,22 @@ import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * @author formation
- *
- */
+
 public abstract class Avion {
 	
 	private String matricule;
 	public Modele modele;
-	private Map<Integer, Aeroport> mapLocalisation;
-	private double rayondaction;
-	private double prixkm;
-	private List<Vol> listVol;
-	private double coeff;
-	private int capacitee;
+	private Map<Integer, Aeroport> mapLocalisation;//localisation de l'avion
+	private double rayondaction;//portée maximale de l'avion en kilomètres
+	private double prixkm;//prix au kilomètre de l'avion en vol ( prix de la consommation de carburant)
+	private List<Vol> listVol;// list des vols 
+	private double coeff;//coefficient de rentabilité de l'avion (peut être calculé en fonction de prix d'achat et d'entretient)
+	private int capacitee; //nombre maximum de passagers
 	
 	
 	
 	
-	
+	//constructeur
 	public Avion(String matricule, Modele modele) {
 		this.matricule = matricule;
 		this.modele = modele;
@@ -31,85 +28,53 @@ public abstract class Avion {
 		this.mapLocalisation = new HashMap<Integer, Aeroport>();
 	}
 
-	
+	//Methodes de modification(set) et de renvoi(get) des attributs de Avion
 	public String getMatricule() {
 		return matricule;
 	}
-	
-	public void setMatricule(String matricule) {
-		this.matricule = matricule;
-	}
-	
 	public Modele getModele() {
 		return modele;
 	}
-	
-	public void setModele(Modele modele) {
-		this.modele = modele;
-	}
-	
 	public Map<Integer, Aeroport> getMapLocalisation() {
 		return mapLocalisation;
 	}
-	
 	public void setMapLocalisation(Map<Integer, Aeroport> mapLocalisation) {
 		this.mapLocalisation = mapLocalisation;
 	}
-
-	
 	public double getRayondaction() {
 		return rayondaction;
 	}
-	
-	public void setRayondaction(double rayondaction) {
-		this.rayondaction = rayondaction;
-	}
-	
 	public double getPrixkm() {
 		return prixkm;
 	}
-	
-	public void setPrixkm(double prixkm) {
-		this.prixkm = prixkm;
-	}
-	
-
 	public double getCoeff() {
 		return coeff;
 	}
-	
-	public void setCoeff(double coeff) {
-		this.coeff = coeff;
-	}
-	
 	public double getCapacitee() {
 		return capacitee;
 	}
-	
-	public void setCapacitee(int capacitee) {
-		this.capacitee = capacitee;
-	}
-	
-
-	/**
-	 * @return the listVol
-	 */
 	public List<Vol> getListVol() {
 		return listVol;
 	}
-
-
-	/**
-	 * @param listVol the listVol to set
-	 */
-	public void setListVol(List<Vol> listVol) {
+    public void setListVol(List<Vol> listVol) {
 		this.listVol = listVol;
 	}
+	public void setCapacitee(int c) {
+		this.capacitee=c;
+	}
+	public void setCoeff(double c) {
+		this.coeff=c;
+	}
+	public void setPrixkm(double c) {
+		this.prixkm=c;
+	}
+	public void setRayondaction(double c) {
+		this.rayondaction=c;
+	}
 	
+    //methode toString de la classe Avion
 	public String toString(){
  		return "\n Appareil "+this.matricule+", de type "+ modele.toString() +", \n Rayon d'action: "+ this.getRayondaction() +"\n prix au km: "+ this.getPrixkm() +"\n Capacité d'acceuil: " + this.getCapacitee();
  	}
-
-
 	
 }

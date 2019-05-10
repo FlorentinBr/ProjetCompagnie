@@ -6,6 +6,7 @@ public class MoyenPorteur extends MoyenCourrier {
 	
 	
 	/**
+	 * constructeur de la classe MoyenPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param rayondaction

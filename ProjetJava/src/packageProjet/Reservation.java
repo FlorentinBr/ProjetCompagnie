@@ -16,6 +16,7 @@ public class Reservation {
 	
 	
 	/**
+	 * Constructeur de la Reservation
 	 * @param idReservation
 	 * @param vol
 	 * @param listVoyageur
@@ -40,6 +41,7 @@ public class Reservation {
 		}
 	}
 
+	//Methodes de modification(set) et de renvoi(get) des attributs de Voyageurs
 	
 	/**
 	 * @return the idReservation
@@ -77,7 +79,6 @@ public class Reservation {
 	public void setListVoyageur(ArrayList<Voyageur> listVoyageur) {
 		this.listVoyageur = listVoyageur;
 	}
-
 	/**
 	 * @return the prix
 	 */

@@ -3,11 +3,9 @@ package packageProjet;
 
 
 public abstract class LongCourrier extends Avion{
-	
 
-	
-	
 	/**
+	 * constructeur de la classe LongCourrier
 	 * @param matricule
 	 * @param modele
 	 * @param localisation

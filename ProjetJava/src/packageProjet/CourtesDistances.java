@@ -3,10 +3,8 @@ package packageProjet;
 
 public abstract class CourtesDistances extends Avion{
 
-	
-	
-	
 	/**
+	 * constructeur de la classe CourtesDistances
 	 * @param matricule
 	 * @param modele
 	 * @param localisation

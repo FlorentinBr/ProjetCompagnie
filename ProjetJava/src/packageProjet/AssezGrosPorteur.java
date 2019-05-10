@@ -3,8 +3,8 @@ package packageProjet;
 
 public class AssezGrosPorteur extends MoyenCourrier {
 	
-
 	/**
+	 * constructeur de la classe AssezGrosPorteur
 	 * @param matricule
 	 * @param modele
 	 * @param rayondaction
