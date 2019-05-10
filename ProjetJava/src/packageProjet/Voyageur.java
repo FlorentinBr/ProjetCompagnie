@@ -169,5 +169,48 @@ public class Voyageur {
 		
 	}
 	
+	/**
+	 * 
+	 * @param c
+	 * @param v
+	 * @return
+	 */
+	public Reservation reserver(Compagnie c ,Vol v) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Nombre de voyageur ?");
+		int nbVoy = scan.nextInt();
+		scan.nextLine();
+		
+		scan.close();
+		
+		ArrayList<Voyageur> listVoy = new ArrayList<Voyageur>();
+		for(int i = 0; i < nbVoy; i++) {
+			Voyageur voy = c.identification();
+			listVoy.add(voy);
+		}
+		
+		Reservation res = new Reservation(v, listVoy);
+		
+		System.out.println("La reservation vous coutera :" + res.getPrix() + "€" + "\n Confirmer la commande (oui/non)");
+		Scanner scan2 = new Scanner(System.in);
+		String rep = scan.next();
+		scan.nextLine();
+		scan.close();
+		if(rep.equals("oui")) {
+			return res;
+		}
+		else{
+			return null;
+		}
+	
+	}
+	
+	public void annulerReservation(Compagnie c, Vol v) {
+		v.getListVoyageur().remove(this);
+		System.out.println("Vous serez remboursé de :" + this.calculPrix(v));
+		
+	}
 	
 }

@@ -27,7 +27,6 @@ public class Reservation {
 	public Reservation(Vol vol, ArrayList<Voyageur> listVoyageur) {
 		this.idReservation = vol.getListVoyageur().size();
 		this.vol = vol;
-		this.listVoyageur = new ArrayList<Voyageur>();
 		this.dateVoyage = vol.getDate();
 		this.aeroportD = vol.getAeroportD();
 		this.aeroportA = vol.getAeroportA();

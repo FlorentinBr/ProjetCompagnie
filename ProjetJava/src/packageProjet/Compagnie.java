@@ -156,8 +156,24 @@ public class Compagnie {
 	}
 	
 	/**
+	 * Permet de récuperer la liste des voyageurs participant à un vol pour une éventuelle modification
+	 * @return la liste de tous les voyageurs d'étant deja identifié
+	 */
+	public ArrayList<Voyageur> voyageurEnregistre() {
+		ArrayList<Voyageur> listVoy = new ArrayList<Voyageur>();
+		for(int i = 0; i<30; i++) {
+			for(Vol vol : this.getMapVol().get(i)) {
+				for(Voyageur voy : vol.getListVoyageur()) {
+					listVoy.add(voy);
+				}
+			}
+		}
+		return listVoy;
+	}
+	
+	/**
 	 * permet de créer un nouveau voyageur en fonction des informations qu'il donne
-	 * @return un noveau voyageur
+	 * @return un nouveau voyageur
 	 */
 	public Voyageur identification() {
 		Scanner scan = new Scanner(System.in);
