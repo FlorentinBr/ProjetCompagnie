@@ -5,7 +5,6 @@ package packageProjet;
  * https://www.jmdoudoux.fr/java/dej/chap-swing.htm
  */
 
-import packageProjet.*;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Desktop;
@@ -1300,24 +1299,562 @@ public abstract class Main {
     	Minsk.getMapAvion().put(i, list50);
     }
     
-    ArrayList<Equipage> listequip = new ArrayList<Equipage>();
-    listequip.add(E1);
-    ArrayList<Equipage> listequip2 = new ArrayList<Equipage>();
-    listequip2.add(E2);
+    
+    ArrayList<Equipage> le1 = new ArrayList<Equipage>();
+    le1.add(E1);
+    le1.add(E2);
+    le1.add(E6);
+    le1.add(E4);
+    le1.add(E5);
+    le1.add(E6);
     for(int i = 0; i<30; i++) {
-    	CDG.getMapEquipage().put(i, listequip);
-    }
-    for(int i = 0; i<30; i++) {
-    	City.getMapEquipage().put(i, listequip2);
+    	CDG.getMapEquipage().put(i, le1);
     }
     
-    
-    
+    ArrayList<Equipage> le2 = new ArrayList<Equipage>();
+    le2.add(E7);
+    le2.add(E8);
+    le2.add(E9);
+    le2.add(E10);
+    le2.add(E11);
+    le2.add(E12);
     for(int i = 0; i<30; i++) {
-    	ArrayList<Vol> listvol = new ArrayList<Vol>();
-    	FonctionnAir.getMapVol().put(i, listvol);
+    	Orly.getMapEquipage().put(i, le2);
     }
-	 
+   
+    ArrayList<Equipage> le3 = new ArrayList<Equipage>();
+    le3.add(E13);
+    le3.add(E14);
+    le3.add(E15);
+    le3.add(E16);
+    le3.add(E17);
+    le3.add(E18);
+    for(int i = 0; i<30; i++) {
+    	Rennes.getMapEquipage().put(i, le3);
+    }
+    
+    ArrayList<Equipage> le4 = new ArrayList<Equipage>();
+    le4.add(E19);
+    le4.add(E20);
+    le4.add(E21);
+    le4.add(E22);
+    le4.add(E23);
+    le4.add(E24);
+    for(int i = 0; i<30; i++) {
+    	Marseille.getMapEquipage().put(i, le4);
+    }
+    
+    ArrayList<Equipage> le5 = new ArrayList<Equipage>();
+    le5.add(E25);
+    le5.add(E26);
+    le5.add(E27);
+    le5.add(E28);
+    le5.add(E29);
+    le5.add(E30);
+    for(int i = 0; i<30; i++) {
+    	Lyon.getMapEquipage().put(i, le5);
+    }
+    
+    ArrayList<Equipage> le6 = new ArrayList<Equipage>();
+    le6.add(E31);
+    le6.add(E32);
+    le6.add(E33);
+    le6.add(E34);
+    le6.add(E35);
+    le6.add(E36);
+    for(int i = 0; i<30; i++) {
+    	Reykjavik.getMapEquipage().put(i, le6);
+    }
+    
+    ArrayList<Equipage> le7 = new ArrayList<Equipage>();
+    le7.add(E37);
+    le7.add(E38);
+    le7.add(E39);
+    le7.add(E40);
+    le7.add(E41);
+    le7.add(E42);
+    for(int i = 0; i<30; i++) {
+    	Heathrow.getMapEquipage().put(i, le7);
+    }
+    
+    ArrayList<Equipage> le8 = new ArrayList<Equipage>();
+    le8.add(E43);
+    le8.add(E44);
+    le8.add(E45);
+    le8.add(E46);
+    le8.add(E47);
+    le8.add(E48);
+    for(int i = 0; i<30; i++) {
+    	City.getMapEquipage().put(i, le8);
+    }
+  
+    ArrayList<Equipage> le9 = new ArrayList<Equipage>();
+    le9.add(E49);
+    le9.add(E50);
+    le9.add(E51);
+    le9.add(E52);
+    le9.add(E53);
+    le9.add(E54);
+    for(int i = 0; i<30; i++) {
+    	Ynukovo.getMapEquipage().put(i, le9);
+    }
+    
+    ArrayList<Equipage> le10 = new ArrayList<Equipage>();
+    le10.add(E55);
+    le10.add(E56);
+    le10.add(E57);
+    le10.add(E58);
+    le10.add(E59);
+    le10.add(E60);
+    for(int i = 0; i<30; i++) {
+    	Sheremtyevo.getMapEquipage().put(i, le10);
+    }
+    
+    ArrayList<Equipage> le11 = new ArrayList<Equipage>();
+    le11.add(E61);
+    le11.add(E62);
+    le11.add(E63);
+    le11.add(E64);
+    le11.add(E65);
+    le11.add(E66);
+    for(int i = 0; i<30; i++) {
+    	Barajas.getMapEquipage().put(i, le11);
+    }
+    
+    ArrayList<Equipage> le12 = new ArrayList<Equipage>();
+    le12.add(E67);
+    le12.add(E68);
+    le12.add(E69);
+    le12.add(E70);
+    le12.add(E71);
+    le12.add(E72);
+    for(int i = 0; i<30; i++) {
+    	CuatroVientos.getMapEquipage().put(i, le12);
+    }
+    
+    ArrayList<Equipage> le13 = new ArrayList<Equipage>();
+    le13.add(E73);
+    le13.add(E74);
+    le13.add(E75);
+    le13.add(E76);
+    le13.add(E78);
+    le13.add(E79);
+    for(int i = 0; i<30; i++) {
+    	Ciampino.getMapEquipage().put(i, le13);
+    }
+    
+    ArrayList<Equipage> le14 = new ArrayList<Equipage>();
+    le14.add(E80);
+    le14.add(E81);
+    le14.add(E82);
+    le14.add(E83);
+    le14.add(E84);
+    le14.add(E85);
+    for(int i = 0; i<30; i++) {
+    	Fiumicino.getMapEquipage().put(i, le14);
+    }
+    
+    ArrayList<Equipage> le15 = new ArrayList<Equipage>();
+    le15.add(E86);
+    le15.add(E87);
+    le15.add(E88);
+    le15.add(E89);
+    le15.add(E90);
+    le15.add(E91);
+    for(int i = 0; i<30; i++) {
+    	Barcelona.getMapEquipage().put(i, le15);
+    }
+    
+    ArrayList<Equipage> le16 = new ArrayList<Equipage>();
+    le16.add(E92);
+    le16.add(E93);
+    le16.add(E94);
+    le16.add(E95);
+    le16.add(E96);
+    le16.add(E97);
+    for(int i = 0; i<30; i++) {
+    	Gerona.getMapEquipage().put(i, le16);
+    }
+    
+    ArrayList<Equipage> le17 = new ArrayList<Equipage>();
+    le17.add(E98);
+    le17.add(E99);
+    le17.add(E100);
+    le17.add(E101);
+    le17.add(E102);
+    le17.add(E103);
+    for(int i = 0; i<30; i++) {
+    	Borispol.getMapEquipage().put(i, le17);
+    }
+    
+    ArrayList<Equipage> le18 = new ArrayList<Equipage>();
+    le18.add(E104);
+    le18.add(E105);
+    le18.add(E106);
+    le18.add(E107);
+    le18.add(E108);
+    le18.add(E109);
+    for(int i = 0; i<30; i++) {
+    	Zhulyany.getMapEquipage().put(i, le18);
+    }
+    
+    ArrayList<Equipage> le19 = new ArrayList<Equipage>();
+    le19.add(E110);
+    le19.add(E111);
+    le19.add(E112);
+    le19.add(E113);
+    le19.add(E114);
+    le19.add(E115);
+    for(int i = 0; i<30; i++) {
+    	Okecie.getMapEquipage().put(i, le19);
+    }
+    
+    ArrayList<Equipage> le20 = new ArrayList<Equipage>();
+    le20.add(E116);
+    le20.add(E117);
+    le20.add(E118);
+    le20.add(E119);
+    le20.add(E120);
+    le20.add(E121);
+    for(int i = 0; i<30; i++) {
+    	Bemowo.getMapEquipage().put(i, le20);
+    }
+    
+    ArrayList<Equipage> le21 = new ArrayList<Equipage>();
+    le21.add(E122);
+    le21.add(E123);
+    le21.add(E124);
+    le21.add(E125);
+    le21.add(E126);
+    le21.add(E127);
+    for(int i = 0; i<30; i++) {
+    	Bromma.getMapEquipage().put(i, le21);
+    }
+    
+    ArrayList<Equipage> le22 = new ArrayList<Equipage>();
+    le22.add(E128);
+    le22.add(E129);
+    le22.add(E130);
+    le22.add(E131);
+    le22.add(E132);
+    le22.add(E133);
+    for(int i = 0; i<30; i++) {
+    	Barkarby.getMapEquipage().put(i, le22);
+    }
+    
+    ArrayList<Equipage> le23 = new ArrayList<Equipage>();
+    le23.add(E134);
+    le23.add(E135);
+    le23.add(E136);
+    le23.add(E137);
+    le23.add(E138);
+    le23.add(E139);
+    for(int i = 0; i<30; i++) {
+    	Oslo.getMapEquipage().put(i, le23);
+    }
+    
+    ArrayList<Equipage> le24 = new ArrayList<Equipage>();
+    le24.add(E140);
+    le24.add(E141);
+    le24.add(E142);
+    le24.add(E143);
+    le24.add(E145);
+    le24.add(E146);
+    for(int i = 0; i<30; i++) {
+    	Helsinki.getMapEquipage().put(i, le24);
+    }
+    
+    ArrayList<Equipage> le25 = new ArrayList<Equipage>();
+    le25.add(E147);
+    le25.add(E148);
+    le25.add(E149);
+    le25.add(E150);
+    le25.add(E151);
+    le25.add(E152);
+    for(int i = 0; i<30; i++) {
+    	Porto.getMapEquipage().put(i, le25);
+    }
+    
+    ArrayList<Equipage> le26 = new ArrayList<Equipage>();
+    le26.add(E153);
+    le26.add(E154);
+    le26.add(E155);
+    le26.add(E156);
+    le26.add(E157);
+    le26.add(E158);
+    for(int i = 0; i<30; i++) {
+    	Lisbonne.getMapEquipage().put(i, le26);
+    }
+    
+    ArrayList<Equipage> le27 = new ArrayList<Equipage>();
+    le27.add(E159);
+    le27.add(E160);
+    le27.add(E161);
+    le27.add(E162);
+    le27.add(E163);
+    le27.add(E164);
+    for(int i = 0; i<30; i++) {
+    	Munich.getMapEquipage().put(i, le27);
+    }
+    
+    ArrayList<Equipage> le28 = new ArrayList<Equipage>();
+    le28.add(E165);
+    le28.add(E166);
+    le28.add(E167);
+    le28.add(E168);
+    le28.add(E169);
+    le28.add(E170);
+    for(int i = 0; i<30; i++) {
+    	Dublin.getMapEquipage().put(i, le28);
+    }
+    
+    ArrayList<Equipage> le29 = new ArrayList<Equipage>();
+    le29.add(E171);
+    le29.add(E172);
+    le29.add(E173);
+    le29.add(E174);
+    le29.add(E175);
+    le29.add(E176);
+    for(int i = 0; i<30; i++) {
+    	Zagreb.getMapEquipage().put(i, le29);
+    }
+    
+    ArrayList<Equipage> le30 = new ArrayList<Equipage>();
+    le30.add(E177);
+    le30.add(E178);
+    le30.add(E179);
+    le30.add(E180);
+    le30.add(E181);
+    le30.add(E182);
+    for(int i = 0; i<30; i++) {
+    	Belgrade.getMapEquipage().put(i, le30);
+    }
+    
+    ArrayList<Equipage> le31 = new ArrayList<Equipage>();
+    le31.add(E183);
+    le31.add(E184);
+    le31.add(E185);
+    le31.add(E186);
+    le31.add(E187);
+    le31.add(E188);
+    for(int i = 0; i<30; i++) {
+    	Sarajevo.getMapEquipage().put(i, le31);
+    }
+    
+    ArrayList<Equipage> le32 = new ArrayList<Equipage>();
+    le32.add(E189);
+    le32.add(E190);
+    le32.add(E191);
+    le32.add(E192);
+    le32.add(E193);
+    le32.add(E194);
+    for(int i = 0; i<30; i++) {
+    	Tirana.getMapEquipage().put(i, le32);
+    }
+    
+    ArrayList<Equipage> le33 = new ArrayList<Equipage>();
+    le33.add(E195);
+    le33.add(E196);
+    le33.add(E197);
+    le33.add(E198);
+    le33.add(E199);
+    le33.add(E200);
+    for(int i = 0; i<30; i++) {
+    	Bucarest.getMapEquipage().put(i, le33);
+    }
+    
+    ArrayList<Equipage> le34 = new ArrayList<Equipage>();
+    le34.add(E201);
+    le34.add(E202);
+    le34.add(E203);
+    le34.add(E204);
+    le34.add(E205);
+    le34.add(E206);
+    for(int i = 0; i<30; i++) {
+    	Budapest.getMapEquipage().put(i, le34);
+    }
+    
+    ArrayList<Equipage> le35 = new ArrayList<Equipage>();
+    le35.add(E207);
+    le35.add(E208);
+    le35.add(E209);
+    le35.add(E210);
+    le35.add(E211);
+    le35.add(E212);
+    for(int i = 0; i<30; i++) {
+    	Prague.getMapEquipage().put(i, le35);
+    }
+    
+    ArrayList<Equipage> le36 = new ArrayList<Equipage>();
+    le36.add(E213);
+    le36.add(E214);
+    le36.add(E215);
+    le36.add(E216);
+    le36.add(E217);
+    le36.add(E218);
+    for(int i = 0; i<30; i++) {
+    	Bruxelles.getMapEquipage().put(i, le36);
+    }
+    
+    ArrayList<Equipage> le37 = new ArrayList<Equipage>();
+    le37.add(E219);
+    le37.add(E220);
+    le37.add(E221);
+    le37.add(E222);
+    le37.add(E223);
+    le37.add(E224);
+    for(int i = 0; i<30; i++) {
+    	Amsterdam.getMapEquipage().put(i, le37);
+    }
+    
+    ArrayList<Equipage> le38 = new ArrayList<Equipage>();
+    le38.add(E225);
+    le38.add(E226);
+    le38.add(E227);
+    le38.add(E228);
+    le38.add(E229);
+    le38.add(E230);
+    for(int i = 0; i<30; i++) {
+    	Geneve.getMapEquipage().put(i, le38);
+    }
+    
+    ArrayList<Equipage> le39 = new ArrayList<Equipage>();
+    le39.add(E231);
+    le39.add(E232);
+    le39.add(E234);
+    le39.add(E233);
+    le39.add(E235);
+    le39.add(E236);
+    for(int i = 0; i<30; i++) {
+    	SaintPetersbourg.getMapEquipage().put(i, le39);
+    }
+    
+    ArrayList<Equipage> le40 = new ArrayList<Equipage>();
+    le40.add(E237);
+    le40.add(E238);
+    le40.add(E239);
+    le40.add(E240);
+    le40.add(E241);
+    le40.add(E242);
+    for(int i = 0; i<30; i++) {
+    	Talin.getMapEquipage().put(i, le40);
+    }
+    
+    ArrayList<Equipage> le41 = new ArrayList<Equipage>();
+    le41.add(E243);
+    le41.add(E244);
+    le41.add(E245);
+    le41.add(E246);
+    le41.add(E247);
+    le41.add(E248);
+    for(int i = 0; i<30; i++) {
+    	Riga.getMapEquipage().put(i, le41);
+    }
+  
+    ArrayList<Equipage> le42 = new ArrayList<Equipage>();
+    le42.add(E249);
+    le42.add(E250);
+    le42.add(E251);
+    le42.add(E252);
+    le42.add(E253);
+    le42.add(E254);
+    for(int i = 0; i<30; i++) {
+    	Vilnius.getMapEquipage().put(i, le42);
+    }
+    
+    ArrayList<Equipage> le43 = new ArrayList<Equipage>();
+    le43.add(E255);
+    le43.add(E256);
+    le43.add(E257);
+    le43.add(E258);
+    le43.add(E259);
+    le43.add(E260);
+    for(int i = 0; i<30; i++) {
+    	Copenhague.getMapEquipage().put(i, le43);
+    }
+    
+    ArrayList<Equipage> le44 = new ArrayList<Equipage>();
+    le44.add(E261);
+    le44.add(E262);
+    le44.add(E263);
+    le44.add(E264);
+    le44.add(E265);
+    le44.add(E266);
+    for(int i = 0; i<30; i++) {
+    	Milan.getMapEquipage().put(i, le44);
+    }
+  
+    ArrayList<Equipage> le45 = new ArrayList<Equipage>();
+    le45.add(E267);
+    le45.add(E268);
+    le45.add(E269);
+    le45.add(E270);
+    le45.add(E271);
+    le45.add(E272);
+    for(int i = 0; i<30; i++) {
+    	Athenes.getMapEquipage().put(i, le45);
+    }
+    
+    ArrayList<Equipage> le46 = new ArrayList<Equipage>();
+    le46.add(E273);
+    le46.add(E274);
+    le46.add(E275);
+    le46.add(E276);
+    le46.add(E277);
+    le46.add(E278);
+    for(int i = 0; i<30; i++) {
+    	Malte.getMapEquipage().put(i, le46);
+    }
+   
+    ArrayList<Equipage> le47 = new ArrayList<Equipage>();
+    le47.add(E279);
+    le47.add(E280);
+    le47.add(E281);
+    le47.add(E282);
+    le47.add(E283);
+    le47.add(E284);
+    for(int i = 0; i<30; i++) {
+    	Edimbourg.getMapEquipage().put(i, le47);
+    }
+   
+    ArrayList<Equipage> le48 = new ArrayList<Equipage>();
+    le48.add(E285);
+    le48.add(E286);
+    le48.add(E287);
+    le48.add(E288);
+    le48.add(E289);
+    le48.add(E290);
+    for(int i = 0; i<30; i++) {
+    	Istanboul.getMapEquipage().put(i, le48);
+    }
+    
+    ArrayList<Equipage> le49 = new ArrayList<Equipage>();
+    le49.add(E291);
+    le49.add(E292);
+    le49.add(E293);
+    le49.add(E294);
+    le49.add(E295);
+    le49.add(E296);
+    for(int i = 0; i<30; i++) {
+    	Poudlard.getMapEquipage().put(i, le49);
+    }
+    
+    ArrayList<Equipage> le50 = new ArrayList<Equipage>();
+    le50.add(E297);
+    le50.add(E298);
+    le50.add(E299);
+    le50.add(E300);
+    le50.add(E77);
+    le50.add(E144);
+    for(int i = 0; i<30; i++) {
+    	Minsk.getMapEquipage().put(i, le50);
+    }
+   
+
+	 for(int i = 0; i<30; i++) {
+		 ArrayList<Vol> listdesvols = new ArrayList<Vol>();
+		 FonctionnAir.getMapVol().put(i, listdesvols);
+	 }
 	 
 	 
 	 FonctionnAir.getListAeroport().add(CDG);
@@ -1923,10 +2460,6 @@ public abstract class Main {
 	 FonctionnAir.getListEquipage().add(E299);
 	 FonctionnAir.getListEquipage().add(E300);
 
-	
-				
-				
-					
 
 
 		// la création des objets graphiques est déléguée au thread de
@@ -2133,17 +2666,7 @@ public abstract class Main {
             		}
             		);	
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+              
                 
                 //boutons compagnie
                 
@@ -2152,11 +2675,11 @@ public abstract class Main {
             		public void actionPerformed(ActionEvent e) {
             			
             			 try {
-            				   JList listaeroport; 
+            				   JList<Aeroport> listaeroport; 
 			       
-         				   ArrayList bonjour = FonctionnAir.getListAeroport();
+         				   ArrayList<Aeroport> bonjour = FonctionnAir.getListAeroport();
          				   Object week[] = bonjour.toArray();
-         				   listaeroport= new JList(week); 
+         				   listaeroport = new JList(week); 
          			       JScrollPane listScroller = new JScrollPane(listaeroport);
 
          			       onglet3.add(listScroller);
@@ -2210,20 +2733,7 @@ public abstract class Main {
                 }
 
             		);	
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+
                 
                 
                 JButton boutonb = new JButton("Afficher nos avions");
@@ -2232,9 +2742,9 @@ public abstract class Main {
             			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
             			 try {
             				 
-            				 JList listavion; 
+            				 JList<Avion> listavion; 
        			       
-         				ArrayList bonjour = FonctionnAir.getListAvion();
+         				ArrayList<Avion> bonjour = FonctionnAir.getListAvion();
       				    Object week[] = bonjour.toArray(); 
    			            listavion= new JList(week); 
       			        JScrollPane listScroller = new JScrollPane(listavion);
@@ -2298,7 +2808,7 @@ public abstract class Main {
             			
             			 try {
             				 
-            				 JList listvol; 
+            				 JList<Vol> listvol; 
             			     
           			        String week[]= { "Rafale","CDG","Rennes", 
           			                         "Florentin","Blabla","Oslo","Nimbus","Airbus","heyheyhey","charles23","Autre avion", "f35", "f22","tomcat"}; 
@@ -2345,22 +2855,7 @@ public abstract class Main {
                 				
      			        	      }
      			        	    });
-      			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
-          			        
+    	        
              				 } 
             				 
             				  
@@ -2415,34 +2910,3 @@ public abstract class Main {
    	 System.out.println(FonctionnAir.getMapVol().get(0));
     }
 }
-
-	
-		
-		
-		
-		
-
-
-
-
-
-	 
-	 
-
-		
-
-
-
-	 
-	 
-	 
- 
-
-	
-	
-	
-	
-
-
-
-

@@ -130,9 +130,14 @@ public class Compagnie {
 				dispo.add(a);
 			}
 		}
-		for(Avion a : dispo) {
-			if(a.getCapacitee() < dispo.get(0).getCapacitee()) {
-				dispo.set(0, a);
+		if(dispo.isEmpty()) {
+			return null;
+		}
+		else {
+			for(Avion a : dispo) {
+				if(a.getCapacitee() < dispo.get(0).getCapacitee()) {
+					dispo.set(0, a);
+				}
 			}
 		}return dispo.get(0);
 		

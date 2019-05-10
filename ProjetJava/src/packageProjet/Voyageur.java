@@ -104,7 +104,7 @@ public class Voyageur {
 		
 		Scanner scan =new Scanner(System.in);
 		
-		System.out.println("Choix dans la date (jj/mm/aaaa)");
+		System.out.println("Choix de votre date (jj/mm/aaaa)");
 		int date =scan.nextInt();
 		scan.nextLine();
 		
@@ -129,8 +129,13 @@ public class Voyageur {
 			}
 		}
 		if(list.isEmpty()) {
-			Vol nouveauVol = new Vol(aeroportD, aeroportA, date);
-			list.add(nouveauVol);
+			try {
+				c.avionDispo(aeroportD, aeroportA, date);
+			}catch(NullPointerException e) {
+				System.out.println("Pas d'avion disponible pour un vol à cette date");
+				return null;
+			}
+
 		}
 		return list;
 		
