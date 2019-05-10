@@ -24,10 +24,8 @@ Une nouvelle fenêtre s'ouvre, cliquez sur **'Directory'** et allez chercher le 
 Enfin cliquez sur **'Finish'**.
 
 ## Utiliser l'application
-Dans le package 'interface'
 
+Double cliquez sur le dossier **'ProjetJava'**, puis sur **'packageProjet'**, puis sur **'Main'**.
+Une fois le main ouvert sur l'éditeur, cliquez sur le bouton vert en haut à gauche.
 
-
-
- 
 
