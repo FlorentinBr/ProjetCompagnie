@@ -25,4 +25,7 @@ Enfin cliquez sur **'Finish'**.
 
 ## Utiliser l'application
 
-Double cliquez sur le dossier **'ProjetJava'**
+Double cliquez sur le dossier **'ProjetJava'**, puis sur **'packageProjet'**, puis sur **'Main'**.
+Une fois le main ouvert sur l'éditeur, cliquez sur le bouton vert en haut à gauche.
+
+
