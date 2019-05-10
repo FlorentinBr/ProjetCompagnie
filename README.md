@@ -26,6 +26,6 @@ Enfin cliquez sur **'Finish'**.
 ## Utiliser l'application
 
 Double cliquez sur le dossier **'ProjetJava'**, puis sur **'packageProjet'**, puis sur **'Main'**.
-Une fois le main ouvert sur l'éditeur, cliquez sur le bouton vert en haut à gauche.![Srceenshot](https://github.com/FlorentinBr/ProjetCompagnie/blob/master/Capture%20d%E2%80%99%C3%A9cran%202.png)
+Une fois le main ouvert sur l'éditeur, cliquez sur le bouton  de  en haut à gauche.
 
 
