@@ -24,10 +24,5 @@ Une nouvelle fenêtre s'ouvre, cliquez sur **'Directory'** et allez chercher le 
 Enfin cliquez sur **'Finish'**.
 
 ## Utiliser l'application
-Dans le package 'interface'
 
-
-
-
- 
-
+Double cliquez sur le dossier **'ProjetJava'**
