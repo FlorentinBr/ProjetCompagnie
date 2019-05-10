@@ -118,7 +118,7 @@ public class Voyageur {
      *Méthode to String de la Classe Voyageur
      */
 	public String toString() {
-		return "Identifiant: "+this.idVoyageur+"\n Nom: "+this.nom+"\n Prenom:"+this.prenom+"\n date de naissance: "+this.dateNaissance+"\n Poid des bagages: "+this.poidsBagage;
+		return "Identifiant: "+this.idVoyageur+"\n Nom: "+this.nom+"\n Prenom:"+this.prenom+"\n date de naissance: "+this.dateNaissance+"\n Poids des bagages: "+this.poidsBagage;
 	}
 	
 	/**
@@ -196,8 +196,8 @@ public class Voyageur {
 		System.out.println("La reservation vous coutera :" + res.getPrix() + "€" + "\n Confirmer la commande (oui/non)");
 		Scanner scan2 = new Scanner(System.in);
 		String rep = scan.next();
-		scan.nextLine();
-		scan.close();
+		scan2.nextLine();
+		scan2.close();
 		if(rep.equals("oui")) {
 			return res;
 		}

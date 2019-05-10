@@ -49,7 +49,8 @@ public abstract class Main {
 	
 	
 
-	Compagnie FonctionnAir = new Compagnie();
+	Compagnie fonctionnAir = new Compagnie();
+	
 	 
 	 Aeroport CDG = new Aeroport("Paris","Charles de Gaulle", "France", 10 , 2.542496 , 49.011138 );
 	 Aeroport Orly = new Aeroport("Paris","Orly", "France", 9 , 2.365247, 48.726243);
@@ -2053,630 +2054,630 @@ public abstract class Main {
 
 	 for(int i = 0; i<30; i++) {
 		 ArrayList<Vol> listdesvols = new ArrayList<Vol>();
-		 FonctionnAir.getMapVol().put(i, listdesvols);
+		 fonctionnAir.getMapVol().put(i, listdesvols);
 	 }
 	 
 	 
-	 FonctionnAir.getListAeroport().add(CDG);
-	 FonctionnAir.getListAeroport().add(Orly);
-	 FonctionnAir.getListAeroport().add(Rennes);
-	 FonctionnAir.getListAeroport().add(Marseille);
-	 FonctionnAir.getListAeroport().add(Lyon);
-	 FonctionnAir.getListAeroport().add(Reykjavik);
-	 FonctionnAir.getListAeroport().add(Heathrow);
-	 FonctionnAir.getListAeroport().add(City);
-	 FonctionnAir.getListAeroport().add(Ynukovo);
-	 FonctionnAir.getListAeroport().add(Sheremtyevo);
-	 FonctionnAir.getListAeroport().add(Barajas);
-	 FonctionnAir.getListAeroport().add(CuatroVientos);
-	 FonctionnAir.getListAeroport().add(Ciampino);
-	 FonctionnAir.getListAeroport().add(Fiumicino);
-	 FonctionnAir.getListAeroport().add(Barcelona);
-	 FonctionnAir.getListAeroport().add(Gerona);
-	 FonctionnAir.getListAeroport().add(Borispol);
-	 FonctionnAir.getListAeroport().add(Zhulyany);
-	 FonctionnAir.getListAeroport().add(Okecie);
-	 FonctionnAir.getListAeroport().add(Bemowo);
-	 FonctionnAir.getListAeroport().add(Bromma);
-	 FonctionnAir.getListAeroport().add(Barkarby);
-	 FonctionnAir.getListAeroport().add(Oslo);
-	 FonctionnAir.getListAeroport().add(Helsinki);
-	 FonctionnAir.getListAeroport().add(Porto);
-	 FonctionnAir.getListAeroport().add(Lisbonne);
-	 FonctionnAir.getListAeroport().add(Munich);
-	 FonctionnAir.getListAeroport().add(Dublin);
-	 FonctionnAir.getListAeroport().add(Zagreb);
-	 FonctionnAir.getListAeroport().add(Belgrade);
-	 FonctionnAir.getListAeroport().add(Sarajevo);
-	 FonctionnAir.getListAeroport().add(Tirana);
-	 FonctionnAir.getListAeroport().add(Bucarest);
-	 FonctionnAir.getListAeroport().add(Budapest);
-	 FonctionnAir.getListAeroport().add(Prague);
-	 FonctionnAir.getListAeroport().add(Bruxelles);
-	 FonctionnAir.getListAeroport().add(Amsterdam);
-	 FonctionnAir.getListAeroport().add(Geneve);
-	 FonctionnAir.getListAeroport().add(SaintPetersbourg);
-	 FonctionnAir.getListAeroport().add(Talin);
-	 FonctionnAir.getListAeroport().add(Riga);
-	 FonctionnAir.getListAeroport().add(Vilnius);
-	 FonctionnAir.getListAeroport().add(Copenhague);
-	 FonctionnAir.getListAeroport().add(Milan);
-	 FonctionnAir.getListAeroport().add(Athenes);
-	 FonctionnAir.getListAeroport().add(Malte);
-	 FonctionnAir.getListAeroport().add(Edimbourg);
-	 FonctionnAir.getListAeroport().add(Istanboul);
-	 FonctionnAir.getListAeroport().add(Poudlard);
-	 FonctionnAir.getListAeroport().add(Minsk);
+	 fonctionnAir.getListAeroport().add(CDG);
+	 fonctionnAir.getListAeroport().add(Orly);
+	 fonctionnAir.getListAeroport().add(Rennes);
+	 fonctionnAir.getListAeroport().add(Marseille);
+	 fonctionnAir.getListAeroport().add(Lyon);
+	 fonctionnAir.getListAeroport().add(Reykjavik);
+	 fonctionnAir.getListAeroport().add(Heathrow);
+	 fonctionnAir.getListAeroport().add(City);
+	 fonctionnAir.getListAeroport().add(Ynukovo);
+	 fonctionnAir.getListAeroport().add(Sheremtyevo);
+	 fonctionnAir.getListAeroport().add(Barajas);
+	 fonctionnAir.getListAeroport().add(CuatroVientos);
+	 fonctionnAir.getListAeroport().add(Ciampino);
+	 fonctionnAir.getListAeroport().add(Fiumicino);
+	 fonctionnAir.getListAeroport().add(Barcelona);
+	 fonctionnAir.getListAeroport().add(Gerona);
+	 fonctionnAir.getListAeroport().add(Borispol);
+	 fonctionnAir.getListAeroport().add(Zhulyany);
+	 fonctionnAir.getListAeroport().add(Okecie);
+	 fonctionnAir.getListAeroport().add(Bemowo);
+	 fonctionnAir.getListAeroport().add(Bromma);
+	 fonctionnAir.getListAeroport().add(Barkarby);
+	 fonctionnAir.getListAeroport().add(Oslo);
+	 fonctionnAir.getListAeroport().add(Helsinki);
+	 fonctionnAir.getListAeroport().add(Porto);
+	 fonctionnAir.getListAeroport().add(Lisbonne);
+	 fonctionnAir.getListAeroport().add(Munich);
+	 fonctionnAir.getListAeroport().add(Dublin);
+	 fonctionnAir.getListAeroport().add(Zagreb);
+	 fonctionnAir.getListAeroport().add(Belgrade);
+	 fonctionnAir.getListAeroport().add(Sarajevo);
+	 fonctionnAir.getListAeroport().add(Tirana);
+	 fonctionnAir.getListAeroport().add(Bucarest);
+	 fonctionnAir.getListAeroport().add(Budapest);
+	 fonctionnAir.getListAeroport().add(Prague);
+	 fonctionnAir.getListAeroport().add(Bruxelles);
+	 fonctionnAir.getListAeroport().add(Amsterdam);
+	 fonctionnAir.getListAeroport().add(Geneve);
+	 fonctionnAir.getListAeroport().add(SaintPetersbourg);
+	 fonctionnAir.getListAeroport().add(Talin);
+	 fonctionnAir.getListAeroport().add(Riga);
+	 fonctionnAir.getListAeroport().add(Vilnius);
+	 fonctionnAir.getListAeroport().add(Copenhague);
+	 fonctionnAir.getListAeroport().add(Milan);
+	 fonctionnAir.getListAeroport().add(Athenes);
+	 fonctionnAir.getListAeroport().add(Malte);
+	 fonctionnAir.getListAeroport().add(Edimbourg);
+	 fonctionnAir.getListAeroport().add(Istanboul);
+	 fonctionnAir.getListAeroport().add(Poudlard);
+	 fonctionnAir.getListAeroport().add(Minsk);
 	 
-	 FonctionnAir.getListAvion().add(MiniP01);
-	 FonctionnAir.getListAvion().add(MiniP02);
-	 FonctionnAir.getListAvion().add(MiniP03);
-	 FonctionnAir.getListAvion().add(MiniP04);
-	 FonctionnAir.getListAvion().add(MiniP05);
-	 FonctionnAir.getListAvion().add(MiniP06);
-	 FonctionnAir.getListAvion().add(MiniP07);
-	 FonctionnAir.getListAvion().add(MiniP08);
-	 FonctionnAir.getListAvion().add(MiniP09);
-	 FonctionnAir.getListAvion().add(MiniP10);
-	 FonctionnAir.getListAvion().add(MiniP11);
-	 FonctionnAir.getListAvion().add(MiniP12);
-	 FonctionnAir.getListAvion().add(MiniP13);
-	 FonctionnAir.getListAvion().add(MiniP14);
-	 FonctionnAir.getListAvion().add(MiniP15);
-	 FonctionnAir.getListAvion().add(MiniP16);
-	 FonctionnAir.getListAvion().add(MiniP17);
-	 FonctionnAir.getListAvion().add(MiniP18);
-	 FonctionnAir.getListAvion().add(MiniP19);
-	 FonctionnAir.getListAvion().add(MiniP20);
-	 FonctionnAir.getListAvion().add(MiniP21);
-	 FonctionnAir.getListAvion().add(MiniP22);
-	 FonctionnAir.getListAvion().add(MiniP23);
-	 FonctionnAir.getListAvion().add(MiniP24);
-	 FonctionnAir.getListAvion().add(MiniP25);
-	 FonctionnAir.getListAvion().add(MiniP26);
-	 FonctionnAir.getListAvion().add(MiniP27);
-	 FonctionnAir.getListAvion().add(MiniP28);
-	 FonctionnAir.getListAvion().add(MiniP29);
-	 FonctionnAir.getListAvion().add(MiniP30);
-	 FonctionnAir.getListAvion().add(MiniP31);
-	 FonctionnAir.getListAvion().add(MiniP32);
-	 FonctionnAir.getListAvion().add(MiniP33);
-	 FonctionnAir.getListAvion().add(MiniP34);
-	 FonctionnAir.getListAvion().add(MiniP35);
-	 FonctionnAir.getListAvion().add(TPP01);
-	 FonctionnAir.getListAvion().add(TPP02);
-	 FonctionnAir.getListAvion().add(TPP03);
-	 FonctionnAir.getListAvion().add(TPP04);
-	 FonctionnAir.getListAvion().add(TPP05);
-	 FonctionnAir.getListAvion().add(TPP06);
-	 FonctionnAir.getListAvion().add(TPP07);
-	 FonctionnAir.getListAvion().add(TPP08);
-	 FonctionnAir.getListAvion().add(TPP09);
-	 FonctionnAir.getListAvion().add(TPP10);
-	 FonctionnAir.getListAvion().add(TPP11);
-	 FonctionnAir.getListAvion().add(TPP12);
-	 FonctionnAir.getListAvion().add(TPP13);
-	 FonctionnAir.getListAvion().add(TPP14);
-	 FonctionnAir.getListAvion().add(TPP15);
-	 FonctionnAir.getListAvion().add(TPP16);
-	 FonctionnAir.getListAvion().add(TPP17);
-	 FonctionnAir.getListAvion().add(TPP18);
-	 FonctionnAir.getListAvion().add(TPP19);
-	 FonctionnAir.getListAvion().add(TPP20);
-	 FonctionnAir.getListAvion().add(TPP21);
-	 FonctionnAir.getListAvion().add(TPP22);
-	 FonctionnAir.getListAvion().add(TPP23);
-	 FonctionnAir.getListAvion().add(TPP24);
-	 FonctionnAir.getListAvion().add(TPP25);
-	 FonctionnAir.getListAvion().add(TPP26);
-	 FonctionnAir.getListAvion().add(TPP27);
-	 FonctionnAir.getListAvion().add(TPP28);
-	 FonctionnAir.getListAvion().add(TPP29);
-	 FonctionnAir.getListAvion().add(TPP30);
-	 FonctionnAir.getListAvion().add(TPP31);
-	 FonctionnAir.getListAvion().add(TPP32);
-	 FonctionnAir.getListAvion().add(TPP33);
-	 FonctionnAir.getListAvion().add(TPP34);
-	 FonctionnAir.getListAvion().add(TPP35);
-	 FonctionnAir.getListAvion().add(TPP36);
-	 FonctionnAir.getListAvion().add(PP01);
-	 FonctionnAir.getListAvion().add(PP02);
-	 FonctionnAir.getListAvion().add(PP03);
-	 FonctionnAir.getListAvion().add(PP04);
-	 FonctionnAir.getListAvion().add(PP05);
-	 FonctionnAir.getListAvion().add(PP06);
-	 FonctionnAir.getListAvion().add(PP07);
-	 FonctionnAir.getListAvion().add(PP08);
-	 FonctionnAir.getListAvion().add(PP09);
-	 FonctionnAir.getListAvion().add(PP10);
-	 FonctionnAir.getListAvion().add(PP11);
-	 FonctionnAir.getListAvion().add(PP12);
-	 FonctionnAir.getListAvion().add(PP13);
-	 FonctionnAir.getListAvion().add(PP14);
-	 FonctionnAir.getListAvion().add(PP15);
-	 FonctionnAir.getListAvion().add(PP16);
-	 FonctionnAir.getListAvion().add(PP17);
-	 FonctionnAir.getListAvion().add(PP18);
-	 FonctionnAir.getListAvion().add(PP19);
-	 FonctionnAir.getListAvion().add(PP20);
-	 FonctionnAir.getListAvion().add(PP21);
-	 FonctionnAir.getListAvion().add(PP22);
-	 FonctionnAir.getListAvion().add(PP23);
-	 FonctionnAir.getListAvion().add(PP24);
-	 FonctionnAir.getListAvion().add(PP25);
-	 FonctionnAir.getListAvion().add(PP26);
-	 FonctionnAir.getListAvion().add(PP27);
-	 FonctionnAir.getListAvion().add(PP28);
-	 FonctionnAir.getListAvion().add(PP29);
-	 FonctionnAir.getListAvion().add(PP30);
-	 FonctionnAir.getListAvion().add(PP31);
-	 FonctionnAir.getListAvion().add(PP32);
-	 FonctionnAir.getListAvion().add(PP33);
-	 FonctionnAir.getListAvion().add(PP34);
-	 FonctionnAir.getListAvion().add(PP35);
-	 FonctionnAir.getListAvion().add(MOP01);
-	 FonctionnAir.getListAvion().add(MOP02);
-	 FonctionnAir.getListAvion().add(MOP03);
-	 FonctionnAir.getListAvion().add(MOP04);
-	 FonctionnAir.getListAvion().add(MOP05);
-	 FonctionnAir.getListAvion().add(MOP06);
-	 FonctionnAir.getListAvion().add(MOP07);
-	 FonctionnAir.getListAvion().add(MOP08);
-	 FonctionnAir.getListAvion().add(MOP09);
-	 FonctionnAir.getListAvion().add(MOP10);
-	 FonctionnAir.getListAvion().add(MOP11);
-	 FonctionnAir.getListAvion().add(MOP12);
-	 FonctionnAir.getListAvion().add(MOP13);
-	 FonctionnAir.getListAvion().add(MOP14);
-	 FonctionnAir.getListAvion().add(MOP15);
-	 FonctionnAir.getListAvion().add(MOP16);
-	 FonctionnAir.getListAvion().add(MOP17);
-	 FonctionnAir.getListAvion().add(MOP18);
-	 FonctionnAir.getListAvion().add(MOP19);
-	 FonctionnAir.getListAvion().add(MOP20);
-	 FonctionnAir.getListAvion().add(MOP21);
-	 FonctionnAir.getListAvion().add(MOP22);
-	 FonctionnAir.getListAvion().add(MOP23);
-	 FonctionnAir.getListAvion().add(MOP24);
-	 FonctionnAir.getListAvion().add(MOP25);
-	 FonctionnAir.getListAvion().add(MOP26);
-	 FonctionnAir.getListAvion().add(MOP27);
-	 FonctionnAir.getListAvion().add(MOP28);
-	 FonctionnAir.getListAvion().add(MOP29);
-	 FonctionnAir.getListAvion().add(MOP30);
-	 FonctionnAir.getListAvion().add(MOP31);
-	 FonctionnAir.getListAvion().add(MOP32);
-	 FonctionnAir.getListAvion().add(MOP33);
-	 FonctionnAir.getListAvion().add(MOP34);
-	 FonctionnAir.getListAvion().add(MOP35);
-	 FonctionnAir.getListAvion().add(MOP36);
-	 FonctionnAir.getListAvion().add(AGP01);
-	 FonctionnAir.getListAvion().add(AGP02);
-	 FonctionnAir.getListAvion().add(AGP03);
-	 FonctionnAir.getListAvion().add(AGP04);
-	 FonctionnAir.getListAvion().add(AGP05);
-	 FonctionnAir.getListAvion().add(AGP06);
-	 FonctionnAir.getListAvion().add(AGP07);
-	 FonctionnAir.getListAvion().add(AGP08);
-	 FonctionnAir.getListAvion().add(AGP09);
-	 FonctionnAir.getListAvion().add(AGP10);
-	 FonctionnAir.getListAvion().add(AGP11);
-	 FonctionnAir.getListAvion().add(AGP12);
-	 FonctionnAir.getListAvion().add(AGP13);
-	 FonctionnAir.getListAvion().add(AGP14);
-	 FonctionnAir.getListAvion().add(AGP15);
-	 FonctionnAir.getListAvion().add(AGP16);
-	 FonctionnAir.getListAvion().add(AGP17);
-	 FonctionnAir.getListAvion().add(AGP18);
-	 FonctionnAir.getListAvion().add(AGP19);
-	 FonctionnAir.getListAvion().add(AGP20);
-	 FonctionnAir.getListAvion().add(AGP21);
-	 FonctionnAir.getListAvion().add(AGP22);
-	 FonctionnAir.getListAvion().add(AGP23);
-	 FonctionnAir.getListAvion().add(AGP24);
-	 FonctionnAir.getListAvion().add(AGP25);
-	 FonctionnAir.getListAvion().add(AGP26);
-	 FonctionnAir.getListAvion().add(AGP27);
-	 FonctionnAir.getListAvion().add(AGP28);
-	 FonctionnAir.getListAvion().add(AGP29);
-	 FonctionnAir.getListAvion().add(AGP30);
-	 FonctionnAir.getListAvion().add(AGP31);
-	 FonctionnAir.getListAvion().add(AGP32);
-	 FonctionnAir.getListAvion().add(AGP33);
-	 FonctionnAir.getListAvion().add(AGP34);
-	 FonctionnAir.getListAvion().add(AGP35);
-	 FonctionnAir.getListAvion().add(AGP36);
-	 FonctionnAir.getListAvion().add(GP01);
-	 FonctionnAir.getListAvion().add(GP02);
-	 FonctionnAir.getListAvion().add(GP03);
-	 FonctionnAir.getListAvion().add(GP04);
-	 FonctionnAir.getListAvion().add(GP05);
-	 FonctionnAir.getListAvion().add(GP06);
-	 FonctionnAir.getListAvion().add(GP07);
-	 FonctionnAir.getListAvion().add(GP08);
-	 FonctionnAir.getListAvion().add(GP09);
-	 FonctionnAir.getListAvion().add(GP10);
-	 FonctionnAir.getListAvion().add(GP11);
-	 FonctionnAir.getListAvion().add(GP12);
-	 FonctionnAir.getListAvion().add(GP13);
-	 FonctionnAir.getListAvion().add(GP14);
-	 FonctionnAir.getListAvion().add(GP15);
-	 FonctionnAir.getListAvion().add(GP16);
-	 FonctionnAir.getListAvion().add(GP17);
-	 FonctionnAir.getListAvion().add(GP18);
-	 FonctionnAir.getListAvion().add(GP19);
-	 FonctionnAir.getListAvion().add(GP20);
-	 FonctionnAir.getListAvion().add(GP21);
-	 FonctionnAir.getListAvion().add(GP22);
-	 FonctionnAir.getListAvion().add(GP23);
-	 FonctionnAir.getListAvion().add(GP24);
-	 FonctionnAir.getListAvion().add(GP25);
-	 FonctionnAir.getListAvion().add(GP26);
-	 FonctionnAir.getListAvion().add(GP27);
-	 FonctionnAir.getListAvion().add(GP28);
-	 FonctionnAir.getListAvion().add(GP29);
-	 FonctionnAir.getListAvion().add(GP30);
-	 FonctionnAir.getListAvion().add(GP31);
-	 FonctionnAir.getListAvion().add(GP32);
-	 FonctionnAir.getListAvion().add(GP33);
-	 FonctionnAir.getListAvion().add(GP34);
-	 FonctionnAir.getListAvion().add(GP35);
-	 FonctionnAir.getListAvion().add(GP36);
-	 FonctionnAir.getListAvion().add(TGP01);
-	 FonctionnAir.getListAvion().add(TGP02);
-	 FonctionnAir.getListAvion().add(TGP03);
-	 FonctionnAir.getListAvion().add(TGP04);
-	 FonctionnAir.getListAvion().add(TGP05);
-	 FonctionnAir.getListAvion().add(TGP06);
-	 FonctionnAir.getListAvion().add(TGP07);
-	 FonctionnAir.getListAvion().add(TGP08);
-	 FonctionnAir.getListAvion().add(TGP09);
-	 FonctionnAir.getListAvion().add(TGP10);
-	 FonctionnAir.getListAvion().add(TGP11);
-	 FonctionnAir.getListAvion().add(TGP12);
-	 FonctionnAir.getListAvion().add(TGP13);
-	 FonctionnAir.getListAvion().add(TGP14);
-	 FonctionnAir.getListAvion().add(TGP15);
-	 FonctionnAir.getListAvion().add(TGP16);
-	 FonctionnAir.getListAvion().add(TGP17);
-	 FonctionnAir.getListAvion().add(TGP18);
-	 FonctionnAir.getListAvion().add(TGP19);
-	 FonctionnAir.getListAvion().add(TGP20);
-	 FonctionnAir.getListAvion().add(TGP21);
-	 FonctionnAir.getListAvion().add(TGP22);
-	 FonctionnAir.getListAvion().add(TGP23);
-	 FonctionnAir.getListAvion().add(TGP24);
-	 FonctionnAir.getListAvion().add(TGP25);
-	 FonctionnAir.getListAvion().add(TGP26);
-	 FonctionnAir.getListAvion().add(TGP27);
-	 FonctionnAir.getListAvion().add(TGP28);
-	 FonctionnAir.getListAvion().add(TGP29);
-	 FonctionnAir.getListAvion().add(TGP30);
-	 FonctionnAir.getListAvion().add(TGP31);
-	 FonctionnAir.getListAvion().add(TGP32);
-	 FonctionnAir.getListAvion().add(TGP33);
-	 FonctionnAir.getListAvion().add(TGP34);
-	 FonctionnAir.getListAvion().add(TGP35);
-	 FonctionnAir.getListAvion().add(TGP36);
+	 fonctionnAir.getListAvion().add(MiniP01);
+	 fonctionnAir.getListAvion().add(MiniP02);
+	 fonctionnAir.getListAvion().add(MiniP03);
+	 fonctionnAir.getListAvion().add(MiniP04);
+	 fonctionnAir.getListAvion().add(MiniP05);
+	 fonctionnAir.getListAvion().add(MiniP06);
+	 fonctionnAir.getListAvion().add(MiniP07);
+	 fonctionnAir.getListAvion().add(MiniP08);
+	 fonctionnAir.getListAvion().add(MiniP09);
+	 fonctionnAir.getListAvion().add(MiniP10);
+	 fonctionnAir.getListAvion().add(MiniP11);
+	 fonctionnAir.getListAvion().add(MiniP12);
+	 fonctionnAir.getListAvion().add(MiniP13);
+	 fonctionnAir.getListAvion().add(MiniP14);
+	 fonctionnAir.getListAvion().add(MiniP15);
+	 fonctionnAir.getListAvion().add(MiniP16);
+	 fonctionnAir.getListAvion().add(MiniP17);
+	 fonctionnAir.getListAvion().add(MiniP18);
+	 fonctionnAir.getListAvion().add(MiniP19);
+	 fonctionnAir.getListAvion().add(MiniP20);
+	 fonctionnAir.getListAvion().add(MiniP21);
+	 fonctionnAir.getListAvion().add(MiniP22);
+	 fonctionnAir.getListAvion().add(MiniP23);
+	 fonctionnAir.getListAvion().add(MiniP24);
+	 fonctionnAir.getListAvion().add(MiniP25);
+	 fonctionnAir.getListAvion().add(MiniP26);
+	 fonctionnAir.getListAvion().add(MiniP27);
+	 fonctionnAir.getListAvion().add(MiniP28);
+	 fonctionnAir.getListAvion().add(MiniP29);
+	 fonctionnAir.getListAvion().add(MiniP30);
+	 fonctionnAir.getListAvion().add(MiniP31);
+	 fonctionnAir.getListAvion().add(MiniP32);
+	 fonctionnAir.getListAvion().add(MiniP33);
+	 fonctionnAir.getListAvion().add(MiniP34);
+	 fonctionnAir.getListAvion().add(MiniP35);
+	 fonctionnAir.getListAvion().add(TPP01);
+	 fonctionnAir.getListAvion().add(TPP02);
+	 fonctionnAir.getListAvion().add(TPP03);
+	 fonctionnAir.getListAvion().add(TPP04);
+	 fonctionnAir.getListAvion().add(TPP05);
+	 fonctionnAir.getListAvion().add(TPP06);
+	 fonctionnAir.getListAvion().add(TPP07);
+	 fonctionnAir.getListAvion().add(TPP08);
+	 fonctionnAir.getListAvion().add(TPP09);
+	 fonctionnAir.getListAvion().add(TPP10);
+	 fonctionnAir.getListAvion().add(TPP11);
+	 fonctionnAir.getListAvion().add(TPP12);
+	 fonctionnAir.getListAvion().add(TPP13);
+	 fonctionnAir.getListAvion().add(TPP14);
+	 fonctionnAir.getListAvion().add(TPP15);
+	 fonctionnAir.getListAvion().add(TPP16);
+	 fonctionnAir.getListAvion().add(TPP17);
+	 fonctionnAir.getListAvion().add(TPP18);
+	 fonctionnAir.getListAvion().add(TPP19);
+	 fonctionnAir.getListAvion().add(TPP20);
+	 fonctionnAir.getListAvion().add(TPP21);
+	 fonctionnAir.getListAvion().add(TPP22);
+	 fonctionnAir.getListAvion().add(TPP23);
+	 fonctionnAir.getListAvion().add(TPP24);
+	 fonctionnAir.getListAvion().add(TPP25);
+	 fonctionnAir.getListAvion().add(TPP26);
+	 fonctionnAir.getListAvion().add(TPP27);
+	 fonctionnAir.getListAvion().add(TPP28);
+	 fonctionnAir.getListAvion().add(TPP29);
+	 fonctionnAir.getListAvion().add(TPP30);
+	 fonctionnAir.getListAvion().add(TPP31);
+	 fonctionnAir.getListAvion().add(TPP32);
+	 fonctionnAir.getListAvion().add(TPP33);
+	 fonctionnAir.getListAvion().add(TPP34);
+	 fonctionnAir.getListAvion().add(TPP35);
+	 fonctionnAir.getListAvion().add(TPP36);
+	 fonctionnAir.getListAvion().add(PP01);
+	 fonctionnAir.getListAvion().add(PP02);
+	 fonctionnAir.getListAvion().add(PP03);
+	 fonctionnAir.getListAvion().add(PP04);
+	 fonctionnAir.getListAvion().add(PP05);
+	 fonctionnAir.getListAvion().add(PP06);
+	 fonctionnAir.getListAvion().add(PP07);
+	 fonctionnAir.getListAvion().add(PP08);
+	 fonctionnAir.getListAvion().add(PP09);
+	 fonctionnAir.getListAvion().add(PP10);
+	 fonctionnAir.getListAvion().add(PP11);
+	 fonctionnAir.getListAvion().add(PP12);
+	 fonctionnAir.getListAvion().add(PP13);
+	 fonctionnAir.getListAvion().add(PP14);
+	 fonctionnAir.getListAvion().add(PP15);
+	 fonctionnAir.getListAvion().add(PP16);
+	 fonctionnAir.getListAvion().add(PP17);
+	 fonctionnAir.getListAvion().add(PP18);
+	 fonctionnAir.getListAvion().add(PP19);
+	 fonctionnAir.getListAvion().add(PP20);
+	 fonctionnAir.getListAvion().add(PP21);
+	 fonctionnAir.getListAvion().add(PP22);
+	 fonctionnAir.getListAvion().add(PP23);
+	 fonctionnAir.getListAvion().add(PP24);
+	 fonctionnAir.getListAvion().add(PP25);
+	 fonctionnAir.getListAvion().add(PP26);
+	 fonctionnAir.getListAvion().add(PP27);
+	 fonctionnAir.getListAvion().add(PP28);
+	 fonctionnAir.getListAvion().add(PP29);
+	 fonctionnAir.getListAvion().add(PP30);
+	 fonctionnAir.getListAvion().add(PP31);
+	 fonctionnAir.getListAvion().add(PP32);
+	 fonctionnAir.getListAvion().add(PP33);
+	 fonctionnAir.getListAvion().add(PP34);
+	 fonctionnAir.getListAvion().add(PP35);
+	 fonctionnAir.getListAvion().add(MOP01);
+	 fonctionnAir.getListAvion().add(MOP02);
+	 fonctionnAir.getListAvion().add(MOP03);
+	 fonctionnAir.getListAvion().add(MOP04);
+	 fonctionnAir.getListAvion().add(MOP05);
+	 fonctionnAir.getListAvion().add(MOP06);
+	 fonctionnAir.getListAvion().add(MOP07);
+	 fonctionnAir.getListAvion().add(MOP08);
+	 fonctionnAir.getListAvion().add(MOP09);
+	 fonctionnAir.getListAvion().add(MOP10);
+	 fonctionnAir.getListAvion().add(MOP11);
+	 fonctionnAir.getListAvion().add(MOP12);
+	 fonctionnAir.getListAvion().add(MOP13);
+	 fonctionnAir.getListAvion().add(MOP14);
+	 fonctionnAir.getListAvion().add(MOP15);
+	 fonctionnAir.getListAvion().add(MOP16);
+	 fonctionnAir.getListAvion().add(MOP17);
+	 fonctionnAir.getListAvion().add(MOP18);
+	 fonctionnAir.getListAvion().add(MOP19);
+	 fonctionnAir.getListAvion().add(MOP20);
+	 fonctionnAir.getListAvion().add(MOP21);
+	 fonctionnAir.getListAvion().add(MOP22);
+	 fonctionnAir.getListAvion().add(MOP23);
+	 fonctionnAir.getListAvion().add(MOP24);
+	 fonctionnAir.getListAvion().add(MOP25);
+	 fonctionnAir.getListAvion().add(MOP26);
+	 fonctionnAir.getListAvion().add(MOP27);
+	 fonctionnAir.getListAvion().add(MOP28);
+	 fonctionnAir.getListAvion().add(MOP29);
+	 fonctionnAir.getListAvion().add(MOP30);
+	 fonctionnAir.getListAvion().add(MOP31);
+	 fonctionnAir.getListAvion().add(MOP32);
+	 fonctionnAir.getListAvion().add(MOP33);
+	 fonctionnAir.getListAvion().add(MOP34);
+	 fonctionnAir.getListAvion().add(MOP35);
+	 fonctionnAir.getListAvion().add(MOP36);
+	 fonctionnAir.getListAvion().add(AGP01);
+	 fonctionnAir.getListAvion().add(AGP02);
+	 fonctionnAir.getListAvion().add(AGP03);
+	 fonctionnAir.getListAvion().add(AGP04);
+	 fonctionnAir.getListAvion().add(AGP05);
+	 fonctionnAir.getListAvion().add(AGP06);
+	 fonctionnAir.getListAvion().add(AGP07);
+	 fonctionnAir.getListAvion().add(AGP08);
+	 fonctionnAir.getListAvion().add(AGP09);
+	 fonctionnAir.getListAvion().add(AGP10);
+	 fonctionnAir.getListAvion().add(AGP11);
+	 fonctionnAir.getListAvion().add(AGP12);
+	 fonctionnAir.getListAvion().add(AGP13);
+	 fonctionnAir.getListAvion().add(AGP14);
+	 fonctionnAir.getListAvion().add(AGP15);
+	 fonctionnAir.getListAvion().add(AGP16);
+	 fonctionnAir.getListAvion().add(AGP17);
+	 fonctionnAir.getListAvion().add(AGP18);
+	 fonctionnAir.getListAvion().add(AGP19);
+	 fonctionnAir.getListAvion().add(AGP20);
+	 fonctionnAir.getListAvion().add(AGP21);
+	 fonctionnAir.getListAvion().add(AGP22);
+	 fonctionnAir.getListAvion().add(AGP23);
+	 fonctionnAir.getListAvion().add(AGP24);
+	 fonctionnAir.getListAvion().add(AGP25);
+	 fonctionnAir.getListAvion().add(AGP26);
+	 fonctionnAir.getListAvion().add(AGP27);
+	 fonctionnAir.getListAvion().add(AGP28);
+	 fonctionnAir.getListAvion().add(AGP29);
+	 fonctionnAir.getListAvion().add(AGP30);
+	 fonctionnAir.getListAvion().add(AGP31);
+	 fonctionnAir.getListAvion().add(AGP32);
+	 fonctionnAir.getListAvion().add(AGP33);
+	 fonctionnAir.getListAvion().add(AGP34);
+	 fonctionnAir.getListAvion().add(AGP35);
+	 fonctionnAir.getListAvion().add(AGP36);
+	 fonctionnAir.getListAvion().add(GP01);
+	 fonctionnAir.getListAvion().add(GP02);
+	 fonctionnAir.getListAvion().add(GP03);
+	 fonctionnAir.getListAvion().add(GP04);
+	 fonctionnAir.getListAvion().add(GP05);
+	 fonctionnAir.getListAvion().add(GP06);
+	 fonctionnAir.getListAvion().add(GP07);
+	 fonctionnAir.getListAvion().add(GP08);
+	 fonctionnAir.getListAvion().add(GP09);
+	 fonctionnAir.getListAvion().add(GP10);
+	 fonctionnAir.getListAvion().add(GP11);
+	 fonctionnAir.getListAvion().add(GP12);
+	 fonctionnAir.getListAvion().add(GP13);
+	 fonctionnAir.getListAvion().add(GP14);
+	 fonctionnAir.getListAvion().add(GP15);
+	 fonctionnAir.getListAvion().add(GP16);
+	 fonctionnAir.getListAvion().add(GP17);
+	 fonctionnAir.getListAvion().add(GP18);
+	 fonctionnAir.getListAvion().add(GP19);
+	 fonctionnAir.getListAvion().add(GP20);
+	 fonctionnAir.getListAvion().add(GP21);
+	 fonctionnAir.getListAvion().add(GP22);
+	 fonctionnAir.getListAvion().add(GP23);
+	 fonctionnAir.getListAvion().add(GP24);
+	 fonctionnAir.getListAvion().add(GP25);
+	 fonctionnAir.getListAvion().add(GP26);
+	 fonctionnAir.getListAvion().add(GP27);
+	 fonctionnAir.getListAvion().add(GP28);
+	 fonctionnAir.getListAvion().add(GP29);
+	 fonctionnAir.getListAvion().add(GP30);
+	 fonctionnAir.getListAvion().add(GP31);
+	 fonctionnAir.getListAvion().add(GP32);
+	 fonctionnAir.getListAvion().add(GP33);
+	 fonctionnAir.getListAvion().add(GP34);
+	 fonctionnAir.getListAvion().add(GP35);
+	 fonctionnAir.getListAvion().add(GP36);
+	 fonctionnAir.getListAvion().add(TGP01);
+	 fonctionnAir.getListAvion().add(TGP02);
+	 fonctionnAir.getListAvion().add(TGP03);
+	 fonctionnAir.getListAvion().add(TGP04);
+	 fonctionnAir.getListAvion().add(TGP05);
+	 fonctionnAir.getListAvion().add(TGP06);
+	 fonctionnAir.getListAvion().add(TGP07);
+	 fonctionnAir.getListAvion().add(TGP08);
+	 fonctionnAir.getListAvion().add(TGP09);
+	 fonctionnAir.getListAvion().add(TGP10);
+	 fonctionnAir.getListAvion().add(TGP11);
+	 fonctionnAir.getListAvion().add(TGP12);
+	 fonctionnAir.getListAvion().add(TGP13);
+	 fonctionnAir.getListAvion().add(TGP14);
+	 fonctionnAir.getListAvion().add(TGP15);
+	 fonctionnAir.getListAvion().add(TGP16);
+	 fonctionnAir.getListAvion().add(TGP17);
+	 fonctionnAir.getListAvion().add(TGP18);
+	 fonctionnAir.getListAvion().add(TGP19);
+	 fonctionnAir.getListAvion().add(TGP20);
+	 fonctionnAir.getListAvion().add(TGP21);
+	 fonctionnAir.getListAvion().add(TGP22);
+	 fonctionnAir.getListAvion().add(TGP23);
+	 fonctionnAir.getListAvion().add(TGP24);
+	 fonctionnAir.getListAvion().add(TGP25);
+	 fonctionnAir.getListAvion().add(TGP26);
+	 fonctionnAir.getListAvion().add(TGP27);
+	 fonctionnAir.getListAvion().add(TGP28);
+	 fonctionnAir.getListAvion().add(TGP29);
+	 fonctionnAir.getListAvion().add(TGP30);
+	 fonctionnAir.getListAvion().add(TGP31);
+	 fonctionnAir.getListAvion().add(TGP32);
+	 fonctionnAir.getListAvion().add(TGP33);
+	 fonctionnAir.getListAvion().add(TGP34);
+	 fonctionnAir.getListAvion().add(TGP35);
+	 fonctionnAir.getListAvion().add(TGP36);
 	
-	 FonctionnAir.getListEquipage().add(E1);
-	 FonctionnAir.getListEquipage().add(E2);
-	 FonctionnAir.getListEquipage().add(E3);
-	 FonctionnAir.getListEquipage().add(E4);
-	 FonctionnAir.getListEquipage().add(E5);
-	 FonctionnAir.getListEquipage().add(E6);
-	 FonctionnAir.getListEquipage().add(E7);
-	 FonctionnAir.getListEquipage().add(E8);
-	 FonctionnAir.getListEquipage().add(E9);
-	 FonctionnAir.getListEquipage().add(E10);
-	 FonctionnAir.getListEquipage().add(E11);
-	 FonctionnAir.getListEquipage().add(E12);
-	 FonctionnAir.getListEquipage().add(E13);
-	 FonctionnAir.getListEquipage().add(E14);
-	 FonctionnAir.getListEquipage().add(E15);
-	 FonctionnAir.getListEquipage().add(E16);
-	 FonctionnAir.getListEquipage().add(E17);
-	 FonctionnAir.getListEquipage().add(E18);
-	 FonctionnAir.getListEquipage().add(E19);
-	 FonctionnAir.getListEquipage().add(E20);
-	 FonctionnAir.getListEquipage().add(E21);
-	 FonctionnAir.getListEquipage().add(E22);
-	 FonctionnAir.getListEquipage().add(E23);
-	 FonctionnAir.getListEquipage().add(E24);
-	 FonctionnAir.getListEquipage().add(E25);
-	 FonctionnAir.getListEquipage().add(E26);
-	 FonctionnAir.getListEquipage().add(E27);
-	 FonctionnAir.getListEquipage().add(E28);
-	 FonctionnAir.getListEquipage().add(E29);
-	 FonctionnAir.getListEquipage().add(E30);
-	 FonctionnAir.getListEquipage().add(E31);
-	 FonctionnAir.getListEquipage().add(E32);
-	 FonctionnAir.getListEquipage().add(E33);
-	 FonctionnAir.getListEquipage().add(E34);
-	 FonctionnAir.getListEquipage().add(E35);
-	 FonctionnAir.getListEquipage().add(E36);
-	 FonctionnAir.getListEquipage().add(E37);
-	 FonctionnAir.getListEquipage().add(E38);
-	 FonctionnAir.getListEquipage().add(E39);
-	 FonctionnAir.getListEquipage().add(E40);
-	 FonctionnAir.getListEquipage().add(E41);
-	 FonctionnAir.getListEquipage().add(E42);
-	 FonctionnAir.getListEquipage().add(E43);
-	 FonctionnAir.getListEquipage().add(E44);
-	 FonctionnAir.getListEquipage().add(E45);
-	 FonctionnAir.getListEquipage().add(E46);
-	 FonctionnAir.getListEquipage().add(E47);
-	 FonctionnAir.getListEquipage().add(E48);
-	 FonctionnAir.getListEquipage().add(E49);
-	 FonctionnAir.getListEquipage().add(E50);
-	 FonctionnAir.getListEquipage().add(E51);
-	 FonctionnAir.getListEquipage().add(E52);
-	 FonctionnAir.getListEquipage().add(E53);
-	 FonctionnAir.getListEquipage().add(E54);
-	 FonctionnAir.getListEquipage().add(E55);
-	 FonctionnAir.getListEquipage().add(E56);
-	 FonctionnAir.getListEquipage().add(E57);
-	 FonctionnAir.getListEquipage().add(E58);
-	 FonctionnAir.getListEquipage().add(E59);
-	 FonctionnAir.getListEquipage().add(E60);
-	 FonctionnAir.getListEquipage().add(E61);
-	 FonctionnAir.getListEquipage().add(E62);
-	 FonctionnAir.getListEquipage().add(E63);
-	 FonctionnAir.getListEquipage().add(E64);
-	 FonctionnAir.getListEquipage().add(E65);
-	 FonctionnAir.getListEquipage().add(E66);
-	 FonctionnAir.getListEquipage().add(E67);
-	 FonctionnAir.getListEquipage().add(E68);
-	 FonctionnAir.getListEquipage().add(E69);
-	 FonctionnAir.getListEquipage().add(E70);
-	 FonctionnAir.getListEquipage().add(E71);
-	 FonctionnAir.getListEquipage().add(E72);
-	 FonctionnAir.getListEquipage().add(E73);
-	 FonctionnAir.getListEquipage().add(E74);
-	 FonctionnAir.getListEquipage().add(E75);
-	 FonctionnAir.getListEquipage().add(E76);
-	 FonctionnAir.getListEquipage().add(E77);
-	 FonctionnAir.getListEquipage().add(E78);
-	 FonctionnAir.getListEquipage().add(E79);
-	 FonctionnAir.getListEquipage().add(E80);
-	 FonctionnAir.getListEquipage().add(E81);
-	 FonctionnAir.getListEquipage().add(E82);
-	 FonctionnAir.getListEquipage().add(E83);
-	 FonctionnAir.getListEquipage().add(E84);
-	 FonctionnAir.getListEquipage().add(E85);
-	 FonctionnAir.getListEquipage().add(E86);
-	 FonctionnAir.getListEquipage().add(E87);
-	 FonctionnAir.getListEquipage().add(E88);
-	 FonctionnAir.getListEquipage().add(E89);
-	 FonctionnAir.getListEquipage().add(E90);
-	 FonctionnAir.getListEquipage().add(E91);
-	 FonctionnAir.getListEquipage().add(E92);
-	 FonctionnAir.getListEquipage().add(E93);
-	 FonctionnAir.getListEquipage().add(E94);
-	 FonctionnAir.getListEquipage().add(E95);
-	 FonctionnAir.getListEquipage().add(E96);
-	 FonctionnAir.getListEquipage().add(E97);
-	 FonctionnAir.getListEquipage().add(E98);
-	 FonctionnAir.getListEquipage().add(E99);
-	 FonctionnAir.getListEquipage().add(E100);
-	 FonctionnAir.getListEquipage().add(E101);
-	 FonctionnAir.getListEquipage().add(E102);
-	 FonctionnAir.getListEquipage().add(E103);
-	 FonctionnAir.getListEquipage().add(E104);
-	 FonctionnAir.getListEquipage().add(E105);
-	 FonctionnAir.getListEquipage().add(E106);
-	 FonctionnAir.getListEquipage().add(E107);
-	 FonctionnAir.getListEquipage().add(E108);
-	 FonctionnAir.getListEquipage().add(E109);
-	 FonctionnAir.getListEquipage().add(E110);
-	 FonctionnAir.getListEquipage().add(E111);
-	 FonctionnAir.getListEquipage().add(E112);
-	 FonctionnAir.getListEquipage().add(E113);
-	 FonctionnAir.getListEquipage().add(E114);
-	 FonctionnAir.getListEquipage().add(E115);
-	 FonctionnAir.getListEquipage().add(E116);
-	 FonctionnAir.getListEquipage().add(E117);
-	 FonctionnAir.getListEquipage().add(E118);
-	 FonctionnAir.getListEquipage().add(E119);
-	 FonctionnAir.getListEquipage().add(E120);
-	 FonctionnAir.getListEquipage().add(E121);
-	 FonctionnAir.getListEquipage().add(E122);
-	 FonctionnAir.getListEquipage().add(E123);
-	 FonctionnAir.getListEquipage().add(E124);
-	 FonctionnAir.getListEquipage().add(E125);
-	 FonctionnAir.getListEquipage().add(E126);
-	 FonctionnAir.getListEquipage().add(E127);
-	 FonctionnAir.getListEquipage().add(E128);
-	 FonctionnAir.getListEquipage().add(E129);
-	 FonctionnAir.getListEquipage().add(E130);
-	 FonctionnAir.getListEquipage().add(E131);
-	 FonctionnAir.getListEquipage().add(E132);
-	 FonctionnAir.getListEquipage().add(E133);
-	 FonctionnAir.getListEquipage().add(E134);
-	 FonctionnAir.getListEquipage().add(E135);
-	 FonctionnAir.getListEquipage().add(E136);
-	 FonctionnAir.getListEquipage().add(E137);
-	 FonctionnAir.getListEquipage().add(E138);
-	 FonctionnAir.getListEquipage().add(E139);
-	 FonctionnAir.getListEquipage().add(E140);
-	 FonctionnAir.getListEquipage().add(E141);
-	 FonctionnAir.getListEquipage().add(E142);
-	 FonctionnAir.getListEquipage().add(E143);
-	 FonctionnAir.getListEquipage().add(E144);
-	 FonctionnAir.getListEquipage().add(E145);
-	 FonctionnAir.getListEquipage().add(E146);
-	 FonctionnAir.getListEquipage().add(E147);
-	 FonctionnAir.getListEquipage().add(E148);
-	 FonctionnAir.getListEquipage().add(E149);
-	 FonctionnAir.getListEquipage().add(E150);
-	 FonctionnAir.getListEquipage().add(E151);
-	 FonctionnAir.getListEquipage().add(E152);
-	 FonctionnAir.getListEquipage().add(E153);
-	 FonctionnAir.getListEquipage().add(E154);
-	 FonctionnAir.getListEquipage().add(E155);
-	 FonctionnAir.getListEquipage().add(E156);
-	 FonctionnAir.getListEquipage().add(E157);
-	 FonctionnAir.getListEquipage().add(E158);
-	 FonctionnAir.getListEquipage().add(E159);
-	 FonctionnAir.getListEquipage().add(E160);
-	 FonctionnAir.getListEquipage().add(E161);
-	 FonctionnAir.getListEquipage().add(E162);
-	 FonctionnAir.getListEquipage().add(E163);
-	 FonctionnAir.getListEquipage().add(E164);
-	 FonctionnAir.getListEquipage().add(E165);
-	 FonctionnAir.getListEquipage().add(E166);
-	 FonctionnAir.getListEquipage().add(E167);
-	 FonctionnAir.getListEquipage().add(E168);
-	 FonctionnAir.getListEquipage().add(E169);
-	 FonctionnAir.getListEquipage().add(E170);
-	 FonctionnAir.getListEquipage().add(E171);
-	 FonctionnAir.getListEquipage().add(E172);
-	 FonctionnAir.getListEquipage().add(E173);
-	 FonctionnAir.getListEquipage().add(E174);
-	 FonctionnAir.getListEquipage().add(E175);
-	 FonctionnAir.getListEquipage().add(E176);
-	 FonctionnAir.getListEquipage().add(E177);
-	 FonctionnAir.getListEquipage().add(E178);
-	 FonctionnAir.getListEquipage().add(E179);
-	 FonctionnAir.getListEquipage().add(E180);
-	 FonctionnAir.getListEquipage().add(E181);
-	 FonctionnAir.getListEquipage().add(E182);
-	 FonctionnAir.getListEquipage().add(E183);
-	 FonctionnAir.getListEquipage().add(E184);
-	 FonctionnAir.getListEquipage().add(E185);
-	 FonctionnAir.getListEquipage().add(E186);
-	 FonctionnAir.getListEquipage().add(E187);
-	 FonctionnAir.getListEquipage().add(E188);
-	 FonctionnAir.getListEquipage().add(E189);
-	 FonctionnAir.getListEquipage().add(E190);
-	 FonctionnAir.getListEquipage().add(E191);
-	 FonctionnAir.getListEquipage().add(E192);
-	 FonctionnAir.getListEquipage().add(E193);
-	 FonctionnAir.getListEquipage().add(E194);
-	 FonctionnAir.getListEquipage().add(E195);
-	 FonctionnAir.getListEquipage().add(E196);
-	 FonctionnAir.getListEquipage().add(E197);
-	 FonctionnAir.getListEquipage().add(E198);
-	 FonctionnAir.getListEquipage().add(E199);
-	 FonctionnAir.getListEquipage().add(E200);
-	 FonctionnAir.getListEquipage().add(E201);
-	 FonctionnAir.getListEquipage().add(E202);
-	 FonctionnAir.getListEquipage().add(E203);
-	 FonctionnAir.getListEquipage().add(E204);
-	 FonctionnAir.getListEquipage().add(E205);
-	 FonctionnAir.getListEquipage().add(E206);
-	 FonctionnAir.getListEquipage().add(E207);
-	 FonctionnAir.getListEquipage().add(E208);
-	 FonctionnAir.getListEquipage().add(E209);
-	 FonctionnAir.getListEquipage().add(E210);
-	 FonctionnAir.getListEquipage().add(E211);
-	 FonctionnAir.getListEquipage().add(E212);
-	 FonctionnAir.getListEquipage().add(E213);
-	 FonctionnAir.getListEquipage().add(E214);
-	 FonctionnAir.getListEquipage().add(E215);
-	 FonctionnAir.getListEquipage().add(E216);
-	 FonctionnAir.getListEquipage().add(E217);
-	 FonctionnAir.getListEquipage().add(E218);
-	 FonctionnAir.getListEquipage().add(E219);
-	 FonctionnAir.getListEquipage().add(E220);
-	 FonctionnAir.getListEquipage().add(E221);
-	 FonctionnAir.getListEquipage().add(E222);
-	 FonctionnAir.getListEquipage().add(E223);
-	 FonctionnAir.getListEquipage().add(E224);
-	 FonctionnAir.getListEquipage().add(E225);
-	 FonctionnAir.getListEquipage().add(E226);
-	 FonctionnAir.getListEquipage().add(E227);
-	 FonctionnAir.getListEquipage().add(E228);
-	 FonctionnAir.getListEquipage().add(E229);
-	 FonctionnAir.getListEquipage().add(E230);
-	 FonctionnAir.getListEquipage().add(E231);
-	 FonctionnAir.getListEquipage().add(E232);
-	 FonctionnAir.getListEquipage().add(E233);
-	 FonctionnAir.getListEquipage().add(E234);
-	 FonctionnAir.getListEquipage().add(E235);
-	 FonctionnAir.getListEquipage().add(E236);
-	 FonctionnAir.getListEquipage().add(E237);
-	 FonctionnAir.getListEquipage().add(E238);
-	 FonctionnAir.getListEquipage().add(E239);
-	 FonctionnAir.getListEquipage().add(E240);
-	 FonctionnAir.getListEquipage().add(E241);
-	 FonctionnAir.getListEquipage().add(E242);
-	 FonctionnAir.getListEquipage().add(E243);
-	 FonctionnAir.getListEquipage().add(E244);
-	 FonctionnAir.getListEquipage().add(E245);
-	 FonctionnAir.getListEquipage().add(E246);
-	 FonctionnAir.getListEquipage().add(E247);
-	 FonctionnAir.getListEquipage().add(E248);
-	 FonctionnAir.getListEquipage().add(E249);
-	 FonctionnAir.getListEquipage().add(E250);
-	 FonctionnAir.getListEquipage().add(E251);
-	 FonctionnAir.getListEquipage().add(E252);
-	 FonctionnAir.getListEquipage().add(E253);
-	 FonctionnAir.getListEquipage().add(E254);
-	 FonctionnAir.getListEquipage().add(E255);
-	 FonctionnAir.getListEquipage().add(E256);
-	 FonctionnAir.getListEquipage().add(E257);
-	 FonctionnAir.getListEquipage().add(E258);
-	 FonctionnAir.getListEquipage().add(E259);
-	 FonctionnAir.getListEquipage().add(E260);
-	 FonctionnAir.getListEquipage().add(E261);
-	 FonctionnAir.getListEquipage().add(E262);
-	 FonctionnAir.getListEquipage().add(E263);
-	 FonctionnAir.getListEquipage().add(E264);
-	 FonctionnAir.getListEquipage().add(E265);
-	 FonctionnAir.getListEquipage().add(E266);
-	 FonctionnAir.getListEquipage().add(E267);
-	 FonctionnAir.getListEquipage().add(E268);
-	 FonctionnAir.getListEquipage().add(E269);
-	 FonctionnAir.getListEquipage().add(E270);
-	 FonctionnAir.getListEquipage().add(E271);
-	 FonctionnAir.getListEquipage().add(E272);
-	 FonctionnAir.getListEquipage().add(E273);
-	 FonctionnAir.getListEquipage().add(E274);
-	 FonctionnAir.getListEquipage().add(E275);
-	 FonctionnAir.getListEquipage().add(E276);
-	 FonctionnAir.getListEquipage().add(E277);
-	 FonctionnAir.getListEquipage().add(E278);
-	 FonctionnAir.getListEquipage().add(E279);
-	 FonctionnAir.getListEquipage().add(E280);
-	 FonctionnAir.getListEquipage().add(E281);
-	 FonctionnAir.getListEquipage().add(E282);
-	 FonctionnAir.getListEquipage().add(E283);
-	 FonctionnAir.getListEquipage().add(E284);
-	 FonctionnAir.getListEquipage().add(E285);
-	 FonctionnAir.getListEquipage().add(E286);
-	 FonctionnAir.getListEquipage().add(E287);
-	 FonctionnAir.getListEquipage().add(E288);
-	 FonctionnAir.getListEquipage().add(E289);
-	 FonctionnAir.getListEquipage().add(E290);
-	 FonctionnAir.getListEquipage().add(E291);
-	 FonctionnAir.getListEquipage().add(E292);
-	 FonctionnAir.getListEquipage().add(E293);
-	 FonctionnAir.getListEquipage().add(E294);
-	 FonctionnAir.getListEquipage().add(E295);
-	 FonctionnAir.getListEquipage().add(E296);
-	 FonctionnAir.getListEquipage().add(E297);
-	 FonctionnAir.getListEquipage().add(E298);
-	 FonctionnAir.getListEquipage().add(E299);
-	 FonctionnAir.getListEquipage().add(E300);
+	 fonctionnAir.getListEquipage().add(E1);
+	 fonctionnAir.getListEquipage().add(E2);
+	 fonctionnAir.getListEquipage().add(E3);
+	 fonctionnAir.getListEquipage().add(E4);
+	 fonctionnAir.getListEquipage().add(E5);
+	 fonctionnAir.getListEquipage().add(E6);
+	 fonctionnAir.getListEquipage().add(E7);
+	 fonctionnAir.getListEquipage().add(E8);
+	 fonctionnAir.getListEquipage().add(E9);
+	 fonctionnAir.getListEquipage().add(E10);
+	 fonctionnAir.getListEquipage().add(E11);
+	 fonctionnAir.getListEquipage().add(E12);
+	 fonctionnAir.getListEquipage().add(E13);
+	 fonctionnAir.getListEquipage().add(E14);
+	 fonctionnAir.getListEquipage().add(E15);
+	 fonctionnAir.getListEquipage().add(E16);
+	 fonctionnAir.getListEquipage().add(E17);
+	 fonctionnAir.getListEquipage().add(E18);
+	 fonctionnAir.getListEquipage().add(E19);
+	 fonctionnAir.getListEquipage().add(E20);
+	 fonctionnAir.getListEquipage().add(E21);
+	 fonctionnAir.getListEquipage().add(E22);
+	 fonctionnAir.getListEquipage().add(E23);
+	 fonctionnAir.getListEquipage().add(E24);
+	 fonctionnAir.getListEquipage().add(E25);
+	 fonctionnAir.getListEquipage().add(E26);
+	 fonctionnAir.getListEquipage().add(E27);
+	 fonctionnAir.getListEquipage().add(E28);
+	 fonctionnAir.getListEquipage().add(E29);
+	 fonctionnAir.getListEquipage().add(E30);
+	 fonctionnAir.getListEquipage().add(E31);
+	 fonctionnAir.getListEquipage().add(E32);
+	 fonctionnAir.getListEquipage().add(E33);
+	 fonctionnAir.getListEquipage().add(E34);
+	 fonctionnAir.getListEquipage().add(E35);
+	 fonctionnAir.getListEquipage().add(E36);
+	 fonctionnAir.getListEquipage().add(E37);
+	 fonctionnAir.getListEquipage().add(E38);
+	 fonctionnAir.getListEquipage().add(E39);
+	 fonctionnAir.getListEquipage().add(E40);
+	 fonctionnAir.getListEquipage().add(E41);
+	 fonctionnAir.getListEquipage().add(E42);
+	 fonctionnAir.getListEquipage().add(E43);
+	 fonctionnAir.getListEquipage().add(E44);
+	 fonctionnAir.getListEquipage().add(E45);
+	 fonctionnAir.getListEquipage().add(E46);
+	 fonctionnAir.getListEquipage().add(E47);
+	 fonctionnAir.getListEquipage().add(E48);
+	 fonctionnAir.getListEquipage().add(E49);
+	 fonctionnAir.getListEquipage().add(E50);
+	 fonctionnAir.getListEquipage().add(E51);
+	 fonctionnAir.getListEquipage().add(E52);
+	 fonctionnAir.getListEquipage().add(E53);
+	 fonctionnAir.getListEquipage().add(E54);
+	 fonctionnAir.getListEquipage().add(E55);
+	 fonctionnAir.getListEquipage().add(E56);
+	 fonctionnAir.getListEquipage().add(E57);
+	 fonctionnAir.getListEquipage().add(E58);
+	 fonctionnAir.getListEquipage().add(E59);
+	 fonctionnAir.getListEquipage().add(E60);
+	 fonctionnAir.getListEquipage().add(E61);
+	 fonctionnAir.getListEquipage().add(E62);
+	 fonctionnAir.getListEquipage().add(E63);
+	 fonctionnAir.getListEquipage().add(E64);
+	 fonctionnAir.getListEquipage().add(E65);
+	 fonctionnAir.getListEquipage().add(E66);
+	 fonctionnAir.getListEquipage().add(E67);
+	 fonctionnAir.getListEquipage().add(E68);
+	 fonctionnAir.getListEquipage().add(E69);
+	 fonctionnAir.getListEquipage().add(E70);
+	 fonctionnAir.getListEquipage().add(E71);
+	 fonctionnAir.getListEquipage().add(E72);
+	 fonctionnAir.getListEquipage().add(E73);
+	 fonctionnAir.getListEquipage().add(E74);
+	 fonctionnAir.getListEquipage().add(E75);
+	 fonctionnAir.getListEquipage().add(E76);
+	 fonctionnAir.getListEquipage().add(E77);
+	 fonctionnAir.getListEquipage().add(E78);
+	 fonctionnAir.getListEquipage().add(E79);
+	 fonctionnAir.getListEquipage().add(E80);
+	 fonctionnAir.getListEquipage().add(E81);
+	 fonctionnAir.getListEquipage().add(E82);
+	 fonctionnAir.getListEquipage().add(E83);
+	 fonctionnAir.getListEquipage().add(E84);
+	 fonctionnAir.getListEquipage().add(E85);
+	 fonctionnAir.getListEquipage().add(E86);
+	 fonctionnAir.getListEquipage().add(E87);
+	 fonctionnAir.getListEquipage().add(E88);
+	 fonctionnAir.getListEquipage().add(E89);
+	 fonctionnAir.getListEquipage().add(E90);
+	 fonctionnAir.getListEquipage().add(E91);
+	 fonctionnAir.getListEquipage().add(E92);
+	 fonctionnAir.getListEquipage().add(E93);
+	 fonctionnAir.getListEquipage().add(E94);
+	 fonctionnAir.getListEquipage().add(E95);
+	 fonctionnAir.getListEquipage().add(E96);
+	 fonctionnAir.getListEquipage().add(E97);
+	 fonctionnAir.getListEquipage().add(E98);
+	 fonctionnAir.getListEquipage().add(E99);
+	 fonctionnAir.getListEquipage().add(E100);
+	 fonctionnAir.getListEquipage().add(E101);
+	 fonctionnAir.getListEquipage().add(E102);
+	 fonctionnAir.getListEquipage().add(E103);
+	 fonctionnAir.getListEquipage().add(E104);
+	 fonctionnAir.getListEquipage().add(E105);
+	 fonctionnAir.getListEquipage().add(E106);
+	 fonctionnAir.getListEquipage().add(E107);
+	 fonctionnAir.getListEquipage().add(E108);
+	 fonctionnAir.getListEquipage().add(E109);
+	 fonctionnAir.getListEquipage().add(E110);
+	 fonctionnAir.getListEquipage().add(E111);
+	 fonctionnAir.getListEquipage().add(E112);
+	 fonctionnAir.getListEquipage().add(E113);
+	 fonctionnAir.getListEquipage().add(E114);
+	 fonctionnAir.getListEquipage().add(E115);
+	 fonctionnAir.getListEquipage().add(E116);
+	 fonctionnAir.getListEquipage().add(E117);
+	 fonctionnAir.getListEquipage().add(E118);
+	 fonctionnAir.getListEquipage().add(E119);
+	 fonctionnAir.getListEquipage().add(E120);
+	 fonctionnAir.getListEquipage().add(E121);
+	 fonctionnAir.getListEquipage().add(E122);
+	 fonctionnAir.getListEquipage().add(E123);
+	 fonctionnAir.getListEquipage().add(E124);
+	 fonctionnAir.getListEquipage().add(E125);
+	 fonctionnAir.getListEquipage().add(E126);
+	 fonctionnAir.getListEquipage().add(E127);
+	 fonctionnAir.getListEquipage().add(E128);
+	 fonctionnAir.getListEquipage().add(E129);
+	 fonctionnAir.getListEquipage().add(E130);
+	 fonctionnAir.getListEquipage().add(E131);
+	 fonctionnAir.getListEquipage().add(E132);
+	 fonctionnAir.getListEquipage().add(E133);
+	 fonctionnAir.getListEquipage().add(E134);
+	 fonctionnAir.getListEquipage().add(E135);
+	 fonctionnAir.getListEquipage().add(E136);
+	 fonctionnAir.getListEquipage().add(E137);
+	 fonctionnAir.getListEquipage().add(E138);
+	 fonctionnAir.getListEquipage().add(E139);
+	 fonctionnAir.getListEquipage().add(E140);
+	 fonctionnAir.getListEquipage().add(E141);
+	 fonctionnAir.getListEquipage().add(E142);
+	 fonctionnAir.getListEquipage().add(E143);
+	 fonctionnAir.getListEquipage().add(E144);
+	 fonctionnAir.getListEquipage().add(E145);
+	 fonctionnAir.getListEquipage().add(E146);
+	 fonctionnAir.getListEquipage().add(E147);
+	 fonctionnAir.getListEquipage().add(E148);
+	 fonctionnAir.getListEquipage().add(E149);
+	 fonctionnAir.getListEquipage().add(E150);
+	 fonctionnAir.getListEquipage().add(E151);
+	 fonctionnAir.getListEquipage().add(E152);
+	 fonctionnAir.getListEquipage().add(E153);
+	 fonctionnAir.getListEquipage().add(E154);
+	 fonctionnAir.getListEquipage().add(E155);
+	 fonctionnAir.getListEquipage().add(E156);
+	 fonctionnAir.getListEquipage().add(E157);
+	 fonctionnAir.getListEquipage().add(E158);
+	 fonctionnAir.getListEquipage().add(E159);
+	 fonctionnAir.getListEquipage().add(E160);
+	 fonctionnAir.getListEquipage().add(E161);
+	 fonctionnAir.getListEquipage().add(E162);
+	 fonctionnAir.getListEquipage().add(E163);
+	 fonctionnAir.getListEquipage().add(E164);
+	 fonctionnAir.getListEquipage().add(E165);
+	 fonctionnAir.getListEquipage().add(E166);
+	 fonctionnAir.getListEquipage().add(E167);
+	 fonctionnAir.getListEquipage().add(E168);
+	 fonctionnAir.getListEquipage().add(E169);
+	 fonctionnAir.getListEquipage().add(E170);
+	 fonctionnAir.getListEquipage().add(E171);
+	 fonctionnAir.getListEquipage().add(E172);
+	 fonctionnAir.getListEquipage().add(E173);
+	 fonctionnAir.getListEquipage().add(E174);
+	 fonctionnAir.getListEquipage().add(E175);
+	 fonctionnAir.getListEquipage().add(E176);
+	 fonctionnAir.getListEquipage().add(E177);
+	 fonctionnAir.getListEquipage().add(E178);
+	 fonctionnAir.getListEquipage().add(E179);
+	 fonctionnAir.getListEquipage().add(E180);
+	 fonctionnAir.getListEquipage().add(E181);
+	 fonctionnAir.getListEquipage().add(E182);
+	 fonctionnAir.getListEquipage().add(E183);
+	 fonctionnAir.getListEquipage().add(E184);
+	 fonctionnAir.getListEquipage().add(E185);
+	 fonctionnAir.getListEquipage().add(E186);
+	 fonctionnAir.getListEquipage().add(E187);
+	 fonctionnAir.getListEquipage().add(E188);
+	 fonctionnAir.getListEquipage().add(E189);
+	 fonctionnAir.getListEquipage().add(E190);
+	 fonctionnAir.getListEquipage().add(E191);
+	 fonctionnAir.getListEquipage().add(E192);
+	 fonctionnAir.getListEquipage().add(E193);
+	 fonctionnAir.getListEquipage().add(E194);
+	 fonctionnAir.getListEquipage().add(E195);
+	 fonctionnAir.getListEquipage().add(E196);
+	 fonctionnAir.getListEquipage().add(E197);
+	 fonctionnAir.getListEquipage().add(E198);
+	 fonctionnAir.getListEquipage().add(E199);
+	 fonctionnAir.getListEquipage().add(E200);
+	 fonctionnAir.getListEquipage().add(E201);
+	 fonctionnAir.getListEquipage().add(E202);
+	 fonctionnAir.getListEquipage().add(E203);
+	 fonctionnAir.getListEquipage().add(E204);
+	 fonctionnAir.getListEquipage().add(E205);
+	 fonctionnAir.getListEquipage().add(E206);
+	 fonctionnAir.getListEquipage().add(E207);
+	 fonctionnAir.getListEquipage().add(E208);
+	 fonctionnAir.getListEquipage().add(E209);
+	 fonctionnAir.getListEquipage().add(E210);
+	 fonctionnAir.getListEquipage().add(E211);
+	 fonctionnAir.getListEquipage().add(E212);
+	 fonctionnAir.getListEquipage().add(E213);
+	 fonctionnAir.getListEquipage().add(E214);
+	 fonctionnAir.getListEquipage().add(E215);
+	 fonctionnAir.getListEquipage().add(E216);
+	 fonctionnAir.getListEquipage().add(E217);
+	 fonctionnAir.getListEquipage().add(E218);
+	 fonctionnAir.getListEquipage().add(E219);
+	 fonctionnAir.getListEquipage().add(E220);
+	 fonctionnAir.getListEquipage().add(E221);
+	 fonctionnAir.getListEquipage().add(E222);
+	 fonctionnAir.getListEquipage().add(E223);
+	 fonctionnAir.getListEquipage().add(E224);
+	 fonctionnAir.getListEquipage().add(E225);
+	 fonctionnAir.getListEquipage().add(E226);
+	 fonctionnAir.getListEquipage().add(E227);
+	 fonctionnAir.getListEquipage().add(E228);
+	 fonctionnAir.getListEquipage().add(E229);
+	 fonctionnAir.getListEquipage().add(E230);
+	 fonctionnAir.getListEquipage().add(E231);
+	 fonctionnAir.getListEquipage().add(E232);
+	 fonctionnAir.getListEquipage().add(E233);
+	 fonctionnAir.getListEquipage().add(E234);
+	 fonctionnAir.getListEquipage().add(E235);
+	 fonctionnAir.getListEquipage().add(E236);
+	 fonctionnAir.getListEquipage().add(E237);
+	 fonctionnAir.getListEquipage().add(E238);
+	 fonctionnAir.getListEquipage().add(E239);
+	 fonctionnAir.getListEquipage().add(E240);
+	 fonctionnAir.getListEquipage().add(E241);
+	 fonctionnAir.getListEquipage().add(E242);
+	 fonctionnAir.getListEquipage().add(E243);
+	 fonctionnAir.getListEquipage().add(E244);
+	 fonctionnAir.getListEquipage().add(E245);
+	 fonctionnAir.getListEquipage().add(E246);
+	 fonctionnAir.getListEquipage().add(E247);
+	 fonctionnAir.getListEquipage().add(E248);
+	 fonctionnAir.getListEquipage().add(E249);
+	 fonctionnAir.getListEquipage().add(E250);
+	 fonctionnAir.getListEquipage().add(E251);
+	 fonctionnAir.getListEquipage().add(E252);
+	 fonctionnAir.getListEquipage().add(E253);
+	 fonctionnAir.getListEquipage().add(E254);
+	 fonctionnAir.getListEquipage().add(E255);
+	 fonctionnAir.getListEquipage().add(E256);
+	 fonctionnAir.getListEquipage().add(E257);
+	 fonctionnAir.getListEquipage().add(E258);
+	 fonctionnAir.getListEquipage().add(E259);
+	 fonctionnAir.getListEquipage().add(E260);
+	 fonctionnAir.getListEquipage().add(E261);
+	 fonctionnAir.getListEquipage().add(E262);
+	 fonctionnAir.getListEquipage().add(E263);
+	 fonctionnAir.getListEquipage().add(E264);
+	 fonctionnAir.getListEquipage().add(E265);
+	 fonctionnAir.getListEquipage().add(E266);
+	 fonctionnAir.getListEquipage().add(E267);
+	 fonctionnAir.getListEquipage().add(E268);
+	 fonctionnAir.getListEquipage().add(E269);
+	 fonctionnAir.getListEquipage().add(E270);
+	 fonctionnAir.getListEquipage().add(E271);
+	 fonctionnAir.getListEquipage().add(E272);
+	 fonctionnAir.getListEquipage().add(E273);
+	 fonctionnAir.getListEquipage().add(E274);
+	 fonctionnAir.getListEquipage().add(E275);
+	 fonctionnAir.getListEquipage().add(E276);
+	 fonctionnAir.getListEquipage().add(E277);
+	 fonctionnAir.getListEquipage().add(E278);
+	 fonctionnAir.getListEquipage().add(E279);
+	 fonctionnAir.getListEquipage().add(E280);
+	 fonctionnAir.getListEquipage().add(E281);
+	 fonctionnAir.getListEquipage().add(E282);
+	 fonctionnAir.getListEquipage().add(E283);
+	 fonctionnAir.getListEquipage().add(E284);
+	 fonctionnAir.getListEquipage().add(E285);
+	 fonctionnAir.getListEquipage().add(E286);
+	 fonctionnAir.getListEquipage().add(E287);
+	 fonctionnAir.getListEquipage().add(E288);
+	 fonctionnAir.getListEquipage().add(E289);
+	 fonctionnAir.getListEquipage().add(E290);
+	 fonctionnAir.getListEquipage().add(E291);
+	 fonctionnAir.getListEquipage().add(E292);
+	 fonctionnAir.getListEquipage().add(E293);
+	 fonctionnAir.getListEquipage().add(E294);
+	 fonctionnAir.getListEquipage().add(E295);
+	 fonctionnAir.getListEquipage().add(E296);
+	 fonctionnAir.getListEquipage().add(E297);
+	 fonctionnAir.getListEquipage().add(E298);
+	 fonctionnAir.getListEquipage().add(E299);
+	 fonctionnAir.getListEquipage().add(E300);
 
 
 
 		// la création des objets graphiques est déléguée au thread de
         // diffusion d'événements de Swing
 		
-	 SwingUtilities.invokeLater(new Runnable() {
+     SwingUtilities.invokeLater(new Runnable() {
          public void run() {
-             // nouvelle fenêtre
+             // nouvelle fenÃªtre
              JFrame fenetre = new JFrame("Mon application");
              JFrame fenetre2 = new JFrame("Intro application");
              // pas de layout manager pour cette fenêtre : 
-             // on positionnera les composants à la fin
+             // on positionnera les composants Ã  la fin
              
               
            
          	
-     		JPanel pannel = new JPanel();
+     		 JPanel pannel = new JPanel();
      		
      		
      		
@@ -2716,8 +2717,8 @@ public abstract class Main {
              
              fenetre2.setSize(740, 700);
              Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-     		fenetre2.setLocation(dim.width/2 - fenetre2.getWidth()/2, dim.height/2 - fenetre2.getHeight()/2);
-     		fenetre2.setVisible(true);
+     		 fenetre2.setLocation(dim.width/2 - fenetre2.getWidth()/2, dim.height/2 - fenetre2.getHeight()/2);
+     		 fenetre2.setVisible(true);
              
              
              //création des onglets               
@@ -2725,16 +2726,16 @@ public abstract class Main {
              JTabbedPane onglets = new JTabbedPane(SwingConstants.TOP);       
              JTabbedPane onglets2 = new JTabbedPane(SwingConstants.TOP); 
              
-     		//Celui des voyageurs
-     		JPanel onglet1 = new JPanel();
-     		onglet1.setLayout(null);
-     		JLabel titreOnglet1 = new JLabel("Votre espace voyageur");
+     		 //Celui des voyageurs
+     		 JPanel onglet1 = new JPanel();
+     		 onglet1.setLayout(null);
+     		 JLabel titreOnglet1 = new JLabel("Votre espace voyageur");
      	    
-     		onglet1.add(titreOnglet1);
-     	    titreOnglet1.setBounds(300, 70, 180, 20);
-     		onglet1.setPreferredSize(new Dimension(730, 690));
+     		 onglet1.add(titreOnglet1);
+     	     titreOnglet1.setBounds(300, 70, 180, 20);
+     		 onglet1.setPreferredSize(new Dimension(730, 690));
      		
-     		//Compagnie
+     		 //Compagnie
      		
      		JPanel onglet2 = new JPanel();
      		
@@ -2794,7 +2795,7 @@ public abstract class Main {
              // Création des images
              
              JLabel avion = new JLabel (new ImageIcon("avion.gif"));
-             JLabel aéroport = new JLabel (new ImageIcon("aeroport.png"));
+             JLabel aeroport = new JLabel (new ImageIcon("aeroport.png"));
              JLabel vol = new JLabel (new ImageIcon("vol.gif"));
              JLabel technique = new JLabel (new ImageIcon("techniqu.gif"));
            
@@ -2803,7 +2804,7 @@ public abstract class Main {
              //ajout des images aux onglets
              
              onglet4.add(avion);
-             onglet3.add(aéroport);
+             onglet3.add(aeroport);
              onglet5.add(vol);
              onglet4.add(technique);
              
@@ -2812,9 +2813,9 @@ public abstract class Main {
              
              // ajout des fenetres scroll
              JList list = new JList(); 
-				list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-				list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
-				list.setVisibleRowCount(-1);
+			 list.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+			 list.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+			 list.setVisibleRowCount(-1);
             
 				
 				
@@ -2822,26 +2823,78 @@ public abstract class Main {
              //Position et dimension image
              
              avion.setBounds(10, 140, 180, 150);
-             aéroport.setBounds(30, 120, 140, 140);
+             aeroport.setBounds(30, 120, 140, 140);
              vol.setBounds(30, 120, 120, 120);
-				technique.setBounds(10, 300, 180, 150);
+			 technique.setBounds(10, 300, 180, 150);
 				
              
              
-        // création des boutons
+             // création des boutons
      		
-     		//Bouton voyageur
-             JButton bouton1 = new JButton("Réserver un voyage");
+     		 //Bouton voyageur
+             JButton bouton1 = new JButton("Identification");
              bouton1.addActionListener( new ActionListener() {
-         		public void actionPerformed(ActionEvent e) {
-         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         	 public void actionPerformed(ActionEvent e) {
+         	 
          			 try {
+         				JFrame f35 = new JFrame("Identification");
+         				f35.setSize(700, 700);
+         				JPanel pannelnom = new JPanel();
+         				JTextField  testField1 = new JTextField ("Nom");
+         				JTextField  testField2 = new JTextField ("Prenom");
+         				JTextField  testField3 = new JTextField ("Date de naissance (jj/mm/aaaa)");
+         				JTextField  testField4 = new JTextField ("20");
+         				
+         				String nom = testField1.getText();
+         				String prenom = testField2.getText();
+         				String date = testField3.getText();
+         				String poidsstring = testField4.getText();
+         				Double poids = Double.parseDouble(poidsstring);
+         				pannelnom.add(testField1);
+         				pannelnom.add(testField2);
+         				pannelnom.add(testField3);
+         				pannelnom.add(testField4);
+         				f35.getContentPane().add(pannelnom);
+         				f35.setVisible(true);
+         				
+         				ActionListener enregistrement = new ActionListener() {
+         					public void actionPerformed(ActionEvent e) {
+         						String nom = testField1.getText();
+                 				String prenom = testField2.getText();
+                 				String date = testField3.getText();
+                 				String poidsstring = testField4.getText();
+                 				Double poids = Double.parseDouble(poidsstring);
+                 				pannelnom.add(testField1);
+                 				pannelnom.add(testField2);
+                 				pannelnom.add(testField3);
+                 				pannelnom.add(testField4);
+                 				f35.getContentPane().add(pannelnom);
+                 				f35.setVisible(true);
+                 				Voyageur voyageur = new Voyageur(nom, prenom, date , poids);
+                 				fonctionnAir.getListVoyageur().add(voyageur);
+                 				JFrame f22 = new JFrame("Identification");
+                 				f22.setSize(300, 100);
+                 				JPanel pannelID = new JPanel();
+                 				JTextArea area = new JTextArea() ;
+                 				area.append("Bienvenue " + nom + prenom);
+                 				pannelID.add(area);
+                 				f22.add(pannelID);
+                 				f22.setVisible(true);
+                 				f35.setVisible(false);
+                 				
+                 				
+         						
+                 				
+                 			
+         					}
+         					};
+         					
+         					
+         				testField4.addActionListener(enregistrement);
+         				
          				 
-         				// URI uri= new URI(url);
-         				// java.awt.Desktop.getDesktop().browse(uri);
-         				 System.out.println("Ouvre une feetre avec les vols et infos affichés");
-         				 
-         				 } 
+         			 }
+         			 
          			 catch (Exception ex) {
          				 
          				 ex.printStackTrace();
@@ -2851,35 +2904,27 @@ public abstract class Main {
          		);	
              
              
-             JButton bouton2 = new JButton("Modifier un voyage");
+             JButton bouton2 = new JButton("Déja enregistré");
              bouton2.addActionListener( new ActionListener() {
          		public void actionPerformed(ActionEvent e) {
-         			// String url = "https://i.ytimg.com/vi/nk2jT2gH18g/maxresdefault.jpg";
+         			
          			 try {
-         				 
-         				// URI uri= new URI(url);
-         				// java.awt.Desktop.getDesktop().browse(uri);
-         				 System.out.println("Ouvre une fenetre avec le voyage en cours à modifier..");
+         				 JList listvoyageur; 
+         				 ArrayList lesVoyageurs = fonctionnAir.getListVoyageur();
+	                     Object week[]= lesVoyageurs.toArray(); 
+   			             listvoyageur= new JList(week); 
+      			         JScrollPane listScroller = new JScrollPane(listvoyageur);
+   			             onglet1.add(listScroller);
+   			             listScroller.setBounds(420,150,300,250);
          				 
          				 } 
-         			 catch (Exception ex) {
+         			  catch (Exception ex) {
          				 
          				 ex.printStackTrace();
          				 }
          		}
          		}
          		);	
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
              
              
              //boutons compagnie
@@ -2891,7 +2936,7 @@ public abstract class Main {
          			 try {
          				   JList listaeroport; 
 			       
-      				       ArrayList bonjour = FonctionnAir.getListAeroport();
+      				       ArrayList bonjour = fonctionnAir.getListAeroport();
       				       Object week[] = bonjour.toArray();
       				       listaeroport= new JList(week); 
       			           JScrollPane listScroller = new JScrollPane(listaeroport);
@@ -2912,14 +2957,9 @@ public abstract class Main {
           			                 pannel2.setPreferredSize(new Dimension(400, 400));
           			            
           			                 JList listdate; 
-          			                 
-          			                 
-          			                
-
-    			                         String week44[]= { "0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"}; 
+    			                     String week44[]= { "0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"}; 
                			             listdate= new JList(week44); 
                   			         JScrollPane listScroller = new JScrollPane(listdate);
-          	             			 
           	            			 pannel2.add(listScroller);
           	            		     listScroller.setBounds(10,30,370,350);
           	            		     
@@ -2938,12 +2978,12 @@ public abstract class Main {
           			              
           			                 listdate.addListSelectionListener(new ListSelectionListener() {
           			                 
-          			                  JList source = (JList)evt.getSource();
-        			                      String i = source.getSelectedValue().toString();
-        			                      Aeroport a = FonctionnAir.stringToAeroport(i);
+          			                 JList source = (JList)evt.getSource();
+        			                 String i = source.getSelectedValue().toString();
+        			                 Aeroport a = fonctionnAir.stringToAeroport(i);
                   			           
-                			        	 public void valueChanged(ListSelectionEvent evt1) {
-                			        		JFrame fenetre4 = new JFrame("Avion dans l'aéroport");
+                			         public void valueChanged(ListSelectionEvent evt1) {
+                			        		 JFrame fenetre4 = new JFrame("Avion dans l'aéroport");
                 			        		
                 			        		    
                  			            	
@@ -3015,21 +3055,21 @@ public abstract class Main {
          				 
          				 JList listavion; 
     			        
-         		    ArrayList<Modele> modele = new ArrayList<Modele>();
+         		         ArrayList<Modele> modele = new ArrayList<Modele>();
          		    
-      				ArrayList bonjour = FonctionnAir.getListAvion();
+      				     ArrayList bonjour = fonctionnAir.getListAvion();
       				
-      				for(Avion a: FonctionnAir.getListAvion()) {
-      					modele.add(a.getModele());
-      				}
-      				Object week[] = modele.toArray();
-      				Object week2[] = bonjour.toArray();
+      				     for(Avion a: fonctionnAir.getListAvion()) {
+      					     modele.add(a.getModele());
+      				         }
+      				     Object week[] = modele.toArray();
+      				     Object week2[] = bonjour.toArray();
    				     
 			            listavion= new JList(week); 
-   			        JScrollPane listScroller = new JScrollPane(listavion);
+   			            JScrollPane listScroller = new JScrollPane(listavion);
 
-   			        onglet4.add(listScroller);
-   			        listScroller.setBounds(420,150,300,180);         				 
+   			            onglet4.add(listScroller);
+   			            listScroller.setBounds(420,150,300,180);         				 
      			        listavion.addListSelectionListener( new ListSelectionListener(){
      			           
      			        	 public void valueChanged(ListSelectionEvent evt) {
@@ -3048,21 +3088,21 @@ public abstract class Main {
       			                
       			                JTextArea area = new JTextArea();
       			                
-      			               JTextArea area2 = new JTextArea();
+      			                JTextArea area2 = new JTextArea();
       			               
-      			               area.append(selected);
+      			                area.append(selected);
       			               
-      			               pannel2.add(avion);
-      			               pannel2.add(area);
+      			                pannel2.add(avion);
+      			                pannel2.add(area);
       			             
       			               
-      			               avion.setBounds(30, 100, 500, 400);
-      			               area.setBounds(200,2,200,40);
-      			               area.setFont(area.getFont().deriveFont(30f));
+      			                avion.setBounds(30, 100, 500, 400);
+      			                area.setBounds(200,2,200,40);
+      			                area.setFont(area.getFont().deriveFont(30f));
       			               
-      			               fenetre3.setSize(600, 500);
-      			               fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-      			               fenetre3.setVisible(true);
+      			                fenetre3.setSize(600, 500);
+      			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+      			                fenetre3.setVisible(true);
                 				
      			        	      }
      			        	    });
@@ -3091,17 +3131,17 @@ public abstract class Main {
          				 JList listavion; 
     			        
          	
-      				ArrayList bonjour = FonctionnAir.getListAvion();
+      				     ArrayList bonjour = fonctionnAir.getListAvion();
       				
-      				Object week[] = bonjour.toArray();
+      				     Object week[] = bonjour.toArray();
       				
    				     
-			            listavion= new JList(week); 
-   			        JScrollPane listScroller = new JScrollPane(listavion);
+			             listavion= new JList(week); 
+   			             JScrollPane listScroller = new JScrollPane(listavion);
 
-   			        onglet4.add(listScroller);
-   			        listScroller.setBounds(420,350,300,180);         				 
-     			        listavion.addListSelectionListener( new ListSelectionListener(){
+   			             onglet4.add(listScroller);
+   			             listScroller.setBounds(420,350,300,180);         				 
+     			         listavion.addListSelectionListener( new ListSelectionListener(){
      			           
      			        	 public void valueChanged(ListSelectionEvent evt) {
      			        		JFrame fenetre3 = new JFrame("Information avion");
@@ -3117,20 +3157,20 @@ public abstract class Main {
       			                
       			                JTextArea area = new JTextArea();
       			                
-      			               JTextArea area2 = new JTextArea();
+      			                JTextArea area2 = new JTextArea();
       			               
-      			               area.append(selected);
-      			               area2.append("Détail technique: "+ "\n" + selected  );
-      			               pannel2.add(area);
-      			               pannel2.add(area2);
+      			                area.append(selected);
+      			                area2.append("Détail technique: "+ "\n" + selected  );
+      			                pannel2.add(area);
+      			                pannel2.add(area2);
       			            
-      			               area.setBounds(200,2,200,40);
-      			               area.setFont(area.getFont().deriveFont(30f));
-      			               area2.setBounds(2,80,200,200);
-      			               area2.setFont(area2.getFont().deriveFont(12f));
-      			               fenetre3.setSize(300, 250);
-      			               fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
-      			               fenetre3.setVisible(true);
+      			                area.setBounds(200,2,200,40);
+      			                area.setFont(area.getFont().deriveFont(30f));
+      			                area2.setBounds(2,80,200,200);
+      			                area2.setFont(area2.getFont().deriveFont(12f));
+      			                fenetre3.setSize(300, 250);
+      			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+      			                fenetre3.setVisible(true);
                 				
      			        	      }
      			        	    });
@@ -3168,7 +3208,7 @@ public abstract class Main {
        			        listScroller.setBounds(450,150,200,120);
        			        
        			        
-       			      listvol.addListSelectionListener(new ListSelectionListener() {
+       			        listvol.addListSelectionListener(new ListSelectionListener() {
     			           
   			        	 public void valueChanged(ListSelectionEvent evt) {
   			        		JFrame fenetre3 = new JFrame("Information vol");
@@ -3182,42 +3222,19 @@ public abstract class Main {
    			                JList source = (JList)evt.getSource();
    			                String selected = source.getSelectedValue().toString();
    			                int i = Integer.parseInt(selected); 
-            				    ArrayList bonjour1 = FonctionnAir.getMapVol().get(i);
-            				    
-   			                
-            				    Object week3[] = bonjour1.toArray();
-            				
-         				     
+            			    ArrayList bonjour1 = fonctionnAir.getMapVol().get(i);
+            			    Object week3[] = bonjour1.toArray();
       			            listvoldate= new JList(week3); 
          			        JScrollPane listScroller = new JScrollPane(listvoldate);
-
          			        pannel2.add(listScroller);
          			        listScroller.setBounds(10,10,370,370);
-   			                
    			                fenetre3.add(pannel2);
-   			                
-   			                
    			                fenetre3.setSize(401, 401);
    			                fenetre3.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
    			                fenetre3.setVisible(true);
              				
   			        	      }
   			        	    });
-   			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
-       			        
        			        
           				 } 
          				 
@@ -3232,9 +3249,7 @@ public abstract class Main {
              
              // ajout des boutons aux onglets
              onglet1.add(bouton1);
-         	onglet1.add(bouton2);
-         	
-         	
+         	 onglet1.add(bouton2);
              onglet3.add(boutona);
              onglet4.add(boutonb);
              onglet4.add(boutone);
@@ -3244,7 +3259,6 @@ public abstract class Main {
              // positionnement et dimensionnement manuel des boutons
              bouton1.setBounds(200, 150, 200, 30);
              bouton2.setBounds(200, 200, 200, 30);
-             
              boutona.setBounds(200, 150, 200, 30);
              boutonb.setBounds(200, 150, 200, 30);
              boutonc.setBounds(200, 150, 200, 30);
@@ -3261,23 +3275,19 @@ public abstract class Main {
              // dimensionnement en affichage de la fenêtre
              
              fenetre.setSize(740, 700);
-            
-     		fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
+     		 fenetre.setLocation(dim.width/2 - fenetre.getWidth()/2, dim.height/2 - fenetre.getHeight()/2);
          }
          });
-      
+	     
+	        //Petits tests de vérif
 	 
-	 
-	 
-	 
-	   //Petits tests de vérif
-	 
-	   Vol vol1 = new Vol(CDG, City, 10);
-	   FonctionnAir.addVol(vol1);
-	   System.out.println(FonctionnAir.getMapVol().get(10));
-	   
-	   
-             
-  
+	         Vol vol1 = new Vol(CDG, City, 10);
+	         fonctionnAir.addVol(vol1);
+	         System.out.println(fonctionnAir.getMapVol().get(10));
+	         
+	         Voyageur voy1 = new Voyageur("Brisebard", "Florentin", "04/06/1998", 20);
+	         fonctionnAir.getListVoyageur().add(voy1);
+	         
+	         
     }
 }

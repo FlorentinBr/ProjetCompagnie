@@ -8,10 +8,11 @@ import java.util.Scanner;
 public class Compagnie {
 	
 	
-	private Map<Integer, ArrayList<Vol>> mapVol;//Tout les vols programés par la compagnie
-	private ArrayList<Aeroport> listAeroport;//tout les aéroports que dessert la compagnie
-	private ArrayList<Equipage> listEquipage;//tout les equipages de la compagnie 
-	private ArrayList<Avion> listAvion;//touts les avions de la compagnie
+	private Map<Integer, ArrayList<Vol>> mapVol;//Tous les vols programés par la compagnie
+	private ArrayList<Aeroport> listAeroport;//tous les aéroports que dessert la compagnie
+	private ArrayList<Equipage> listEquipage;//tous les equipages de la compagnie 
+	private ArrayList<Avion> listAvion;//tous les avions de la compagnie
+	private ArrayList<Voyageur> listVoyageur;//tous les voyageurs de la compagnie
 	
 	/**
 	 * Constructeur de la classe Compagnie
@@ -26,6 +27,7 @@ public class Compagnie {
 		this.listAeroport = new ArrayList<Aeroport>();
 		this.listEquipage = new ArrayList<Equipage>();
 		this.listAvion = new ArrayList<Avion>();
+		this.listVoyageur = new ArrayList<Voyageur>();
 	}
 
 	//Methodes de modification(set) et de renvoi(get) des attributs de Compagnie
@@ -76,6 +78,20 @@ public class Compagnie {
 	 */
 	public void setListAvion(ArrayList<Avion> listAvion) {
 		this.listAvion = listAvion;
+	}
+	
+	/**
+	 * @return the listVoyageur
+	 */
+	public ArrayList<Voyageur> getListVoyageur() {
+		return listVoyageur;
+	}
+
+	/**
+	 * @param listVoyageur the listVoyageur to set
+	 */
+	public void setListVoyageur(ArrayList<Voyageur> listVoyageur) {
+		this.listVoyageur = listVoyageur;
 	}
 	
 	
